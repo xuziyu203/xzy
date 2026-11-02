@@ -1,0 +1,42 @@
+test_calibrate_rejects_invalid_extreme_moving_stale_or_fault (test_gold_game_panel.ActionTests.test_calibrate_rejects_invalid_extreme_moving_stale_or_fault) ... ok
+test_calibrate_uses_fresh_values_not_historic_constants (test_gold_game_panel.ActionTests.test_calibrate_uses_fresh_values_not_historic_constants) ... ok
+test_calibration_sequence_wrap_is_supported (test_gold_game_panel.ActionTests.test_calibration_sequence_wrap_is_supported) ... ok
+test_exit_explicit_then_status (test_gold_game_panel.ActionTests.test_exit_explicit_then_status) ... ok
+test_missing_asset_blocks_prepare (test_gold_game_panel.ActionTests.test_missing_asset_blocks_prepare) ... ok
+test_move_waits_shown_and_never_auto_shields (test_gold_game_panel.ActionTests.test_move_waits_shown_and_never_auto_shields) ... ok
+test_move_without_configuration_does_not_start_default_single (test_gold_game_panel.ActionTests.test_move_without_configuration_does_not_start_default_single) ... ok
+test_moving_game_blocks_calibration (test_gold_game_panel.ActionTests.test_moving_game_blocks_calibration) ... ok
+test_prepare_full_order_no_automatic_start (test_gold_game_panel.ActionTests.test_prepare_full_order_no_automatic_start) ... ok
+test_refresh_stops_at_first_unknown (test_gold_game_panel.ActionTests.test_refresh_stops_at_first_unknown) ... ok
+test_safe_idle_missing_blocks_prepare (test_gold_game_panel.ActionTests.test_safe_idle_missing_blocks_prepare) ... ok
+test_journal_lossless_bytes_and_close (test_gold_game_panel.IdentityAndWorkerTests.test_journal_lossless_bytes_and_close) ... ok
+test_manifest_mismatch_before_serial_import (test_gold_game_panel.IdentityAndWorkerTests.test_manifest_mismatch_before_serial_import) ... ok
+test_pair_hash_gate_with_synthetic_files (test_gold_game_panel.IdentityAndWorkerTests.test_pair_hash_gate_with_synthetic_files) ... ok
+test_worker_open_close_has_no_auto_tx_and_dtr_set_before_open (test_gold_game_panel.IdentityAndWorkerTests.test_worker_open_close_has_no_auto_tx_and_dtr_set_before_open) ... ok
+test_diag_cumulative_and_historical_slot (test_gold_game_panel.ParserTests.test_diag_cumulative_and_historical_slot) ... ok
+test_error_forms (test_gold_game_panel.ParserTests.test_error_forms) ... ok
+test_invalid_xy_never_reuses_historical_values (test_gold_game_panel.ParserTests.test_invalid_xy_never_reuses_historical_values) ... ok
+test_malformed_joy_rejected (test_gold_game_panel.ParserTests.test_malformed_joy_rejected) ... ok
+test_signed_and_wrap_sequence (test_gold_game_panel.ParserTests.test_signed_and_wrap_sequence) ... ok
+test_user_valid_xy_and_armed (test_gold_game_panel.ParserTests.test_user_valid_xy_and_armed) ... ok
+test_zero_error_status_not_rejected (test_gold_game_panel.ParserTests.test_zero_error_status_not_rejected) ... ok
+test_correct_build_observed (test_gold_game_panel.WireTests.test_correct_build_observed) ... ok
+test_exact_user_unknown_command_is_immediate (test_gold_game_panel.WireTests.test_exact_user_unknown_command_is_immediate) ... ok
+test_fragmented_status_and_raw_log (test_gold_game_panel.WireTests.test_fragmented_status_and_raw_log) ... ok
+test_import_never_imports_serial (test_gold_game_panel.WireTests.test_import_never_imports_serial) ... ok
+test_new_partial_rx_kept_on_timeout (test_gold_game_panel.WireTests.test_new_partial_rx_kept_on_timeout) ... ok
+test_no_control_chars_in_command (test_gold_game_panel.WireTests.test_no_control_chars_in_command) ... ok
+test_no_write_after_timeout (test_gold_game_panel.WireTests.test_no_write_after_timeout) ... ok
+test_partial_write_not_retried (test_gold_game_panel.WireTests.test_partial_write_not_retried) ... ok
+test_preexisting_complete_line_logged_not_used_as_reply (test_gold_game_panel.WireTests.test_preexisting_complete_line_logged_not_used_as_reply) ... ok
+test_preexisting_partial_line_blocks_send (test_gold_game_panel.WireTests.test_preexisting_partial_line_blocks_send) ... ok
+test_stop_accepted_alone_not_complete (test_gold_game_panel.WireTests.test_stop_accepted_alone_not_complete) ... ok
+test_stop_waits_for_complete_notification (test_gold_game_panel.WireTests.test_stop_waits_for_complete_notification) ... ok
+test_write_exception_unknown_outcome (test_gold_game_panel.WireTests.test_write_exception_unknown_outcome) ... ok
+test_wrong_build_stops_before_more_commands (test_gold_game_panel.WireTests.test_wrong_build_stops_before_more_commands) ... ok
+test_wrong_prefix_timeout_not_silence (test_gold_game_panel.WireTests.test_wrong_prefix_timeout_not_silence) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.066s
+
+OK

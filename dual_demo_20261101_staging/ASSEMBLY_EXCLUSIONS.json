@@ -1,0 +1,294 @@
+[
+  {
+    "destination": "demo_1_game/ip/riscv_soc/T120F324_devkit/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\T120F324_devkit\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin",
+    "source_sha256": "19d1b02ea4d37c261207c11bb7fc37f654e7b62d675d1c129d4eef5fb74c49dd"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/T120F324_devkit/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\T120F324_devkit\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin",
+    "source_sha256": "67fe285d60a6888cbb56d281d4fe268d9f0087f9d958015ff65b782c15fff10c"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/T120F324_devkit/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\T120F324_devkit\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin",
+    "source_sha256": "860a47885bcf58c6c22829f3c388525c38d35a0fad69f159590f5724641ec6f0"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/T120F324_devkit/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\T120F324_devkit\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin",
+    "source_sha256": "da410f698d49b9c435e015ebc337fad3df3e579b732c8907c5a2e2052969dbb5"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/T120F324_devkit/ddr_reset_sequencer.v",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\T120F324_devkit\\ddr_reset_sequencer.v",
+    "source_sha256": "949be5f40fb4392672334c3e9482f92bca339a91272d2fc9f63c2ffa2b071f72"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/T120F324_devkit/design_modules.v",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\T120F324_devkit\\design_modules.v",
+    "source_sha256": "154ce0d41875ea49bb479a36cf971dc9ef071abf6c38efa71474ed3f2ef30a9b"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/T120F324_devkit/embedded_sw/riscv_soc/tool/bootloader/bootloader_124K.bin",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\T120F324_devkit\\embedded_sw\\riscv_soc\\tool\\bootloader\\bootloader_124K.bin",
+    "source_sha256": "27a26ffbcae4d9a5e177aac9985fa92913f8e6e839b2001d1641cf62fe44d6f7"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/T120F324_devkit/riscv_soc.v",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\T120F324_devkit\\riscv_soc.v",
+    "source_sha256": "dbc92638dedb0d8ad16b30db724be39c42cdda859d808e9c3e993f4f40f0d183"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/T120F324_devkit/riscv_soc_define.vh",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\T120F324_devkit\\riscv_soc_define.vh",
+    "source_sha256": "553f4a1ce09c50245a1f350bd8eddcf0c7f6292ee25882857d4eaf791ece547c"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/T120F324_devkit/soc.hex",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\T120F324_devkit\\soc.hex",
+    "source_sha256": "95e61b6fe713abafca1615c720780d12213809ff7ccea04c207561ac7caa350c"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/T120F324_devkit/top_soc.v",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\T120F324_devkit\\top_soc.v",
+    "source_sha256": "4f98f8371ee901d81d6ac86bf941ee2802160fe912c9b9f0a5708265ef6960bd"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Testbench/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin",
+    "reason": "Vendor simulation-only testbench; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Testbench\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin",
+    "source_sha256": "f88113dbabb9c74df2a37093d3accab4f7dfa703e87887e73dee7b906ffb988c"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Testbench/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin",
+    "reason": "Vendor simulation-only testbench; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Testbench\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin",
+    "source_sha256": "36bf5d01497679553dee0ef0ff1085f2e3d366c62f5f4cce0900ba1472103733"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Testbench/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin",
+    "reason": "Vendor simulation-only testbench; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Testbench\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin",
+    "source_sha256": "9f3a855483667ba50846f61acdaa3e1012c6fa0d4406c4ba5fcf9a3449bec4b7"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Testbench/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin",
+    "reason": "Vendor simulation-only testbench; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Testbench\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin",
+    "source_sha256": "661ecd603a30f9f797bd78c31220c799279d650a14ec37e04d929973c5cd4163"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Testbench/W25Q32JVxxIM.v",
+    "reason": "Vendor simulation-only testbench; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Testbench\\W25Q32JVxxIM.v",
+    "source_sha256": "202bbb526c5413b2cf5029ef59db1c6ec4cbfde689159006be33f3889b2d168a"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Testbench/aldec/riscv_soc.v",
+    "reason": "Vendor simulation-only testbench; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Testbench\\aldec\\riscv_soc.v",
+    "source_sha256": "573526b4632b9e9f596e8712cdaee0b7c378199dab67c5f6c508449b8f84af00"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Testbench/design_modules.v",
+    "reason": "Vendor simulation-only testbench; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Testbench\\design_modules.v",
+    "source_sha256": "f0e3a46446f34d2a7ab6187af9224265e8b9680d328ba21f19d28fb73cd88525"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Testbench/modelsim/riscv_soc.v",
+    "reason": "Vendor simulation-only testbench; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Testbench\\modelsim\\riscv_soc.v",
+    "source_sha256": "8944518fd771a43d9587c8e105be3617dd4e398eac2cf841c1fb9c80806f1350"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Testbench/ncsim/riscv_soc.v",
+    "reason": "Vendor simulation-only testbench; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Testbench\\ncsim\\riscv_soc.v",
+    "source_sha256": "a632b898b67287984b80b997717231d99729eac0c702413b2a45b6a475ecc952"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Testbench/riscv_soc.v",
+    "reason": "Vendor simulation-only testbench; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Testbench\\riscv_soc.v",
+    "source_sha256": "dbc92638dedb0d8ad16b30db724be39c42cdda859d808e9c3e993f4f40f0d183"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Testbench/riscv_soc_define.vh",
+    "reason": "Vendor simulation-only testbench; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Testbench\\riscv_soc_define.vh",
+    "source_sha256": "553f4a1ce09c50245a1f350bd8eddcf0c7f6292ee25882857d4eaf791ece547c"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Testbench/sim_modules.v",
+    "reason": "Vendor simulation-only testbench; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Testbench\\sim_modules.v",
+    "source_sha256": "867e4a7e8a7718a597a59a932e4eed6e48071237c0b1a0d7fded50f00c678eae"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Testbench/synopsys/riscv_soc.v",
+    "reason": "Vendor simulation-only testbench; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Testbench\\synopsys\\riscv_soc.v",
+    "source_sha256": "4798657bcde9aa693141b943cc8171c74e42ecbc3ed87257e618f120146f0a56"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Testbench/tb_soc.v",
+    "reason": "Vendor simulation-only testbench; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Testbench\\tb_soc.v",
+    "source_sha256": "13547795aa10e0ea8e60281453314bb29c31240212c7e246b429bf8854723424"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Testbench/top_soc.v",
+    "reason": "Vendor simulation-only testbench; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Testbench\\top_soc.v",
+    "source_sha256": "c78dd61706c6088d199b2b6c7455ed59c4ae32436cf1886c038fab57b93b519d"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Ti180J484_devkit/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Ti180J484_devkit\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin",
+    "source_sha256": "19d1b02ea4d37c261207c11bb7fc37f654e7b62d675d1c129d4eef5fb74c49dd"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Ti180J484_devkit/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Ti180J484_devkit\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin",
+    "source_sha256": "67fe285d60a6888cbb56d281d4fe268d9f0087f9d958015ff65b782c15fff10c"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Ti180J484_devkit/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Ti180J484_devkit\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin",
+    "source_sha256": "860a47885bcf58c6c22829f3c388525c38d35a0fad69f159590f5724641ec6f0"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Ti180J484_devkit/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Ti180J484_devkit\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin",
+    "source_sha256": "da410f698d49b9c435e015ebc337fad3df3e579b732c8907c5a2e2052969dbb5"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Ti180J484_devkit/design_modules.v",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Ti180J484_devkit\\design_modules.v",
+    "source_sha256": "42c33f12ef7f6dfeb65d40a331d08c22adf8936f8ca16e38048128b3a01029a4"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Ti180J484_devkit/embedded_sw/riscv_soc/tool/bootloader/bootloader_124K.bin",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Ti180J484_devkit\\embedded_sw\\riscv_soc\\tool\\bootloader\\bootloader_124K.bin",
+    "source_sha256": "27a26ffbcae4d9a5e177aac9985fa92913f8e6e839b2001d1641cf62fe44d6f7"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Ti180J484_devkit/riscv_soc.v",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Ti180J484_devkit\\riscv_soc.v",
+    "source_sha256": "dbc92638dedb0d8ad16b30db724be39c42cdda859d808e9c3e993f4f40f0d183"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Ti180J484_devkit/riscv_soc_define.vh",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Ti180J484_devkit\\riscv_soc_define.vh",
+    "source_sha256": "553f4a1ce09c50245a1f350bd8eddcf0c7f6292ee25882857d4eaf791ece547c"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Ti180J484_devkit/top_soc.v",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Ti180J484_devkit\\top_soc.v",
+    "source_sha256": "0dfbcb51b76199727c5c486e6755d290c27d0da546d3ad9ec97b9fc57e5ba996"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Tz170J484_devkit/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Tz170J484_devkit\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin",
+    "source_sha256": "19d1b02ea4d37c261207c11bb7fc37f654e7b62d675d1c129d4eef5fb74c49dd"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Tz170J484_devkit/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Tz170J484_devkit\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin",
+    "source_sha256": "67fe285d60a6888cbb56d281d4fe268d9f0087f9d958015ff65b782c15fff10c"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Tz170J484_devkit/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Tz170J484_devkit\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin",
+    "source_sha256": "860a47885bcf58c6c22829f3c388525c38d35a0fad69f159590f5724641ec6f0"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Tz170J484_devkit/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Tz170J484_devkit\\EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin",
+    "source_sha256": "da410f698d49b9c435e015ebc337fad3df3e579b732c8907c5a2e2052969dbb5"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Tz170J484_devkit/design_modules.v",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Tz170J484_devkit\\design_modules.v",
+    "source_sha256": "42c33f12ef7f6dfeb65d40a331d08c22adf8936f8ca16e38048128b3a01029a4"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Tz170J484_devkit/embedded_sw/riscv_soc/tool/bootloader/bootloader_124K.bin",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Tz170J484_devkit\\embedded_sw\\riscv_soc\\tool\\bootloader\\bootloader_124K.bin",
+    "source_sha256": "27a26ffbcae4d9a5e177aac9985fa92913f8e6e839b2001d1641cf62fe44d6f7"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Tz170J484_devkit/riscv_soc.v",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Tz170J484_devkit\\riscv_soc.v",
+    "source_sha256": "dbc92638dedb0d8ad16b30db724be39c42cdda859d808e9c3e993f4f40f0d183"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Tz170J484_devkit/riscv_soc_define.vh",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Tz170J484_devkit\\riscv_soc_define.vh",
+    "source_sha256": "553f4a1ce09c50245a1f350bd8eddcf0c7f6292ee25882857d4eaf791ece547c"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/Tz170J484_devkit/top_soc.v",
+    "reason": "Unused example for another device; no active project/include/readmem reference",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\Tz170J484_devkit\\top_soc.v",
+    "source_sha256": "972eadacd3887d014e3ae6b7b94a5aa5ad19bc16152c1b28e85fbffc00014d57"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/source/hardware/netlist/source_aldec/EfxSapphireSoc.v",
+    "reason": "Simulator-specific duplicate netlist; retain canonical and source_efinity generated netlists",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\source\\hardware\\netlist\\source_aldec\\EfxSapphireSoc.v",
+    "source_sha256": "e767444f870b70c9f6a0bdd13bb470c4d81b70685da707a6fae0f661696b7f6b"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/source/hardware/netlist/source_modelsim/EfxSapphireSoc.v",
+    "reason": "Simulator-specific duplicate netlist; retain canonical and source_efinity generated netlists",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\source\\hardware\\netlist\\source_modelsim\\EfxSapphireSoc.v",
+    "source_sha256": "d55ea8a74654af49822f90da46a4af111088da95d79e1abc3ad98785cc2cc979"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/source/hardware/netlist/source_ncsim/EfxSapphireSoc.v",
+    "reason": "Simulator-specific duplicate netlist; retain canonical and source_efinity generated netlists",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\source\\hardware\\netlist\\source_ncsim\\EfxSapphireSoc.v",
+    "source_sha256": "6ed9bd29dfc109de796bed8957c40416b63c455402f15c2e0ea9cb1adc9d1870"
+  },
+  {
+    "destination": "demo_1_game/ip/riscv_soc/source/hardware/netlist/source_synopsys/EfxSapphireSoc.v",
+    "reason": "Simulator-specific duplicate netlist; retain canonical and source_efinity generated netlists",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\ip\\riscv_soc\\source\\hardware\\netlist\\source_synopsys\\EfxSapphireSoc.v",
+    "source_sha256": "5cc57197643a481ca76792d1e2f2c540c170542be0d9e0982a59634512c6a245"
+  },
+  {
+    "reason": "No packaged loader/upload tool reads the prebuilt BIN; expected_image is generated from ELF; bin metadata removed",
+    "source": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\board\\candidate_pkg\\pair\\apbTest.bin"
+  }
+]

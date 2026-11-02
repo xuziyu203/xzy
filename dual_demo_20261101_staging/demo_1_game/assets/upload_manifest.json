@@ -1,0 +1,244 @@
+{
+ "contract": "B3 MS1 / BU4.0 MIXED; original23 B2 payloads unchanged; independent blue/red missiles ID24..27. Requires this matched bit+ELF+27 assets, ASSET41530204. | BGT (BFS_BGT_POOL600_PIPE): IDs 28..31 = I4 background, cyan/orange 32x32 RGB565LE+A4 decor, palette (pad128), handoff alpha_v1. | CMD: ID10 round blue (CRC C1C65390), IDs 32..33 start menu I4 + palette (0x15C capability word, VALID_MASK_HI). | GHD1: ID22/ID23 = gold energy shield (validation/gold_hud_dualelf_20261030/assets/gold_shield, same size/format/DDR slot). | GHD4: ID1 = starfield light background (assets/light_bg), ID22/ID23 = shield v2 (frame 1 brighter hit flash); sizes/slots unchanged. | GHD5P: ID10/ID11 = blue enemy bullet v2 (style 2 only; same size/format/DDR slot; firmware CRC check updated in the GHD5P ELF).",
+ "resources": [
+  {
+   "id": 1,
+   "path": "assets/payloads/id01_background_1920x1080.rgb565",
+   "bytes": 4147200,
+   "crc32": "15DE71B2",
+   "sha256": "349dcb613203f8aea09fcaa7555871d54670c369c6ddf7e27aeba046b0fc26e6"
+  },
+  {
+   "id": 2,
+   "path": "assets/payloads/id02_mini_boss_01_64.rgb565",
+   "bytes": 8192,
+   "crc32": "BE1FE4C5",
+   "sha256": "07a932ccb95b27d3fc5300cf26c42567447b476703b8e08bbdf244f348021932"
+  },
+  {
+   "id": 3,
+   "path": "assets/payloads/id03_mini_boss_01_64.mask1",
+   "bytes": 512,
+   "crc32": "CE025BE5",
+   "sha256": "94b6a16cd4ac992dfec3008a2b952bc81be9525811ae813604a8ff64e0321db2"
+  },
+  {
+   "id": 4,
+   "path": "assets/payloads/id04_mini_boss_02_64.rgb565",
+   "bytes": 8192,
+   "crc32": "8874CB55",
+   "sha256": "2f814e75f273d615e869e39e925a652bbcdbf1b5017f332330a350ce90a65c55"
+  },
+  {
+   "id": 5,
+   "path": "assets/payloads/id05_mini_boss_02_64.mask1",
+   "bytes": 512,
+   "crc32": "3454631F",
+   "sha256": "359081dd5f5e681258b43d66003efda7a137418000f9c306c5a2464998a8a948"
+  },
+  {
+   "id": 6,
+   "path": "assets/payloads/id06_mini_boss_03_64.rgb565",
+   "bytes": 8192,
+   "crc32": "D41B06D0",
+   "sha256": "f0d61b3e68c2fed72f842daf506838feafcc5ec4c0e0fffd49dcc0d1613f98cf"
+  },
+  {
+   "id": 7,
+   "path": "assets/payloads/id07_mini_boss_03_64.mask1",
+   "bytes": 512,
+   "crc32": "EF3B03A1",
+   "sha256": "748f1155a7dede623c2be734d8d19b44996d637349387aff9ba8e57f355c3e92"
+  },
+  {
+   "id": 8,
+   "path": "assets/payloads/id08_boss_large_128.rgb565",
+   "bytes": 32768,
+   "crc32": "BF1D35C0",
+   "sha256": "c6c3d583bbc630090babdeb1326651f93d0b140363c9dccf4e989f44f665860c"
+  },
+  {
+   "id": 9,
+   "path": "assets/payloads/id09_boss_large_128.mask1",
+   "bytes": 2048,
+   "crc32": "F72337A7",
+   "sha256": "71efb2dc9d9c017948dcb1837f410649b07ac275a809742a5da96fc0f5e6fdad"
+  },
+  {
+   "id": 10,
+   "path": "assets/payloads/id10_enemy_styles4_packed.rgb565le",
+   "bytes": 1024,
+   "crc32": "2C7D6EC5",
+   "sha256": "33124484fe727a0b6d6695fe14dbd17f1fc380be984dffe3a38aed355e48d919",
+   "source": "GHD5P blue bullet v2: style-2 cell (0,16) 8x12 only, styles 0/1/3 byte-identical (dense_blue_20261031/scripts/blue_bullet_v2.py); was CRC C1C65390"
+  },
+  {
+   "id": 11,
+   "path": "assets/payloads/id11_enemy_styles4_packed.mask1",
+   "bytes": 128,
+   "crc32": "9260879B",
+   "sha256": "553c9fc2335b2bf5620261b6afab13edc5ec61df06db3ff7eca172dbe6141bfd",
+   "source": "GHD5P blue bullet v2: style-2 cell (0,16) 8x12 only, styles 0/1/3 byte-identical (dense_blue_20261031/scripts/blue_bullet_v2.py); was CRC 2FF6BDD1"
+  },
+  {
+   "id": 12,
+   "path": "assets/payloads/id12_blue_16x32.rgb565le",
+   "bytes": 1024,
+   "crc32": "EDBA0830",
+   "sha256": "55c8076e8d0e936ded54df40bf5ffd19a8eb487f72c84664e698a5afd4d6a12a"
+  },
+  {
+   "id": 13,
+   "path": "assets/payloads/id13_blue_16x32.mask1",
+   "bytes": 128,
+   "crc32": "FABF139E",
+   "sha256": "d994caeda7226c2c2f410fc9691991d8dddba9f03fa7666f48e5495627838075"
+  },
+  {
+   "id": 14,
+   "path": "assets/payloads/id14_player_ship_96.rgb565",
+   "bytes": 18432,
+   "crc32": "D8F19C16",
+   "sha256": "fd46d04763fbe68a32a86196c85ad541fc8db748af14869aacdfba2439c7c68d"
+  },
+  {
+   "id": 15,
+   "path": "assets/payloads/id15_player_ship_96.mask1",
+   "bytes": 1152,
+   "crc32": "E674BBEB",
+   "sha256": "294029438ba7fbb145b52bfe0e6c6891a857ecd0f99efb04aa060f1104c0377e"
+  },
+  {
+   "id": 16,
+   "path": "assets/payloads/id16_fx_small_64.rgb565",
+   "bytes": 49152,
+   "crc32": "ED273C22",
+   "sha256": "fb83db28313c1e7beb6aa17307ca20af5b16ce3f3e2f49630a0d381f44f14652"
+  },
+  {
+   "id": 17,
+   "path": "assets/payloads/id17_fx_small_64.a4",
+   "bytes": 12288,
+   "crc32": "C145F85C",
+   "sha256": "aaed371ef2afd93fce31e5a075e089fdba570329ece1789392c3459a24274432"
+  },
+  {
+   "id": 18,
+   "path": "assets/payloads/id18_fx_large_128.rgb565",
+   "bytes": 262144,
+   "crc32": "CDFFBD85",
+   "sha256": "8335a0d8c72097fe7eab6f50754108e27d96905c72d134d1e51513e308c6bebe"
+  },
+  {
+   "id": 19,
+   "path": "assets/payloads/id19_fx_large_128.a4",
+   "bytes": 65536,
+   "crc32": "C6C489BF",
+   "sha256": "33c8b12b746c4d963c8000f5735648390989979b21c74a7496c5a0589a8ff52b"
+  },
+  {
+   "id": 20,
+   "path": "assets/payloads/id20_spark_64.rgb565",
+   "bytes": 32768,
+   "crc32": "BB53AADD",
+   "sha256": "f69eee6fc432cbc8d0e1e3870103789d1921ca65d55aa2c7a2f72cf3fd88798f"
+  },
+  {
+   "id": 21,
+   "path": "assets/payloads/id21_spark_64.a4",
+   "bytes": 8192,
+   "crc32": "489CE3B5",
+   "sha256": "39bd5634d51ca6286ea8242f36cbefe7070999538f92d89d5672b50a28c809a7"
+  },
+  {
+   "id": 22,
+   "path": "assets/payloads/id22_shield_128.rgb565",
+   "bytes": 65536,
+   "crc32": "85E0FD97",
+   "sha256": "2de3246fa3c4cae03baeec39615abf8aa6c4172a0b6f8ccb8e106e0a456e126f"
+  },
+  {
+   "id": 23,
+   "path": "assets/payloads/id23_shield_128.a4",
+   "bytes": 16384,
+   "crc32": "7A6081B5",
+   "sha256": "39ebc847a0bbd0240c3562de024cf831994bcc50d4753ed4f6cd87fa3ac08e66"
+  },
+  {
+   "id": 24,
+   "path": "assets/payloads/id24_missile_blue_storage16.rgb565le",
+   "bytes": 1024,
+   "crc32": "C6F8A144",
+   "sha256": "b1e14967b4b81489cf0038a03edd679878033fd64cdc137665fa0be44eeed211"
+  },
+  {
+   "id": 25,
+   "path": "assets/payloads/id25_missile_blue_storage16.mask1",
+   "bytes": 128,
+   "crc32": "95DE4EE3",
+   "sha256": "a8a17ab58bc84a2be10c618bd32a2db16f4fa8c300e393b5c1ee4041e20ed0e3"
+  },
+  {
+   "id": 26,
+   "path": "assets/payloads/id26_missile_red_storage16.rgb565le",
+   "bytes": 1024,
+   "crc32": "A5E1CF06",
+   "sha256": "c2ad5968f154a1e663cf3caef389ca7d4db2dc2b32736e9d64b04603d79c23ad"
+  },
+  {
+   "id": 27,
+   "path": "assets/payloads/id27_missile_red_storage16.mask1",
+   "bytes": 128,
+   "crc32": "E465544B",
+   "sha256": "58056ff516e82c88a660f5e345e00d3725ed726784989798be176bcc32f8f189"
+  },
+  {
+   "id": 28,
+   "path": "assets/payloads/id28_background_1080p_i4.bin",
+   "bytes": 1036800,
+   "crc32": "9C291606",
+   "sha256": "1408ca973b27409bc6ae4aa529df64b734fe7cbfc9b94d926a6a44e35f15151f",
+   "source": "handoff bg_turret_assets_20261028_alpha_v1 assets/background_1080p_i4.bin"
+  },
+  {
+   "id": 29,
+   "path": "assets/payloads/id29_decor_cyan_32_rgb565le_a4.bin",
+   "bytes": 2560,
+   "crc32": "380723AC",
+   "sha256": "1833be20e04207c9ab0815fbf2d165d458dc4509a8942889b9bd6abe898b61e6",
+   "source": "handoff bg_turret_assets_20261028_alpha_v1 assets/bullet_cyan_32_rgb565le_a4.bin"
+  },
+  {
+   "id": 30,
+   "path": "assets/payloads/id30_decor_orange_32_rgb565le_a4.bin",
+   "bytes": 2560,
+   "crc32": "A1DB6099",
+   "sha256": "e747c3eeb5aed1c843b0eaab0bf90efb33d540d5a671d15c249010550fb357a6",
+   "source": "handoff bg_turret_assets_20261028_alpha_v1 assets/bullet_orange_32_rgb565le_a4.bin"
+  },
+  {
+   "id": 31,
+   "path": "assets/payloads/id31_palette_rgb565le_pad128.bin",
+   "bytes": 128,
+   "crc32": "C8A5D5C6",
+   "sha256": "5011110fb012de2e839f3a26431b24c4282f585fb9a9abdf40cdce731282cf9b",
+   "source": "handoff bg_turret_assets_20261028_alpha_v1 upload/shared_rgb565le_pad128.bin"
+  },
+  {
+   "id": 32,
+   "path": "assets/payloads/id32_menu_1080p_i4.bin",
+   "bytes": 1036800,
+   "crc32": "957EABB8",
+   "sha256": "747128dee26b8088a982f26c9f9d6310a180680b2f8e4ceba7bd0bdf0ad33f42",
+   "source": "CMD: start menu 16-colour I4 (assets/tools/make_menu_i4.py), source PNG sha 65bb217a..."
+  },
+  {
+   "id": 33,
+   "path": "assets/payloads/id33_menu_palette_pad128.bin",
+   "bytes": 128,
+   "crc32": "98094A09",
+   "sha256": "a9de22f2295f15e7c1fadb5427b34ca4e8c38dbfe9942e461b82decc4bbd15d3",
+   "source": "CMD: start menu palette, 16 x RGB565LE + 96 zero bytes"
+  }
+ ]
+}

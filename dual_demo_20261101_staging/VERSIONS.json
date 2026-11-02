@@ -1,0 +1,63 @@
+{
+  "basic": {
+    "pair": {
+      "bit": "pair/basic_demo.bit",
+      "bit_sha256": "ca722493e2abed677c543dec61db9c2c6e95ae29ca39895ee1f3978f2a126998",
+      "elf": "pair/basic_demo.elf",
+      "elf_sha256": "4a481583cb33e41a5478d10a9012aa53b44ffca055950293527f30c10f2efb3a"
+    },
+    "source_file_count": 242,
+    "source_head": "665157205c969c64b0de12848f598c2f94f67e62",
+    "source_note": "Frozen scope hw_05 + elf_source_inputs; original workspace preserved",
+    "source_tree_sha256": "ba5fbfcf34adfffad2e7ef204c417d2c6c691034893f828a448d6b34c31d0b93",
+    "validation": {
+      "board": {
+        "evidence": [],
+        "status": "NOT_RUN"
+      },
+      "firmware_build": "PASS: isolated draft build exactly matches release ELF",
+      "fpga_rebuild": "NOT_RUN this round; frozen existing bit",
+      "timing": "Existing FAIL; 183 setup paths / 0 hold; core->HDMI -1.711 ns, HDMI->core -0.724 ns"
+    }
+  },
+  "delivery_status": "PARTIAL_STAGING",
+  "game": {
+    "fix_commit": "b74b29b78d5845fb2b64defe5fda4b2f16a7c0ac",
+    "pair": {
+      "bit": "pair/ti60f225_oob.bit",
+      "bit_sha256": "72d4f01497b5599bc633a35162388f312a0631ea17b348fdf97a5efea335bd54",
+      "elf": "pair/apbTest.elf",
+      "elf_sha256": "0fac4deabec6a794316c8672ec37bbe3db7201c74c6fd5c3fc0880a976101087"
+    },
+    "source_checkpoint": "6f20230d0b4fbb2b433bfaf0efe5bdccda070f79",
+    "source_file_count": 289,
+    "source_tree_sha256": "e2f1fee563f58035e0e0c8c169d582a022e77a69a4b7f5d04e8894fb54c7d826",
+    "validation": {
+      "board": {
+        "complete_stress_windows": 44,
+        "complete_stress_windows_fps": 60,
+        "continuous_stress_5_minutes": "NOT_COMPLETED",
+        "evidence": [
+          "User confirmed: 正常了，可以开始整理代码了",
+          "verification/MANUAL_V1_RESULT_zh.md",
+          "verification/manual_v1_final/analysis.json"
+        ],
+        "input_faults": 0,
+        "long_frame_count": 0,
+        "manual_active_stress_seconds": 44.013,
+        "manual_direction_hold_all_actions": "PARTIAL; only recorded actions count, see manual report",
+        "max_complete_frame_interval_us": 16701,
+        "repeated_starts_10": "IN_PROGRESS; not yet declared PASS at this staging snapshot",
+        "status": "PARTIAL"
+      },
+      "firmware_build": "PASS: isolated draft build exactly matches GHDB1 ELF",
+      "fpga_rebuild": "NOT_RUN: firmware-only change, preserved FRAME_DONE_PULSE bit",
+      "offline_contracts": "PASS: 105 existing contracts and additional 10 repeated starts/mode transitions in C/MMIO model",
+      "stack": "PASS: conservative 1232 / 8192 bytes; image matches analysis build",
+      "timing": "Inherited FAIL: GHDPP 19 negative setup endpoints, WNS -1.139 ns, TNS -11.469 ns; hold minimum +0.027 ns. No RTL change or new STA in this firmware repair."
+    }
+  },
+  "packaging_validation": "PENDING extraction/build/resource acceptance after ZIP creation",
+  "release_date": "2026-11-01",
+  "release_name": "Ti60 basic + joystick recovery game"
+}

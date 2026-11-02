@@ -1,0 +1,1013 @@
+{
+  "input": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\board\\restarts_event_v5_run1\\results.json",
+  "input_sha256": "481edd5281816a0d0a6ee26050162ae66cf3bbdefd267ac4e913bb87e6b05061",
+  "independent_validation_pass": true,
+  "issues": [],
+  "device_operation_by_verifier": false,
+  "classification": "10 JTAG-injected GameOver/logical KEY3 restarts on actual FPGA. UART recovery windows exclude JTAG halt and require active game; not ten physical button trials or five-minute stress.",
+  "start": "2026-11-01T20:10:23.875+08:00",
+  "end": "2026-11-01T20:11:21.102+08:00",
+  "rounds": [
+    {
+      "round": 1,
+      "flow_before": 2,
+      "flow_after": 3,
+      "phase_before": 7,
+      "phase_after": 1,
+      "frame_delta": 283,
+      "new_pair_delta": 437,
+      "uart_span_s": 3.007717,
+      "uart_rows": 4,
+      "uart_pairs": 386,
+      "uart_frames": 238,
+      "uart_min_fr": 58,
+      "uart_max_fr": 60,
+      "uart_long_intervals": 2,
+      "uart_max_interval_us": 35494,
+      "uart_faults": 0,
+      "uart_direction_masks": [
+        0
+      ],
+      "debug_window_fault_delta": 1,
+      "debug_window_stale_delta": 0,
+      "post_recovery": {
+        "attempts": 0,
+        "ok": 0,
+        "fail": 0,
+        "consecutive": 0,
+        "exhausted": 0
+      }
+    },
+    {
+      "round": 2,
+      "flow_before": 3,
+      "flow_after": 4,
+      "phase_before": 1,
+      "phase_after": 1,
+      "frame_delta": 312,
+      "new_pair_delta": 496,
+      "uart_span_s": 3.007711,
+      "uart_rows": 4,
+      "uart_pairs": 399,
+      "uart_frames": 240,
+      "uart_min_fr": 60,
+      "uart_max_fr": 60,
+      "uart_long_intervals": 0,
+      "uart_max_interval_us": 16686,
+      "uart_faults": 0,
+      "uart_direction_masks": [
+        0
+      ],
+      "debug_window_fault_delta": 2,
+      "debug_window_stale_delta": 0,
+      "post_recovery": {
+        "attempts": 0,
+        "ok": 0,
+        "fail": 0,
+        "consecutive": 0,
+        "exhausted": 0
+      }
+    },
+    {
+      "round": 3,
+      "flow_before": 4,
+      "flow_after": 5,
+      "phase_before": 1,
+      "phase_after": 1,
+      "frame_delta": 251,
+      "new_pair_delta": 372,
+      "uart_span_s": 2.000458,
+      "uart_rows": 3,
+      "uart_pairs": 298,
+      "uart_frames": 180,
+      "uart_min_fr": 60,
+      "uart_max_fr": 60,
+      "uart_long_intervals": 0,
+      "uart_max_interval_us": 16688,
+      "uart_faults": 0,
+      "uart_direction_masks": [
+        0
+      ],
+      "debug_window_fault_delta": 2,
+      "debug_window_stale_delta": 0,
+      "post_recovery": {
+        "attempts": 0,
+        "ok": 0,
+        "fail": 0,
+        "consecutive": 0,
+        "exhausted": 0
+      }
+    },
+    {
+      "round": 4,
+      "flow_before": 5,
+      "flow_after": 6,
+      "phase_before": 1,
+      "phase_after": 1,
+      "frame_delta": 313,
+      "new_pair_delta": 489,
+      "uart_span_s": 2.991739,
+      "uart_rows": 4,
+      "uart_pairs": 397,
+      "uart_frames": 240,
+      "uart_min_fr": 60,
+      "uart_max_fr": 60,
+      "uart_long_intervals": 0,
+      "uart_max_interval_us": 16689,
+      "uart_faults": 0,
+      "uart_direction_masks": [
+        0
+      ],
+      "debug_window_fault_delta": 3,
+      "debug_window_stale_delta": 0,
+      "post_recovery": {
+        "attempts": 0,
+        "ok": 0,
+        "fail": 0,
+        "consecutive": 0,
+        "exhausted": 0
+      }
+    },
+    {
+      "round": 5,
+      "flow_before": 6,
+      "flow_after": 7,
+      "phase_before": 1,
+      "phase_after": 1,
+      "frame_delta": 313,
+      "new_pair_delta": 500,
+      "uart_span_s": 2.991752,
+      "uart_rows": 4,
+      "uart_pairs": 399,
+      "uart_frames": 240,
+      "uart_min_fr": 60,
+      "uart_max_fr": 60,
+      "uart_long_intervals": 0,
+      "uart_max_interval_us": 16687,
+      "uart_faults": 0,
+      "uart_direction_masks": [
+        0
+      ],
+      "debug_window_fault_delta": 2,
+      "debug_window_stale_delta": 0,
+      "post_recovery": {
+        "attempts": 0,
+        "ok": 0,
+        "fail": 0,
+        "consecutive": 0,
+        "exhausted": 0
+      }
+    },
+    {
+      "round": 6,
+      "flow_before": 7,
+      "flow_after": 8,
+      "phase_before": 1,
+      "phase_after": 1,
+      "frame_delta": 304,
+      "new_pair_delta": 479,
+      "uart_span_s": 2.993161,
+      "uart_rows": 4,
+      "uart_pairs": 389,
+      "uart_frames": 239,
+      "uart_min_fr": 59,
+      "uart_max_fr": 60,
+      "uart_long_intervals": 0,
+      "uart_max_interval_us": 16689,
+      "uart_faults": 0,
+      "uart_direction_masks": [
+        0
+      ],
+      "debug_window_fault_delta": 3,
+      "debug_window_stale_delta": 0,
+      "post_recovery": {
+        "attempts": 0,
+        "ok": 0,
+        "fail": 0,
+        "consecutive": 0,
+        "exhausted": 0
+      }
+    },
+    {
+      "round": 7,
+      "flow_before": 8,
+      "flow_after": 9,
+      "phase_before": 1,
+      "phase_after": 1,
+      "frame_delta": 306,
+      "new_pair_delta": 465,
+      "uart_span_s": 2.991779,
+      "uart_rows": 4,
+      "uart_pairs": 400,
+      "uart_frames": 240,
+      "uart_min_fr": 60,
+      "uart_max_fr": 60,
+      "uart_long_intervals": 0,
+      "uart_max_interval_us": 16686,
+      "uart_faults": 0,
+      "uart_direction_masks": [
+        0
+      ],
+      "debug_window_fault_delta": 2,
+      "debug_window_stale_delta": 0,
+      "post_recovery": {
+        "attempts": 0,
+        "ok": 0,
+        "fail": 0,
+        "consecutive": 0,
+        "exhausted": 0
+      }
+    },
+    {
+      "round": 8,
+      "flow_before": 9,
+      "flow_after": 10,
+      "phase_before": 1,
+      "phase_after": 1,
+      "frame_delta": 254,
+      "new_pair_delta": 391,
+      "uart_span_s": 2.000291,
+      "uart_rows": 3,
+      "uart_pairs": 299,
+      "uart_frames": 180,
+      "uart_min_fr": 60,
+      "uart_max_fr": 60,
+      "uart_long_intervals": 0,
+      "uart_max_interval_us": 16686,
+      "uart_faults": 0,
+      "uart_direction_masks": [
+        0
+      ],
+      "debug_window_fault_delta": 3,
+      "debug_window_stale_delta": 0,
+      "post_recovery": {
+        "attempts": 0,
+        "ok": 0,
+        "fail": 0,
+        "consecutive": 0,
+        "exhausted": 0
+      }
+    },
+    {
+      "round": 9,
+      "flow_before": 10,
+      "flow_after": 11,
+      "phase_before": 1,
+      "phase_after": 1,
+      "frame_delta": 304,
+      "new_pair_delta": 461,
+      "uart_span_s": 3.00759,
+      "uart_rows": 4,
+      "uart_pairs": 400,
+      "uart_frames": 240,
+      "uart_min_fr": 60,
+      "uart_max_fr": 60,
+      "uart_long_intervals": 0,
+      "uart_max_interval_us": 16687,
+      "uart_faults": 0,
+      "uart_direction_masks": [
+        0
+      ],
+      "debug_window_fault_delta": 2,
+      "debug_window_stale_delta": 0,
+      "post_recovery": {
+        "attempts": 0,
+        "ok": 0,
+        "fail": 0,
+        "consecutive": 0,
+        "exhausted": 0
+      }
+    },
+    {
+      "round": 10,
+      "flow_before": 11,
+      "flow_after": 12,
+      "phase_before": 1,
+      "phase_after": 1,
+      "frame_delta": 253,
+      "new_pair_delta": 409,
+      "uart_span_s": 2.000063,
+      "uart_rows": 3,
+      "uart_pairs": 300,
+      "uart_frames": 180,
+      "uart_min_fr": 60,
+      "uart_max_fr": 60,
+      "uart_long_intervals": 0,
+      "uart_max_interval_us": 16690,
+      "uart_faults": 0,
+      "uart_direction_masks": [
+        0
+      ],
+      "debug_window_fault_delta": 1,
+      "debug_window_stale_delta": 0,
+      "post_recovery": {
+        "attempts": 0,
+        "ok": 0,
+        "fail": 0,
+        "consecutive": 0,
+        "exhausted": 0
+      }
+    }
+  ],
+  "totals": {
+    "qualified_rounds": 10,
+    "uart_rows": 37,
+    "uart_pairs": 3667,
+    "uart_frames": 2217,
+    "uart_faults": 0,
+    "uart_long_intervals": 2,
+    "uart_max_interval_us": 35494,
+    "debug_window_fault_delta_sum": 21,
+    "debug_window_stale_delta_sum": 0,
+    "cumulative_fault_first_pre": 5,
+    "cumulative_fault_last_post": 33,
+    "max_reported_halt_ms": 12,
+    "max_batch_wall_ms": 29.994
+  },
+  "halt_batches": [
+    {
+      "time": "2026-11-01T20:10:24.372+08:00",
+      "label": "identity_before_any_write",
+      "halt_ms": 7,
+      "wall_ms": 19.068
+    },
+    {
+      "time": "2026-11-01T20:10:24.468+08:00",
+      "label": "baseline",
+      "halt_ms": 8,
+      "wall_ms": 20.251
+    },
+    {
+      "time": "2026-11-01T20:10:24.560+08:00",
+      "label": "baseline_recovery",
+      "halt_ms": 4,
+      "wall_ms": 16.057
+    },
+    {
+      "time": "2026-11-01T20:10:24.656+08:00",
+      "label": "round_1_before",
+      "halt_ms": 8,
+      "wall_ms": 20.461
+    },
+    {
+      "time": "2026-11-01T20:10:25.178+08:00",
+      "label": "round_1_before_health",
+      "halt_ms": 9,
+      "wall_ms": 21.096
+    },
+    {
+      "time": "2026-11-01T20:10:25.270+08:00",
+      "label": "round_1_before_recovery",
+      "halt_ms": 4,
+      "wall_ms": 16.133
+    },
+    {
+      "time": "2026-11-01T20:10:25.492+08:00",
+      "label": "round_1_display_over",
+      "halt_ms": 9,
+      "wall_ms": 21.726
+    },
+    {
+      "time": "2026-11-01T20:10:25.584+08:00",
+      "label": "round_1_start_before",
+      "halt_ms": 4,
+      "wall_ms": 15.997
+    },
+    {
+      "time": "2026-11-01T20:10:25.676+08:00",
+      "label": "round_1_start_event_1",
+      "halt_ms": 5,
+      "wall_ms": 16.513
+    },
+    {
+      "time": "2026-11-01T20:10:25.893+08:00",
+      "label": "round_1_start_ack_1",
+      "halt_ms": 3,
+      "wall_ms": 15.342
+    },
+    {
+      "time": "2026-11-01T20:10:26.116+08:00",
+      "label": "round_1_complete",
+      "halt_ms": 8,
+      "wall_ms": 20.679
+    },
+    {
+      "time": "2026-11-01T20:10:29.988+08:00",
+      "label": "round_1_after_uart_health",
+      "halt_ms": 8,
+      "wall_ms": 20.616
+    },
+    {
+      "time": "2026-11-01T20:10:30.080+08:00",
+      "label": "round_1_after_recovery",
+      "halt_ms": 5,
+      "wall_ms": 16.8
+    },
+    {
+      "time": "2026-11-01T20:10:30.177+08:00",
+      "label": "round_2_before",
+      "halt_ms": 9,
+      "wall_ms": 20.635
+    },
+    {
+      "time": "2026-11-01T20:10:30.699+08:00",
+      "label": "round_2_before_health",
+      "halt_ms": 9,
+      "wall_ms": 20.896
+    },
+    {
+      "time": "2026-11-01T20:10:30.791+08:00",
+      "label": "round_2_before_recovery",
+      "halt_ms": 5,
+      "wall_ms": 16.461
+    },
+    {
+      "time": "2026-11-01T20:10:30.880+08:00",
+      "label": "round_2_over",
+      "halt_ms": 2,
+      "wall_ms": 13.595
+    },
+    {
+      "time": "2026-11-01T20:10:31.102+08:00",
+      "label": "round_2_display_over",
+      "halt_ms": 8,
+      "wall_ms": 20.463
+    },
+    {
+      "time": "2026-11-01T20:10:31.192+08:00",
+      "label": "round_2_start_before",
+      "halt_ms": 4,
+      "wall_ms": 15.402
+    },
+    {
+      "time": "2026-11-01T20:10:31.285+08:00",
+      "label": "round_2_start_event_1",
+      "halt_ms": 5,
+      "wall_ms": 17.399
+    },
+    {
+      "time": "2026-11-01T20:10:31.502+08:00",
+      "label": "round_2_start_ack_1",
+      "halt_ms": 5,
+      "wall_ms": 16.723
+    },
+    {
+      "time": "2026-11-01T20:10:31.725+08:00",
+      "label": "round_2_complete",
+      "halt_ms": 9,
+      "wall_ms": 20.679
+    },
+    {
+      "time": "2026-11-01T20:10:36.007+08:00",
+      "label": "round_2_after_uart_health",
+      "halt_ms": 8,
+      "wall_ms": 21.464
+    },
+    {
+      "time": "2026-11-01T20:10:36.099+08:00",
+      "label": "round_2_after_recovery",
+      "halt_ms": 5,
+      "wall_ms": 17.159
+    },
+    {
+      "time": "2026-11-01T20:10:36.194+08:00",
+      "label": "round_3_before",
+      "halt_ms": 7,
+      "wall_ms": 19.952
+    },
+    {
+      "time": "2026-11-01T20:10:36.716+08:00",
+      "label": "round_3_before_health",
+      "halt_ms": 8,
+      "wall_ms": 20.315
+    },
+    {
+      "time": "2026-11-01T20:10:36.808+08:00",
+      "label": "round_3_before_recovery",
+      "halt_ms": 5,
+      "wall_ms": 16.846
+    },
+    {
+      "time": "2026-11-01T20:10:36.898+08:00",
+      "label": "round_3_over",
+      "halt_ms": 2,
+      "wall_ms": 14.608
+    },
+    {
+      "time": "2026-11-01T20:10:37.121+08:00",
+      "label": "round_3_display_over",
+      "halt_ms": 8,
+      "wall_ms": 21.265
+    },
+    {
+      "time": "2026-11-01T20:10:37.213+08:00",
+      "label": "round_3_start_before",
+      "halt_ms": 4,
+      "wall_ms": 16.283
+    },
+    {
+      "time": "2026-11-01T20:10:37.305+08:00",
+      "label": "round_3_start_event_1",
+      "halt_ms": 5,
+      "wall_ms": 17.088
+    },
+    {
+      "time": "2026-11-01T20:10:37.523+08:00",
+      "label": "round_3_start_ack_1",
+      "halt_ms": 4,
+      "wall_ms": 15.804
+    },
+    {
+      "time": "2026-11-01T20:10:37.744+08:00",
+      "label": "round_3_complete",
+      "halt_ms": 8,
+      "wall_ms": 19.995
+    },
+    {
+      "time": "2026-11-01T20:10:41.008+08:00",
+      "label": "round_3_after_uart_health",
+      "halt_ms": 9,
+      "wall_ms": 21.4
+    },
+    {
+      "time": "2026-11-01T20:10:41.100+08:00",
+      "label": "round_3_after_recovery",
+      "halt_ms": 6,
+      "wall_ms": 17.447
+    },
+    {
+      "time": "2026-11-01T20:10:41.197+08:00",
+      "label": "round_4_before",
+      "halt_ms": 8,
+      "wall_ms": 21.659
+    },
+    {
+      "time": "2026-11-01T20:10:41.720+08:00",
+      "label": "round_4_before_health",
+      "halt_ms": 8,
+      "wall_ms": 21.301
+    },
+    {
+      "time": "2026-11-01T20:10:41.813+08:00",
+      "label": "round_4_before_recovery",
+      "halt_ms": 4,
+      "wall_ms": 17.239
+    },
+    {
+      "time": "2026-11-01T20:10:41.903+08:00",
+      "label": "round_4_over",
+      "halt_ms": 2,
+      "wall_ms": 14.146
+    },
+    {
+      "time": "2026-11-01T20:10:42.126+08:00",
+      "label": "round_4_display_over",
+      "halt_ms": 9,
+      "wall_ms": 21.822
+    },
+    {
+      "time": "2026-11-01T20:10:42.217+08:00",
+      "label": "round_4_start_before",
+      "halt_ms": 3,
+      "wall_ms": 15.806
+    },
+    {
+      "time": "2026-11-01T20:10:42.309+08:00",
+      "label": "round_4_start_event_1",
+      "halt_ms": 5,
+      "wall_ms": 16.615
+    },
+    {
+      "time": "2026-11-01T20:10:42.528+08:00",
+      "label": "round_4_start_ack_1",
+      "halt_ms": 4,
+      "wall_ms": 16.504
+    },
+    {
+      "time": "2026-11-01T20:10:42.750+08:00",
+      "label": "round_4_complete",
+      "halt_ms": 8,
+      "wall_ms": 20.849
+    },
+    {
+      "time": "2026-11-01T20:10:47.038+08:00",
+      "label": "round_4_after_uart_health",
+      "halt_ms": 9,
+      "wall_ms": 22.241
+    },
+    {
+      "time": "2026-11-01T20:10:47.130+08:00",
+      "label": "round_4_after_recovery",
+      "halt_ms": 5,
+      "wall_ms": 16.436
+    },
+    {
+      "time": "2026-11-01T20:10:47.225+08:00",
+      "label": "round_5_before",
+      "halt_ms": 8,
+      "wall_ms": 20.063
+    },
+    {
+      "time": "2026-11-01T20:10:47.747+08:00",
+      "label": "round_5_before_health",
+      "halt_ms": 8,
+      "wall_ms": 20.144
+    },
+    {
+      "time": "2026-11-01T20:10:47.839+08:00",
+      "label": "round_5_before_recovery",
+      "halt_ms": 4,
+      "wall_ms": 16.192
+    },
+    {
+      "time": "2026-11-01T20:10:47.929+08:00",
+      "label": "round_5_over",
+      "halt_ms": 2,
+      "wall_ms": 13.807
+    },
+    {
+      "time": "2026-11-01T20:10:48.151+08:00",
+      "label": "round_5_display_over",
+      "halt_ms": 9,
+      "wall_ms": 21.606
+    },
+    {
+      "time": "2026-11-01T20:10:48.243+08:00",
+      "label": "round_5_start_before",
+      "halt_ms": 4,
+      "wall_ms": 15.522
+    },
+    {
+      "time": "2026-11-01T20:10:48.335+08:00",
+      "label": "round_5_start_event_1",
+      "halt_ms": 4,
+      "wall_ms": 16.407
+    },
+    {
+      "time": "2026-11-01T20:10:48.552+08:00",
+      "label": "round_5_start_ack_1",
+      "halt_ms": 3,
+      "wall_ms": 15.457
+    },
+    {
+      "time": "2026-11-01T20:10:48.774+08:00",
+      "label": "round_5_complete",
+      "halt_ms": 8,
+      "wall_ms": 20.238
+    },
+    {
+      "time": "2026-11-01T20:10:53.078+08:00",
+      "label": "round_5_after_uart_health",
+      "halt_ms": 8,
+      "wall_ms": 21.554
+    },
+    {
+      "time": "2026-11-01T20:10:53.171+08:00",
+      "label": "round_5_after_recovery",
+      "halt_ms": 5,
+      "wall_ms": 17.144
+    },
+    {
+      "time": "2026-11-01T20:10:53.267+08:00",
+      "label": "round_6_before",
+      "halt_ms": 9,
+      "wall_ms": 21.247
+    },
+    {
+      "time": "2026-11-01T20:10:53.791+08:00",
+      "label": "round_6_before_health",
+      "halt_ms": 9,
+      "wall_ms": 21.766
+    },
+    {
+      "time": "2026-11-01T20:10:53.886+08:00",
+      "label": "round_6_before_recovery",
+      "halt_ms": 7,
+      "wall_ms": 19.265
+    },
+    {
+      "time": "2026-11-01T20:10:53.977+08:00",
+      "label": "round_6_over",
+      "halt_ms": 3,
+      "wall_ms": 15.148
+    },
+    {
+      "time": "2026-11-01T20:10:54.202+08:00",
+      "label": "round_6_display_over",
+      "halt_ms": 10,
+      "wall_ms": 23.285
+    },
+    {
+      "time": "2026-11-01T20:10:54.296+08:00",
+      "label": "round_6_start_before",
+      "halt_ms": 5,
+      "wall_ms": 17.534
+    },
+    {
+      "time": "2026-11-01T20:10:54.389+08:00",
+      "label": "round_6_start_event_1",
+      "halt_ms": 5,
+      "wall_ms": 17.811
+    },
+    {
+      "time": "2026-11-01T20:10:54.608+08:00",
+      "label": "round_6_start_ack_1",
+      "halt_ms": 4,
+      "wall_ms": 16.757
+    },
+    {
+      "time": "2026-11-01T20:10:54.832+08:00",
+      "label": "round_6_complete",
+      "halt_ms": 9,
+      "wall_ms": 21.841
+    },
+    {
+      "time": "2026-11-01T20:10:59.010+08:00",
+      "label": "round_6_after_uart_health",
+      "halt_ms": 10,
+      "wall_ms": 23.079
+    },
+    {
+      "time": "2026-11-01T20:10:59.103+08:00",
+      "label": "round_6_after_recovery",
+      "halt_ms": 5,
+      "wall_ms": 17.655
+    },
+    {
+      "time": "2026-11-01T20:10:59.203+08:00",
+      "label": "round_7_before",
+      "halt_ms": 10,
+      "wall_ms": 23.928
+    },
+    {
+      "time": "2026-11-01T20:10:59.728+08:00",
+      "label": "round_7_before_health",
+      "halt_ms": 10,
+      "wall_ms": 22.541
+    },
+    {
+      "time": "2026-11-01T20:10:59.821+08:00",
+      "label": "round_7_before_recovery",
+      "halt_ms": 5,
+      "wall_ms": 17.475
+    },
+    {
+      "time": "2026-11-01T20:10:59.912+08:00",
+      "label": "round_7_over",
+      "halt_ms": 3,
+      "wall_ms": 15.058
+    },
+    {
+      "time": "2026-11-01T20:11:00.137+08:00",
+      "label": "round_7_display_over",
+      "halt_ms": 9,
+      "wall_ms": 22.508
+    },
+    {
+      "time": "2026-11-01T20:11:00.229+08:00",
+      "label": "round_7_start_before",
+      "halt_ms": 5,
+      "wall_ms": 17.2
+    },
+    {
+      "time": "2026-11-01T20:11:00.322+08:00",
+      "label": "round_7_start_event_1",
+      "halt_ms": 6,
+      "wall_ms": 17.781
+    },
+    {
+      "time": "2026-11-01T20:11:00.541+08:00",
+      "label": "round_7_start_ack_1",
+      "halt_ms": 4,
+      "wall_ms": 16.696
+    },
+    {
+      "time": "2026-11-01T20:11:00.767+08:00",
+      "label": "round_7_complete",
+      "halt_ms": 9,
+      "wall_ms": 21.883
+    },
+    {
+      "time": "2026-11-01T20:11:04.937+08:00",
+      "label": "round_7_after_uart_health",
+      "halt_ms": 9,
+      "wall_ms": 22.369
+    },
+    {
+      "time": "2026-11-01T20:11:05.030+08:00",
+      "label": "round_7_after_recovery",
+      "halt_ms": 5,
+      "wall_ms": 17.728
+    },
+    {
+      "time": "2026-11-01T20:11:05.129+08:00",
+      "label": "round_8_before",
+      "halt_ms": 10,
+      "wall_ms": 23.103
+    },
+    {
+      "time": "2026-11-01T20:11:05.654+08:00",
+      "label": "round_8_before_health",
+      "halt_ms": 10,
+      "wall_ms": 22.379
+    },
+    {
+      "time": "2026-11-01T20:11:05.749+08:00",
+      "label": "round_8_before_recovery",
+      "halt_ms": 6,
+      "wall_ms": 18.754
+    },
+    {
+      "time": "2026-11-01T20:11:05.839+08:00",
+      "label": "round_8_over",
+      "halt_ms": 2,
+      "wall_ms": 14.704
+    },
+    {
+      "time": "2026-11-01T20:11:06.064+08:00",
+      "label": "round_8_display_over",
+      "halt_ms": 10,
+      "wall_ms": 22.862
+    },
+    {
+      "time": "2026-11-01T20:11:06.157+08:00",
+      "label": "round_8_start_before",
+      "halt_ms": 5,
+      "wall_ms": 17.141
+    },
+    {
+      "time": "2026-11-01T20:11:06.251+08:00",
+      "label": "round_8_start_event_1",
+      "halt_ms": 6,
+      "wall_ms": 18.444
+    },
+    {
+      "time": "2026-11-01T20:11:06.471+08:00",
+      "label": "round_8_start_ack_1",
+      "halt_ms": 5,
+      "wall_ms": 17.298
+    },
+    {
+      "time": "2026-11-01T20:11:06.697+08:00",
+      "label": "round_8_complete",
+      "halt_ms": 9,
+      "wall_ms": 21.779
+    },
+    {
+      "time": "2026-11-01T20:11:09.998+08:00",
+      "label": "round_8_after_uart_health",
+      "halt_ms": 10,
+      "wall_ms": 22.795
+    },
+    {
+      "time": "2026-11-01T20:11:10.092+08:00",
+      "label": "round_8_after_recovery",
+      "halt_ms": 6,
+      "wall_ms": 18.739
+    },
+    {
+      "time": "2026-11-01T20:11:10.199+08:00",
+      "label": "round_9_before",
+      "halt_ms": 12,
+      "wall_ms": 29.994
+    },
+    {
+      "time": "2026-11-01T20:11:10.723+08:00",
+      "label": "round_9_before_health",
+      "halt_ms": 10,
+      "wall_ms": 22.023
+    },
+    {
+      "time": "2026-11-01T20:11:10.816+08:00",
+      "label": "round_9_before_recovery",
+      "halt_ms": 5,
+      "wall_ms": 17.761
+    },
+    {
+      "time": "2026-11-01T20:11:10.906+08:00",
+      "label": "round_9_over",
+      "halt_ms": 2,
+      "wall_ms": 14.243
+    },
+    {
+      "time": "2026-11-01T20:11:11.131+08:00",
+      "label": "round_9_display_over",
+      "halt_ms": 9,
+      "wall_ms": 22.332
+    },
+    {
+      "time": "2026-11-01T20:11:11.224+08:00",
+      "label": "round_9_start_before",
+      "halt_ms": 5,
+      "wall_ms": 18.011
+    },
+    {
+      "time": "2026-11-01T20:11:11.317+08:00",
+      "label": "round_9_start_event_1",
+      "halt_ms": 5,
+      "wall_ms": 17.799
+    },
+    {
+      "time": "2026-11-01T20:11:11.537+08:00",
+      "label": "round_9_start_ack_1",
+      "halt_ms": 5,
+      "wall_ms": 17.384
+    },
+    {
+      "time": "2026-11-01T20:11:11.763+08:00",
+      "label": "round_9_complete",
+      "halt_ms": 9,
+      "wall_ms": 22.312
+    },
+    {
+      "time": "2026-11-01T20:11:15.887+08:00",
+      "label": "round_9_after_uart_health",
+      "halt_ms": 9,
+      "wall_ms": 22.452
+    },
+    {
+      "time": "2026-11-01T20:11:15.981+08:00",
+      "label": "round_9_after_recovery",
+      "halt_ms": 6,
+      "wall_ms": 18.175
+    },
+    {
+      "time": "2026-11-01T20:11:16.078+08:00",
+      "label": "round_10_before",
+      "halt_ms": 9,
+      "wall_ms": 21.85
+    },
+    {
+      "time": "2026-11-01T20:11:16.606+08:00",
+      "label": "round_10_before_health",
+      "halt_ms": 9,
+      "wall_ms": 22.572
+    },
+    {
+      "time": "2026-11-01T20:11:16.698+08:00",
+      "label": "round_10_before_recovery",
+      "halt_ms": 5,
+      "wall_ms": 16.608
+    },
+    {
+      "time": "2026-11-01T20:11:16.787+08:00",
+      "label": "round_10_over",
+      "halt_ms": 2,
+      "wall_ms": 14.048
+    },
+    {
+      "time": "2026-11-01T20:11:17.010+08:00",
+      "label": "round_10_display_over",
+      "halt_ms": 9,
+      "wall_ms": 20.529
+    },
+    {
+      "time": "2026-11-01T20:11:17.100+08:00",
+      "label": "round_10_start_before",
+      "halt_ms": 4,
+      "wall_ms": 15.338
+    },
+    {
+      "time": "2026-11-01T20:11:17.192+08:00",
+      "label": "round_10_start_event_1",
+      "halt_ms": 5,
+      "wall_ms": 16.159
+    },
+    {
+      "time": "2026-11-01T20:11:17.410+08:00",
+      "label": "round_10_start_ack_1",
+      "halt_ms": 4,
+      "wall_ms": 15.94
+    },
+    {
+      "time": "2026-11-01T20:11:17.633+08:00",
+      "label": "round_10_complete",
+      "halt_ms": 7,
+      "wall_ms": 20.029
+    },
+    {
+      "time": "2026-11-01T20:11:20.906+08:00",
+      "label": "round_10_after_uart_health",
+      "halt_ms": 8,
+      "wall_ms": 20.85
+    },
+    {
+      "time": "2026-11-01T20:11:20.998+08:00",
+      "label": "round_10_after_recovery",
+      "halt_ms": 4,
+      "wall_ms": 16.947
+    },
+    {
+      "time": "2026-11-01T20:11:21.090+08:00",
+      "label": "final_recovery",
+      "halt_ms": 5,
+      "wall_ms": 16.678
+    }
+  ],
+  "final_resume": [
+    {
+      "attempt": 1,
+      "state": "running"
+    }
+  ]
+}

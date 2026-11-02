@@ -1,0 +1,281 @@
+{
+ "start": "2026-11-01T19:47:10",
+ "steps": [
+  {
+   "t": "2026-11-01T19:47:10.815",
+   "gate": {
+    "bit_sha_logged": true,
+    "idcode": true,
+    "programmed": true,
+    "user_mode": true,
+    "elf_sha": true,
+    "expected_image_sha": true,
+    "no_openocd_gdb": true
+   }
+  },
+  {
+   "t": "2026-11-01T19:47:10.832",
+   "elf_facts": {
+    "__global_pointer$": "0xf9016768",
+    "_sp": "0xf9021090",
+    "main": "0xf9000728",
+    "main_size": "0x148",
+    "main_frame": "0x30"
+   }
+  },
+  {
+   "t": "2026-11-01T19:47:10.857",
+   "openocd_cmd": [
+    "C:\\Efinity\\efinity-riscv-ide-2026.1\\openocd\\bin\\openocd.exe",
+    "-c",
+    "gdb_port 3333",
+    "-c",
+    "telnet_port 4444",
+    "-c",
+    "tcl_port 6666",
+    "-c",
+    "set bsp_loc {C:/Users/Administrator/Desktop/1/three_renderer_async_quad_20261006/validation/joystick_recovery_20261101/board/candidate_pkg/candidate/embedded_sw/riscv_soc}",
+    "-f",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\board\\candidate_pkg\\candidate\\embedded_sw\\riscv_soc\\bsp\\efinix\\EfxSapphireSoc\\openocd\\ftdi_ti.cfg",
+    "-f",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\board\\candidate_pkg\\candidate\\embedded_sw\\riscv_soc\\bsp\\efinix\\EfxSapphireSoc\\openocd\\debug_ti.cfg"
+   ]
+  },
+  {
+   "t": "2026-11-01T19:47:10.857",
+   "openocd_cwd": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\board\\candidate_pkg\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest"
+  },
+  {
+   "t": "2026-11-01T19:47:14.093",
+   "target_remote": "ote debugging using localhost:3333\r\n0xf9023c2c in ?? ()\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\n(gdb)"
+  },
+  {
+   "t": "2026-11-01T19:47:14.321",
+   "reset_init": "JTAG tap: fpga_spinal.bridge tap/device found: 0x10660a79 (mfg: 0x53c (Efinix Inc), part: 0x0660, ver: 0x1)\r\n(gdb)"
+  },
+  {
+   "t": "2026-11-01T19:47:19.337",
+   "load": "Loading section .init, size 0xc8 lma 0xf9000000\r\nLoading section .text, size 0x14a78 lma 0xf90000c8\r\nLoading section .data, size 0x14f4 lma 0xf9014b40\r\nStart address 0xf9000000, load size 90164\r\nTransfer rate: 18 KB/sec, 11270 bytes/write.\r\n(gdb)"
+  },
+  {
+   "t": "2026-11-01T19:47:19.581",
+   "reset_halt": "JTAG tap: fpga_spinal.bridge tap/device found: 0x10660a79 (mfg: 0x53c (Efinix Inc), part: 0x0660, ver: 0x1)\r\n(gdb)"
+  },
+  {
+   "t": "2026-11-01T19:47:19.602",
+   "pc_after_reset_halt": "PC_RESET=0xf9000000\r\n(gdb)"
+  },
+  {
+   "t": "2026-11-01T19:47:31.588",
+   "image_readback": {
+    "bytes": 90164,
+    "equal": true,
+    "sha256": "d4aae45bf6dd4fee9994dadcd75d589e2468a255e7e49b133b7265b709653530"
+   }
+  },
+  {
+   "t": "2026-11-01T19:47:31.734",
+   "ram144_fingerprint": {
+    "region": [
+     "0xf9023c00",
+     "0xf9024000"
+    ],
+    "sha256": "e15b8eb98d8e91b6b2bdc3f1c9eedbcca8e2309efcd0b727de5d1e73b3229125",
+    "ram_gate": {
+     "segments": [
+      [
+       "0xf9000000",
+       135312
+      ]
+     ],
+     "_sp": "0xf9021090",
+     "gap": 11120,
+     "stack": 8192
+    },
+    "ok": true,
+    "code_range": [
+     "0xf9023c00",
+     "0xf9023ef4"
+    ],
+    "code_equal": true,
+    "full_region_equal": false,
+    "bytes": 1024,
+    "differing_words": [
+     [
+      "0xf9023f80",
+      "f900004c",
+      "00000000"
+     ]
+    ],
+    "differing_words_in_code": []
+   }
+  },
+  {
+   "t": "2026-11-01T19:47:31.775",
+   "tbreak": "Temporary breakpoint 1 at 0xf9000748\r\n(gdb)"
+  },
+  {
+   "t": "2026-11-01T19:47:31.878",
+   "continue": "Continuing.\r\n\r\nProgram stopped.\r\n0xf9000748 in main ()\r\n(gdb)"
+  },
+  {
+   "t": "2026-11-01T19:47:31.899",
+   "stop_regs_1": {
+    "pc": "0xf9000748",
+    "sp": "0xf9021060",
+    "gp": "0xf9016768",
+    "ra": "0xf90000c0"
+   }
+  },
+  {
+   "t": "2026-11-01T19:47:31.900",
+   "openocd_reg_pc_1": "pc (/32): 0xf9000748"
+  },
+  {
+   "t": "2026-11-01T19:47:31.900",
+   "openocd_state": "halted"
+  },
+  {
+   "t": "2026-11-01T19:47:31.920",
+   "words_at_pc": "0xf9000748 <main+32>:\t0xc35ff0ef\t0x01040593\t0x00c00613\t0x00410513\r\n0xf9000758 <main+48>:\t0xc25ff0ef\t0xf80107b7\r\n(gdb)"
+  },
+  {
+   "t": "2026-11-01T19:47:31.962",
+   "disasm_at_pc_gdb": "=> 0xf9000748 <main+32>:\tjal\t0xf900037c <memcpy>\r\n   0xf900074c <main+36>:\taddi\ta1,s0,16\r\n   0xf9000750 <main+40>:\tli\ta2,12\r\n   0xf9000754 <main+44>:\taddi\ta0,sp,4\r\n   0xf9000758 <main+48>:\tjal\t0xf900037c <memcpy>\r\n   0xf900075c <main+52>:\tlui\ta5,0xf8010\r\n(gdb)"
+  },
+  {
+   "t": "2026-11-01T19:47:31.968",
+   "disasm_at_pc_elf": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\board\\candidate_pkg\\pair\\apbTest.elf:     file format elf32-littleriscv\n\n\nDisassembly of section .text:\n\nf9000748 <main+0x20>:\nf9000748:\tjal\tf900037c <memcpy>\nf900074c:\taddi\ta1,s0,16\nf9000750:\tli\ta2,12\nf9000754:\taddi\ta0,sp,4\nf9000758:\tjal\tf900037c <memcpy>\nf900075c:\tlui\ta5,0xf8010"
+  },
+  {
+   "t": "2026-11-01T19:47:31.968",
+   "elf_words_at_pc": [
+    "0xc35ff0ef",
+    "0x1040593",
+    "0xc00613",
+    "0x410513",
+    "0xc25ff0ef",
+    "0xf80107b7"
+   ]
+  },
+  {
+   "t": "2026-11-01T19:47:33.989",
+   "stop_regs_2": {
+    "pc": "0xf9000748",
+    "sp": "0xf9021060",
+    "gp": "0xf9016768",
+    "ra": "0xf90000c0"
+   }
+  },
+  {
+   "t": "2026-11-01T19:47:33.990",
+   "openocd_reg_pc_2": "pc (/32): 0xf9000748"
+  },
+  {
+   "t": "2026-11-01T19:47:33.990",
+   "startup_checks": {
+    "gdb_breakpoint_is_stop_pc": true,
+    "pc_inside_main": true,
+    "code_at_pc_equals_elf": true,
+    "sp_is_sp_minus_main_frame": true,
+    "gp_is_global_pointer": true,
+    "state_halted": true,
+    "pc_stable_gdb": true,
+    "pc_stable_openocd": true
+   }
+  },
+  {
+   "t": "2026-11-01T19:47:34.010",
+   "resume": "(gdb)"
+  },
+  {
+   "t": "2026-11-01T19:47:34.311",
+   "state_after_resume": "running"
+  },
+  {
+   "t": "2026-11-01T19:47:34.311",
+   "banner_seen": true
+  },
+  {
+   "t": "2026-11-01T19:47:34.373",
+   "asset_build_session_open": "ASSET BUILD ID=GHDB1_20261101 HUD=48440900 DDRCRC=44435201 VERIFY=1"
+  },
+  {
+   "t": "2026-11-01T19:47:34.394",
+   "gdb_disconnect": "Ending remote debugging.\r\n(gdb)"
+  },
+  {
+   "t": "2026-11-01T19:47:34.916",
+   "state_after_gdb_disconnect": "running"
+  },
+  {
+   "t": "2026-11-01T19:47:34.916",
+   "openocd_shutdown": ""
+  },
+  {
+   "t": "2026-11-01T19:47:34.918",
+   "openocd_rc": 0
+  },
+  {
+   "t": "2026-11-01T19:47:36.482",
+   "asset_build_after_openocd_exit": "ASSET BUILD ID=GHDB1_20261101 HUD=48440900 DDRCRC=44435201 VERIFY=1"
+  },
+  {
+   "t": "2026-11-01T19:47:36.482",
+   "banner_count": 1
+  },
+  {
+   "t": "2026-11-01T19:47:36.588",
+   "identity_check": {
+    "while_attached": {
+     "reply": "ASSET BUILD ID=GHDB1_20261101 HUD=48440900 DDRCRC=44435201 VERIFY=1",
+     "checks": {
+      "ID": true,
+      "HUD": true,
+      "DDRCRC": true,
+      "VERIFY": true
+     },
+     "expected": {
+      "ID": "GHDB1_20261101",
+      "HUD": "48440900",
+      "DDRCRC": "44435201",
+      "VERIFY": "1"
+     }
+    },
+    "after_openocd_exit": {
+     "reply": "ASSET BUILD ID=GHDB1_20261101 HUD=48440900 DDRCRC=44435201 VERIFY=1",
+     "checks": {
+      "ID": true,
+      "HUD": true,
+      "DDRCRC": true,
+      "VERIFY": true
+     },
+     "expected": {
+      "ID": "GHDB1_20261101",
+      "HUD": "48440900",
+      "DDRCRC": "44435201",
+      "VERIFY": "1"
+     }
+    }
+   }
+  },
+  {
+   "t": "2026-11-01T19:47:36.588",
+   "final_checks": {
+    "running_after_resume": true,
+    "banner": true,
+    "asset_build_while_attached": true,
+    "running_after_gdb_disconnect": true,
+    "asset_build_after_openocd_exit": true,
+    "single_banner_no_reset": true
+   }
+  }
+ ],
+ "verification_stage": "board_load",
+ "device_operation": true,
+ "firmware_resume_requested": true,
+ "pass": true,
+ "stop_reason": "",
+ "end": "2026-11-01T19:47:36",
+ "cleanup_errors": []
+}

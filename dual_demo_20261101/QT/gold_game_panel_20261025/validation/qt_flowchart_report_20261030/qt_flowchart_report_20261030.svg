@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="135.4667mm" viewBox="0 0 453.5433070866142 384" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">Qt 上位机交互与串口通信流程图</title><desc id="diagram-desc">依据 qt_panel_scifi_20261030.zip 静态源码绘制。界面处理事件并通过队列和输入信箱与串口线程交互；主线程不阻塞等待串口回复。</desc>
+<defs><marker id="arrow" viewBox="0 0 6 6" refX="5.6" refY="3" markerWidth="5.2" markerHeight="5.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" fill="#333333"/></marker></defs>
+<g id="background"><rect width="453.5433070866142" height="384" fill="white"/></g>
+<g id="connections" fill="none" stroke="#333333" stroke-width="0.72" stroke-linejoin="round">
+<path id="start_init" data-route="[[226.5,22],[226.5,28]]" d="M226.5,22 L226.5,28" marker-end="url(#arrow)"/>
+<path id="init_bind" data-route="[[226.5,48],[226.5,54]]" d="M226.5,48 L226.5,54" marker-end="url(#arrow)"/>
+<path id="bind_loop" data-route="[[226.5,74],[226.5,80]]" d="M226.5,74 L226.5,80" marker-end="url(#arrow)"/>
+<path id="event_bus" data-route="[[155,90],[10,90],[10,309]]" d="M155,90 L10,90 L10,309"/>
+<path id="dispatch_request" data-route="[[10,134],[76,134]]" d="M10,134 L76,134" marker-end="url(#arrow)"/>
+<path id="dispatch_key" data-route="[[10,174],[76,174]]" d="M10,174 L76,174" marker-end="url(#arrow)"/>
+<path id="dispatch_update" data-route="[[10,269],[76,269]]" d="M10,269 L76,269" marker-end="url(#arrow)"/>
+<path id="dispatch_close" data-route="[[10,309],[76,309]]" d="M10,309 L76,309" marker-end="url(#arrow)"/>
+<path id="return_bus" data-route="[[445,287],[445,90],[298,90]]" d="M445,287 L445,90 L298,90" marker-end="url(#arrow)"/>
+<path id="request_return" data-route="[[162,144],[162,152],[445,152]]" d="M162,144 L162,152 L445,152"/>
+<path id="request_async" data-route="[[248,134],[281,134]]" d="M248,134 L281,134" stroke-dasharray="3.5 2.3" marker-end="url(#arrow)"/>
+<path id="state_gate" data-route="[[162,184],[162,194]]" d="M162,184 L162,194" marker-end="url(#arrow)"/>
+<path id="gate_yes" data-route="[[248,214],[264,214]]" d="M248,214 L264,214"/>
+<path id="key_async" data-route="[[264,214],[281,214]]" d="M264,214 L281,214" stroke-dasharray="3.5 2.3" marker-end="url(#arrow)"/>
+<path id="gate_no" data-route="[[162,234],[162,247]]" d="M162,234 L162,247"/>
+<path id="key_handoff_return" data-route="[[264,214],[264,247]]" d="M264,214 L264,247"/>
+<path id="key_return" data-route="[[162,247],[445,247]]" d="M162,247 L445,247"/>
+<path id="received_queue" data-route="[[281,269],[248,269]]" d="M281,269 L248,269" stroke-dasharray="3.5 2.3" marker-end="url(#arrow)"/>
+<path id="update_return" data-route="[[162,279],[162,287],[445,287]]" d="M162,279 L162,287 L445,287"/>
+<path id="close_async" data-route="[[248,309],[281,309]]" d="M248,309 L281,309" stroke-dasharray="3.5 2.3" marker-end="url(#arrow)"/>
+<path id="close_check" data-route="[[162,319],[162,329]]" d="M162,319 L162,329" marker-end="url(#arrow)"/>
+<path id="worker_finished" data-route="[[359,319],[359,339],[248,339]]" d="M359,319 L359,339 L248,339" stroke-dasharray="3.5 2.3" marker-end="url(#arrow)"/>
+<path id="cleanup_end" data-route="[[162,349],[162,359]]" d="M162,349 L162,359" marker-end="url(#arrow)"/>
+<circle cx="264" cy="214" r="1.1" fill="#333333" stroke="none"/></g><g id="nodes" fill="#171717" font-family="SimSun">
+<g id="start" data-node="round" data-box="185,4,83,18"><rect x="185" y="4" width="83" height="18" rx="7" fill="#FBF5E5" stroke="#333333" stroke-width="0.8"/><text x="226.5" y="16.4" font-size="10.4" text-anchor="middle" ><tspan font-family="SimSun">启动程序</tspan></text></g>
+<g id="init" data-node="rect" data-box="125,28,203,20"><rect x="125" y="28" width="203" height="20" fill="#FBF5E5" stroke="#333333" stroke-width="0.8"/><text x="226.5" y="41.4" font-size="10.4" text-anchor="middle" ><tspan font-family="SimSun">初始化界面与通信资源</tspan></text></g>
+<g id="bind" data-node="rect" data-box="125,54,203,20"><rect x="125" y="54" width="203" height="20" fill="#FBF5E5" stroke="#333333" stroke-width="0.8"/><text x="226.5" y="67.4" font-size="10.4" text-anchor="middle" ><tspan font-family="SimSun">绑定事件并启动定时器</tspan></text></g>
+<g id="loop" data-node="rect" data-box="155,80,143,20"><rect x="155" y="80" width="143" height="20" fill="#FBF5E5" stroke="#333333" stroke-width="0.8"/><text x="226.5" y="93.4" font-size="10.4" text-anchor="middle" ><tspan font-family="SimSun">进入事件循环</tspan></text></g>
+<g id="request" data-node="rect" data-box="76,124,172,20"><rect x="76" y="124" width="172" height="20" fill="#FBF5E5" stroke="#333333" stroke-width="0.8"/><text x="162" y="137.4" font-size="10.4" text-anchor="middle" ><tspan font-family="SimSun">处理连接或功能请求</tspan></text></g>
+<g id="execute" data-node="rect" data-box="281,124,156,20"><rect x="281" y="124" width="156" height="20" fill="#FBF5E5" stroke="#333333" stroke-width="0.8"/><text x="359" y="137.4" font-size="10.4" text-anchor="middle" ><tspan font-family="SimSun">连接校验／执行命令</tspan></text></g>
+<g id="key_state" data-node="rect" data-box="76,164,172,20"><rect x="76" y="164" width="172" height="20" fill="#FBF5E5" stroke="#333333" stroke-width="0.8"/><text x="162" y="177.4" font-size="10.4" text-anchor="middle" ><tspan font-family="SimSun">更新按键状态与高亮</tspan></text></g>
+<g id="key_gate" data-node="diamond" data-box="76,194,172,40"><polygon points="162,194 248,214 162,234 76,214" fill="#FBF5E5" stroke="#333333" stroke-width="0.8"/><text x="162" y="217.4" font-size="10.4" text-anchor="middle" ><tspan font-family="SimSun">已连接且启用接管？</tspan></text></g>
+<g id="key_send" data-node="rect" data-box="281,204,156,20"><rect x="281" y="204" width="156" height="20" fill="#FBF5E5" stroke="#333333" stroke-width="0.8"/><text x="359" y="217.4" font-size="10.4" text-anchor="middle" ><tspan font-family="SimSun">编码并发送控制命令</tspan></text></g>
+<g id="update" data-node="rect" data-box="76,259,172,20"><rect x="76" y="259" width="172" height="20" fill="#FBF5E5" stroke="#333333" stroke-width="0.8"/><text x="162" y="272.4" font-size="10.4" text-anchor="middle" ><tspan font-family="SimSun">刷新状态与日志</tspan></text></g>
+<g id="receive" data-node="rect" data-box="281,259,156,20"><rect x="281" y="259" width="156" height="20" fill="#FBF5E5" stroke="#333333" stroke-width="0.8"/><text x="359" y="272.4" font-size="10.4" text-anchor="middle" ><tspan font-family="SimSun">接收并解析回复</tspan></text></g>
+<g id="close" data-node="rect" data-box="76,299,172,20"><rect x="76" y="299" width="172" height="20" fill="#FBF5E5" stroke="#333333" stroke-width="0.8"/><text x="162" y="312.4" font-size="10.4" text-anchor="middle" ><tspan font-family="SimSun">释放输入并请求停止</tspan></text></g>
+<g id="worker_stop" data-node="rect" data-box="281,299,156,20"><rect x="281" y="299" width="156" height="20" fill="#FBF5E5" stroke="#333333" stroke-width="0.8"/><text x="359" y="312.4" font-size="10.4" text-anchor="middle" ><tspan font-family="SimSun">清理资源并退出</tspan></text></g>
+<g id="cleanup" data-node="rect" data-box="76,329,172,20"><rect x="76" y="329" width="172" height="20" fill="#FBF5E5" stroke="#333333" stroke-width="0.8"/><text x="162" y="342.4" font-size="10.4" text-anchor="middle" ><tspan font-family="SimSun">确认线程退出并关闭界面</tspan></text></g>
+<g id="end" data-node="round" data-box="119,359,86,18"><rect x="119" y="359" width="86" height="18" rx="7" fill="#FBF5E5" stroke="#333333" stroke-width="0.8"/><text x="162" y="371.4" font-size="10.4" text-anchor="middle" ><tspan font-family="SimSun">结束</tspan></text></g>
+</g><g id="annotations" fill="#333333" font-family="SimSun"><text x="162" y="116" font-size="10.4" text-anchor="middle" ><tspan font-family="SimSun">界面线程</tspan></text><text x="359" y="116" font-size="10.4" text-anchor="middle" ><tspan font-family="SimSun">串口工作线程</tspan></text><text x="43" y="129" font-size="9.4" text-anchor="middle" ><tspan font-family="SimSun">连接／功能</tspan></text><text x="43" y="169" font-size="9.4" text-anchor="middle" ><tspan font-family="SimSun">键盘／键帽</tspan></text><text x="43" y="264" font-size="9.4" text-anchor="middle" ><tspan font-family="SimSun">通信反馈</tspan></text><text x="43" y="304" font-size="9.4" text-anchor="middle" ><tspan font-family="SimSun">关闭窗口</tspan></text><text x="260" y="208" font-size="9.4" text-anchor="middle" ><tspan font-family="SimSun">是</tspan></text><text x="174" y="242" font-size="9.4" text-anchor="middle" ><tspan font-family="SimSun">否</tspan></text></g></svg>

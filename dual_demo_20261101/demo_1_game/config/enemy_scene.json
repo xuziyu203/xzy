@@ -1,0 +1,1921 @@
+{
+  "enemy_capacity": 40,
+  "bullet_capacity": 850,
+  "player_bullet_capacity": 16,
+  "player_bullet_material_type": 1,
+  "effect_capacity": 17,
+  "effect_death_reserve": 4,
+  "assets": [
+    {
+      "id": 1,
+      "name": "BG_ORIGINAL",
+      "base": "02000000",
+      "length": 4147200
+    },
+    {
+      "id": 2,
+      "name": "ENEMY_COLOR",
+      "base": "02400000",
+      "length": 8192
+    },
+    {
+      "id": 3,
+      "name": "ENEMY_MASK",
+      "base": "02402000",
+      "length": 512
+    },
+    {
+      "id": 4,
+      "name": "MINI02_COLOR",
+      "base": "02404000",
+      "length": 8192
+    },
+    {
+      "id": 5,
+      "name": "MINI02_MASK",
+      "base": "02406000",
+      "length": 512
+    },
+    {
+      "id": 6,
+      "name": "MINI03_COLOR",
+      "base": "02408000",
+      "length": 8192
+    },
+    {
+      "id": 7,
+      "name": "MINI03_MASK",
+      "base": "0240A000",
+      "length": 512
+    },
+    {
+      "id": 8,
+      "name": "LARGE_COLOR",
+      "base": "02410000",
+      "length": 32768
+    },
+    {
+      "id": 9,
+      "name": "LARGE_MASK",
+      "base": "02418000",
+      "length": 2048
+    },
+    {
+      "id": 10,
+      "name": "GOLD_BULLET_COLOR",
+      "base": "02420000",
+      "length": 1024
+    },
+    {
+      "id": 11,
+      "name": "GOLD_BULLET_MASK",
+      "base": "02420400",
+      "length": 128,
+      "logical_length": 64
+    },
+    {
+      "id": 12,
+      "name": "BLUE_BULLET_COLOR",
+      "base": "02420800",
+      "length": 1024
+    },
+    {
+      "id": 13,
+      "name": "BLUE_BULLET_MASK",
+      "base": "02420C00",
+      "length": 128,
+      "logical_length": 64
+    },
+    {
+      "id": 14,
+      "name": "PLAYER_COLOR",
+      "base": "02430000",
+      "length": 18432
+    },
+    {
+      "id": 15,
+      "name": "PLAYER_MASK",
+      "base": "02434800",
+      "length": 1152
+    },
+    {
+      "id": 16,
+      "name": "FX_SMALL_COLOR",
+      "base": "02440000",
+      "length": 49152
+    },
+    {
+      "id": 17,
+      "name": "FX_SMALL_ALPHA",
+      "base": "0244C000",
+      "length": 12288
+    },
+    {
+      "id": 18,
+      "name": "FX_LARGE_COLOR",
+      "base": "02450000",
+      "length": 262144
+    },
+    {
+      "id": 19,
+      "name": "FX_LARGE_ALPHA",
+      "base": "02490000",
+      "length": 65536
+    },
+    {
+      "id": 20,
+      "name": "spark_64_color",
+      "base": "0x024A0000",
+      "length": 32768
+    },
+    {
+      "id": 21,
+      "name": "spark_64_alpha",
+      "base": "0x024A8000",
+      "length": 8192
+    },
+    {
+      "id": 22,
+      "name": "shield_128_color",
+      "base": "0x024B0000",
+      "length": 65536
+    },
+    {
+      "id": 23,
+      "name": "shield_128_alpha",
+      "base": "0x024C0000",
+      "length": 16384
+    },
+    {
+      "id": 24,
+      "name": "missile_blue_color",
+      "base": "0x024C4000",
+      "length": 1024,
+      "logical_length": 1024
+    },
+    {
+      "id": 25,
+      "name": "missile_blue_mask",
+      "base": "0x024C4400",
+      "length": 128,
+      "logical_length": 64
+    },
+    {
+      "id": 26,
+      "name": "missile_red_color",
+      "base": "0x024C4800",
+      "length": 1024,
+      "logical_length": 1024
+    },
+    {
+      "id": 27,
+      "name": "missile_red_mask",
+      "base": "0x024C4C00",
+      "length": 128,
+      "logical_length": 64
+    },
+    {
+      "id": 28,
+      "name": "bg_i4",
+      "base": "0x02500000",
+      "length": 1036800
+    },
+    {
+      "id": 29,
+      "name": "decor_cyan_rgb565le_a4",
+      "base": "0x025FD200",
+      "length": 2560
+    },
+    {
+      "id": 30,
+      "name": "decor_orange_rgb565le_a4",
+      "base": "0x025FDC00",
+      "length": 2560
+    },
+    {
+      "id": 31,
+      "name": "bg_palette_pad128",
+      "base": "0x025FE600",
+      "length": 128,
+      "logical_length": 32
+    },
+    {
+      "id": 32,
+      "name": "menu_i4",
+      "base": "0x02600000",
+      "length": 1036800
+    },
+    {
+      "id": 33,
+      "name": "menu_palette_pad128",
+      "base": "0x026FD200",
+      "length": 128,
+      "logical_length": 32
+    }
+  ],
+  "enemy_hp": {
+    "small": 1,
+    "large": 8
+  },
+  "respawn_ms": {
+    "small": 1500,
+    "large": 3000
+  },
+  "score": {
+    "small": 100,
+    "large": 1000
+  },
+  "materials": [
+    {
+      "color_id": 2,
+      "mask_id": 3,
+      "width": 64,
+      "height": 64,
+      "hitbox": [
+        5,
+        2,
+        59,
+        61
+      ],
+      "hp": 1,
+      "respawn_ms": 1500,
+      "score": 100
+    },
+    {
+      "color_id": 4,
+      "mask_id": 5,
+      "width": 64,
+      "height": 64,
+      "hitbox": [
+        4,
+        1,
+        60,
+        62
+      ],
+      "hp": 1,
+      "respawn_ms": 1500,
+      "score": 100
+    },
+    {
+      "color_id": 6,
+      "mask_id": 7,
+      "width": 64,
+      "height": 64,
+      "hitbox": [
+        9,
+        2,
+        55,
+        60
+      ],
+      "hp": 1,
+      "respawn_ms": 1500,
+      "score": 100
+    },
+    {
+      "color_id": 8,
+      "mask_id": 9,
+      "width": 128,
+      "height": 128,
+      "hitbox": [
+        4,
+        8,
+        124,
+        119
+      ],
+      "hp": 8,
+      "respawn_ms": 3000,
+      "score": 1000
+    }
+  ],
+  "player": {
+    "color_id": 14,
+    "mask_id": 15,
+    "width": 96,
+    "height": 96,
+    "x": 912,
+    "y": 936
+  },
+  "player_hitbox": [
+    27,
+    27,
+    69,
+    66
+  ],
+  "player_lives": 10,
+  "invulnerable_ms": 1000,
+  "bullet_materials": [
+    {
+      "color_id": 10,
+      "mask_id": 11,
+      "width": 16,
+      "height": 32
+    },
+    {
+      "color_id": 12,
+      "mask_id": 13,
+      "width": 16,
+      "height": 32
+    }
+  ],
+  "effects": [
+    {
+      "name": "small",
+      "color_id": 16,
+      "alpha_id": 17,
+      "size": 64,
+      "frames": 6,
+      "frame_ms": 50
+    },
+    {
+      "name": "large",
+      "color_id": 18,
+      "alpha_id": 19,
+      "size": 128,
+      "frames": 8,
+      "frame_ms": 50
+    },
+    {
+      "name": "spark",
+      "color_id": 20,
+      "alpha_id": 21,
+      "size": 64,
+      "frames": 4,
+      "frame_ms": 30
+    },
+    {
+      "name": "shield",
+      "color_id": 22,
+      "alpha_id": 23,
+      "size": 128,
+      "frames": 2,
+      "frame_ms": 80
+    }
+  ],
+  "fire": {
+    "global_period_ms": 100,
+    "large_period_ms": 400,
+    "max_spawn_per_frame": 4,
+    "small_speed": 360,
+    "large_speed": 480,
+    "fan_half_angle_q16": 22000,
+    "angle_deg": [
+      30,
+      45,
+      60
+    ]
+  },
+  "waves": {
+    "BOSS4": [
+      {
+        "material": 3,
+        "x": 896,
+        "y": 128,
+        "speed": 60
+      },
+      {
+        "material": 0,
+        "x": 448,
+        "y": 384,
+        "speed": 120
+      },
+      {
+        "material": 1,
+        "x": 1152,
+        "y": 512,
+        "speed": 90
+      },
+      {
+        "material": 2,
+        "x": 1376,
+        "y": 640,
+        "speed": 150
+      }
+    ],
+    "WAVE8": [
+      {
+        "material": 3,
+        "x": 896,
+        "y": 128,
+        "speed": 60
+      },
+      {
+        "material": 0,
+        "x": 64,
+        "y": 320,
+        "speed": 120
+      },
+      {
+        "material": 1,
+        "x": 320,
+        "y": 560,
+        "speed": 90
+      },
+      {
+        "material": 2,
+        "x": 576,
+        "y": 40,
+        "speed": 150
+      },
+      {
+        "material": 0,
+        "x": 1120,
+        "y": 720,
+        "speed": 120
+      },
+      {
+        "material": 1,
+        "x": 1376,
+        "y": 200,
+        "speed": 90
+      },
+      {
+        "material": 2,
+        "x": 1632,
+        "y": 480,
+        "speed": 150
+      },
+      {
+        "material": 0,
+        "x": 1824,
+        "y": 880,
+        "speed": 120
+      }
+    ],
+    "WAVE16": [
+      {
+        "material": 3,
+        "x": 256,
+        "y": 96,
+        "speed": 60
+      },
+      {
+        "material": 3,
+        "x": 1536,
+        "y": 540,
+        "speed": 50
+      },
+      {
+        "material": 0,
+        "x": 32,
+        "y": 300,
+        "speed": 120
+      },
+      {
+        "material": 1,
+        "x": 448,
+        "y": 700,
+        "speed": 90
+      },
+      {
+        "material": 2,
+        "x": 544,
+        "y": 120,
+        "speed": 150
+      },
+      {
+        "material": 0,
+        "x": 640,
+        "y": 880,
+        "speed": 120
+      },
+      {
+        "material": 1,
+        "x": 736,
+        "y": 420,
+        "speed": 90
+      },
+      {
+        "material": 2,
+        "x": 832,
+        "y": 60,
+        "speed": 150
+      },
+      {
+        "material": 0,
+        "x": 928,
+        "y": 640,
+        "speed": 120
+      },
+      {
+        "material": 1,
+        "x": 1024,
+        "y": 240,
+        "speed": 90
+      },
+      {
+        "material": 2,
+        "x": 1120,
+        "y": 960,
+        "speed": 150
+      },
+      {
+        "material": 0,
+        "x": 1216,
+        "y": 500,
+        "speed": 120
+      },
+      {
+        "material": 1,
+        "x": 1312,
+        "y": 140,
+        "speed": 90
+      },
+      {
+        "material": 2,
+        "x": 1408,
+        "y": 760,
+        "speed": 150
+      },
+      {
+        "material": 0,
+        "x": 1728,
+        "y": 360,
+        "speed": 120
+      },
+      {
+        "material": 1,
+        "x": 1824,
+        "y": 820,
+        "speed": 90
+      }
+    ],
+    "WAVE35": "generated",
+    "WAVE20": [
+      {
+        "material": 3,
+        "x": 256,
+        "y": 96,
+        "speed": 60
+      },
+      {
+        "material": 3,
+        "x": 1536,
+        "y": 540,
+        "speed": 50
+      },
+      {
+        "material": 0,
+        "x": 32,
+        "y": 300,
+        "speed": 120
+      },
+      {
+        "material": 1,
+        "x": 448,
+        "y": 700,
+        "speed": 90
+      },
+      {
+        "material": 2,
+        "x": 544,
+        "y": 120,
+        "speed": 150
+      },
+      {
+        "material": 0,
+        "x": 640,
+        "y": 880,
+        "speed": 120
+      },
+      {
+        "material": 1,
+        "x": 736,
+        "y": 420,
+        "speed": 90
+      },
+      {
+        "material": 2,
+        "x": 832,
+        "y": 60,
+        "speed": 150
+      },
+      {
+        "material": 0,
+        "x": 928,
+        "y": 640,
+        "speed": 120
+      },
+      {
+        "material": 1,
+        "x": 1024,
+        "y": 240,
+        "speed": 90
+      },
+      {
+        "material": 2,
+        "x": 1120,
+        "y": 960,
+        "speed": 150
+      },
+      {
+        "material": 0,
+        "x": 1216,
+        "y": 500,
+        "speed": 120
+      },
+      {
+        "material": 1,
+        "x": 1312,
+        "y": 140,
+        "speed": 90
+      },
+      {
+        "material": 2,
+        "x": 1408,
+        "y": 760,
+        "speed": 150
+      },
+      {
+        "material": 0,
+        "x": 1728,
+        "y": 360,
+        "speed": 120
+      },
+      {
+        "material": 1,
+        "x": 1824,
+        "y": 820,
+        "speed": 90
+      },
+      {
+        "material": 0,
+        "x": 160,
+        "y": 620,
+        "speed": 120
+      },
+      {
+        "material": 1,
+        "x": 384,
+        "y": 200,
+        "speed": 90
+      },
+      {
+        "material": 2,
+        "x": 1472,
+        "y": 40,
+        "speed": 150
+      },
+      {
+        "material": 2,
+        "x": 1664,
+        "y": 460,
+        "speed": 150
+      }
+    ],
+    "WAVE24": [
+      {
+        "material": 3,
+        "x": 256,
+        "y": 96,
+        "speed": 60,
+        "role": "CURTAIN"
+      },
+      {
+        "material": 3,
+        "x": 1536,
+        "y": 540,
+        "speed": 50,
+        "role": "CURTAIN"
+      },
+      {
+        "material": 1,
+        "x": 32,
+        "y": 862,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 832,
+        "y": 934,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 1408,
+        "y": 1007,
+        "speed": 90,
+        "role": "TRIPLE"
+      },
+      {
+        "material": 1,
+        "x": 384,
+        "y": 62,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 928,
+        "y": 135,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 1664,
+        "y": 208,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 544,
+        "y": 280,
+        "speed": 90,
+        "role": "RING2"
+      },
+      {
+        "material": 1,
+        "x": 1120,
+        "y": 353,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 1824,
+        "y": 426,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 640,
+        "y": 498,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 1312,
+        "y": 571,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 32,
+        "y": 644,
+        "speed": 90,
+        "role": "TRIPLE"
+      },
+      {
+        "material": 1,
+        "x": 832,
+        "y": 716,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 1408,
+        "y": 789,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 0,
+        "x": 160,
+        "y": 136,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 736,
+        "y": 391,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 1216,
+        "y": 645,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 1728,
+        "y": 900,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 2,
+        "x": 448,
+        "y": 777,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 2,
+        "x": 1024,
+        "y": 14,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 2,
+        "x": 1472,
+        "y": 268,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 2,
+        "x": 448,
+        "y": 523,
+        "speed": 150,
+        "role": "BLUE3"
+      }
+    ],
+    "WAVE32": [
+      {
+        "material": 3,
+        "x": 256,
+        "y": 96,
+        "speed": 60,
+        "role": "CURTAIN"
+      },
+      {
+        "material": 3,
+        "x": 1536,
+        "y": 540,
+        "speed": 50,
+        "role": "CURTAIN"
+      },
+      {
+        "material": 1,
+        "x": 32,
+        "y": 862,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 832,
+        "y": 915,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 1408,
+        "y": 969,
+        "speed": 90,
+        "role": "TRIPLE"
+      },
+      {
+        "material": 1,
+        "x": 384,
+        "y": 5,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 928,
+        "y": 58,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 1664,
+        "y": 112,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 544,
+        "y": 166,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 1120,
+        "y": 219,
+        "speed": 90,
+        "role": "RING2"
+      },
+      {
+        "material": 1,
+        "x": 1824,
+        "y": 273,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 640,
+        "y": 326,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 1312,
+        "y": 380,
+        "speed": 90,
+        "role": "TRIPLE"
+      },
+      {
+        "material": 1,
+        "x": 32,
+        "y": 433,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 832,
+        "y": 487,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 1408,
+        "y": 540,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 384,
+        "y": 594,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 928,
+        "y": 648,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 1664,
+        "y": 701,
+        "speed": 90,
+        "role": "TRIPLE"
+      },
+      {
+        "material": 1,
+        "x": 544,
+        "y": 755,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 1120,
+        "y": 808,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 0,
+        "x": 160,
+        "y": 136,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 736,
+        "y": 306,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 1216,
+        "y": 476,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 1728,
+        "y": 645,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 160,
+        "y": 815,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 736,
+        "y": 985,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 2,
+        "x": 448,
+        "y": 777,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 2,
+        "x": 1024,
+        "y": 981,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 2,
+        "x": 1472,
+        "y": 166,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 2,
+        "x": 448,
+        "y": 370,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 2,
+        "x": 1024,
+        "y": 574,
+        "speed": 150,
+        "role": "BLUE3"
+      }
+    ],
+    "WAVE40": [
+      {
+        "material": 3,
+        "x": 256,
+        "y": 96,
+        "speed": 60,
+        "role": "CURTAIN"
+      },
+      {
+        "material": 3,
+        "x": 1536,
+        "y": 540,
+        "speed": 50,
+        "role": "CURTAIN"
+      },
+      {
+        "material": 3,
+        "x": 256,
+        "y": 572,
+        "speed": 60,
+        "role": "CURTAIN"
+      },
+      {
+        "material": 3,
+        "x": 1536,
+        "y": 64,
+        "speed": 50,
+        "role": "CURTAIN"
+      },
+      {
+        "material": 2,
+        "x": 32,
+        "y": 777,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 2,
+        "x": 928,
+        "y": 850,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 2,
+        "x": 1728,
+        "y": 923,
+        "speed": 150,
+        "role": "RING2"
+      },
+      {
+        "material": 2,
+        "x": 640,
+        "y": 996,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 2,
+        "x": 1408,
+        "y": 50,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 2,
+        "x": 448,
+        "y": 123,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 2,
+        "x": 1216,
+        "y": 195,
+        "speed": 150,
+        "role": "RING2"
+      },
+      {
+        "material": 2,
+        "x": 32,
+        "y": 268,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 2,
+        "x": 928,
+        "y": 341,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 2,
+        "x": 1728,
+        "y": 414,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 2,
+        "x": 640,
+        "y": 486,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 2,
+        "x": 1408,
+        "y": 559,
+        "speed": 150,
+        "role": "RING2"
+      },
+      {
+        "material": 2,
+        "x": 448,
+        "y": 632,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 2,
+        "x": 1216,
+        "y": 705,
+        "speed": 150,
+        "role": "BLUE3"
+      },
+      {
+        "material": 1,
+        "x": 384,
+        "y": 862,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 832,
+        "y": 989,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 1120,
+        "y": 99,
+        "speed": 90,
+        "role": "TRIPLE"
+      },
+      {
+        "material": 1,
+        "x": 1664,
+        "y": 226,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 384,
+        "y": 353,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 832,
+        "y": 480,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 1,
+        "x": 1120,
+        "y": 607,
+        "speed": 90,
+        "role": "TRIPLE"
+      },
+      {
+        "material": 1,
+        "x": 1664,
+        "y": 735,
+        "speed": 90,
+        "role": "FANX"
+      },
+      {
+        "material": 0,
+        "x": 160,
+        "y": 136,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 1024,
+        "y": 209,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 1824,
+        "y": 282,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 736,
+        "y": 354,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 1472,
+        "y": 427,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 544,
+        "y": 500,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 1312,
+        "y": 573,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 160,
+        "y": 645,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 1024,
+        "y": 718,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 1824,
+        "y": 791,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 736,
+        "y": 863,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 1472,
+        "y": 936,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 544,
+        "y": 1009,
+        "speed": 120,
+        "role": "THREE"
+      },
+      {
+        "material": 0,
+        "x": 1312,
+        "y": 64,
+        "speed": 120,
+        "role": "THREE"
+      }
+    ],
+    "WAVE0": []
+  },
+  "bullet_draw": {
+    "width": 8,
+    "height": 12,
+    "member_dx": 20,
+    "source_y": [
+      0,
+      16
+    ],
+    "hitbox": [
+      1,
+      2,
+      7,
+      10
+    ],
+    "packed_color_crc32": 746417861,
+    "packed_mask_crc32": 2455799707,
+    "hitboxes": [
+      [
+        2,
+        2,
+        6,
+        10
+      ],
+      [
+        2,
+        2,
+        6,
+        10
+      ],
+      [
+        1,
+        3,
+        7,
+        9
+      ],
+      [
+        3,
+        0,
+        5,
+        12
+      ]
+    ],
+    "source_xy": [
+      [
+        0,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        0,
+        16
+      ],
+      [
+        8,
+        16
+      ]
+    ],
+    "material_to_style": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "triple": {
+      "material": 1,
+      "style": 1,
+      "muzzles": [
+        [
+          23,
+          56
+        ],
+        [
+          32,
+          61
+        ],
+        [
+          40,
+          56
+        ]
+      ],
+      "anchor": [
+        19,
+        57
+      ],
+      "offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          17,
+          0
+        ]
+      ],
+      "span": [
+        25,
+        17
+      ]
+    }
+  },
+  "effect_pool_capacity": 16,
+  "effect_limits": {
+    "small": 2,
+    "large": 1,
+    "spark": 2,
+    "spark_cooldown_ms": 100,
+    "shield_duration_ms": 10000,
+    "shield_flash_ms": 140,
+    "shield_flash_gap_ms": 220,
+    "shield_charges": 3
+  },
+  "missiles": {
+    "capacity": 8,
+    "per_type_capacity": 4,
+    "shared_period_ms": 250,
+    "types": [
+      {
+        "name": "blue",
+        "color_id": 24,
+        "mask_id": 25,
+        "width": 8,
+        "height": 32,
+        "storage_width": 16,
+        "hitbox": [
+          2,
+          8,
+          6,
+          28
+        ],
+        "speed": 240,
+        "emitter_period_ms": 1500,
+        "type_period_ms": 600,
+        "material": 2,
+        "color_crc32": 3338182980,
+        "mask_crc32": 2514374371
+      },
+      {
+        "name": "red",
+        "color_id": 26,
+        "mask_id": 27,
+        "width": 12,
+        "height": 32,
+        "storage_width": 16,
+        "hitbox": [
+          2,
+          8,
+          9,
+          26
+        ],
+        "speed": 180,
+        "emitter_period_ms": 2200,
+        "type_period_ms": 900,
+        "material": 3,
+        "color_crc32": 2783039238,
+        "mask_crc32": 3831845963
+      }
+    ]
+  },
+  "rich": {
+    "roles": [
+      "FANX",
+      "TRIPLE",
+      "THREE",
+      "BLUE3",
+      "RING2",
+      "CURTAIN"
+    ],
+    "role_material": {
+      "FANX": 1,
+      "TRIPLE": 1,
+      "THREE": 0,
+      "BLUE3": 2,
+      "RING2": 1,
+      "CURTAIN": 3
+    },
+    "role_material_alt": {
+      "RING2": [
+        2
+      ]
+    },
+    "role_by_material": [
+      "THREE",
+      "FANX",
+      "BLUE3",
+      "CURTAIN"
+    ],
+    "period_ms": {
+      "FANX": 380,
+      "TRIPLE": 300,
+      "THREE": 360,
+      "BLUE3": 340,
+      "RING2": 1100,
+      "CURTAIN": 180
+    },
+    "lite_fanx_period_ms": 460,
+    "cease_y": 820,
+    "ring_max_center_y": 700,
+    "frame_budget_groups": 24,
+    "age_frames": 3,
+    "lane_guard_gap": 32,
+    "first_shot_ms": 250,
+    "ring_speed": 200,
+    "ring_directions": 12,
+    "fan5": [
+      [
+        0,
+        360
+      ],
+      [
+        -123,
+        338
+      ],
+      [
+        123,
+        338
+      ],
+      [
+        -231,
+        276
+      ],
+      [
+        231,
+        276
+      ]
+    ],
+    "fan4": [
+      [
+        -63,
+        355
+      ],
+      [
+        63,
+        355
+      ],
+      [
+        -180,
+        312
+      ],
+      [
+        180,
+        312
+      ]
+    ],
+    "three": [
+      [
+        0,
+        360
+      ],
+      [
+        -255,
+        255
+      ],
+      [
+        255,
+        255
+      ]
+    ],
+    "blue3": [
+      [
+        0,
+        360
+      ],
+      [
+        -93,
+        348
+      ],
+      [
+        93,
+        348
+      ]
+    ],
+    "curtain_dx": [
+      [
+        0,
+        33,
+        66,
+        99
+      ],
+      [
+        0,
+        99
+      ]
+    ],
+    "angle_deg": [
+      30,
+      45,
+      60
+    ],
+    "angle_speed": 360,
+    "angle_rows": {
+      "FANX": [
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "THREE": [
+        [
+          1,
+          2
+        ]
+      ],
+      "BLUE3": [
+        [
+          1,
+          2
+        ]
+      ]
+    }
+  },
+  "rich_quota": {
+    "per_plane": {
+      "FANX": 15,
+      "TRIPLE": 4,
+      "THREE": 11,
+      "BLUE3": 10,
+      "RING2": 22,
+      "CURTAIN": 14
+    },
+    "shared_min": 64,
+    "basis": "0.9 x min(per-plane p50 live groups) of WAVE32 and the 40-plane mix, unconstrained model (model/demand.json)"
+  },
+  "background_i4": {
+    "id": 28,
+    "palette_id": 31,
+    "width": 1920,
+    "height": 1080,
+    "stride": 960,
+    "even_x": "high"
+  },
+  "menu_i4": {
+    "id": 32,
+    "palette_id": 33,
+    "width": 1920,
+    "height": 1080,
+    "stride": 960,
+    "even_x": "high"
+  },
+  "decor": {
+    "skins": [
+      29,
+      30
+    ],
+    "size": 32,
+    "color_stride": 64,
+    "alpha_offset": 2048,
+    "alpha_stride": 16,
+    "slots": 16,
+    "max_active": 8,
+    "tick_hz": 60,
+    "period_ticks": 144,
+    "first_ticks": [
+      0,
+      48,
+      96
+    ],
+    "rate_2x": {
+      "period_ticks": 72,
+      "first_ticks": [
+        0,
+        24,
+        48
+      ],
+      "max_active": 16
+    },
+    "life_ticks": 456,
+    "recycle_center": [
+      -16,
+      -16,
+      1936,
+      1096
+    ],
+    "turrets": [
+      {
+        "id": "T0_upper_left",
+        "muzzles": [
+          [
+            277,
+            167
+          ],
+          [
+            332,
+            181
+          ]
+        ],
+        "v": [
+          4,
+          1
+        ],
+        "skin": 0
+      },
+      {
+        "id": "T1_right",
+        "muzzles": [
+          [
+            1626,
+            784
+          ],
+          [
+            1670,
+            798
+          ]
+        ],
+        "v": [
+          -4,
+          1
+        ],
+        "skin": 1
+      },
+      {
+        "id": "T2_lower",
+        "muzzles": [
+          [
+            1082,
+            941
+          ],
+          [
+            1114,
+            951
+          ]
+        ],
+        "v": [
+          -4,
+          -1
+        ],
+        "skin": 0
+      }
+    ]
+  },
+  "density_tiers": {
+    "pool_caps": [
+      620,
+      800,
+      850
+    ],
+    "period_pct": [
+      85,
+      75,
+      68
+    ],
+    "tag_pct": [
+      110,
+      132,
+      144
+    ],
+    "triple_styles": [
+      4,
+      4,
+      4
+    ],
+    "default": 2,
+    "note": "GHD7: default tier 2 (M-144). GHD6: tier 2 = 850-group pressure tier (pool 850, period 68 %, tag M-144); tiers 0/1 unchanged. GHD5: every tier keeps the M roles/shapes (colours follow the firing aircraft). Tier 0 = GHD4S M-110 density (620, 85 %) rollback; tier 1 default 800/75 % (host model avg +351 vs GHD4S M-110); tier 2 800/70 % (+466). The compositor hit list removed the per-block full row-list walk, so composition is no longer the limit at 800 groups (model). tag_pct = measured average relative to the original M (1567, host model).",
+    "glow": [
+      0,
+      0,
+      0
+    ]
+  },
+  "light_density": {
+    "period_pct": 60,
+    "note": "GHD5: LIGHT phase (pattern 2) fire periods x pct/100 (100 = GHD4S cadence); same planes, styles and decor; pressure unaffected"
+  },
+  "triple_styles": {
+    "mask": 7,
+    "alt_style": 2,
+    "alt_offsets": [
+      [
+        0,
+        0
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        12,
+        0
+      ]
+    ],
+    "alt_span": [
+      20,
+      21
+    ],
+    "colour_by_aircraft": 1,
+    "note": "GHD5: styles 0..2 may use the triple layout; style 2 (blue round disk) triple = downward triangle; styles 0/1 keep the V of bullet_draw.triple. RICH rows carry their triple flag; pressure bullets take the firing aircraft colour (material -> style)"
+  },
+  "angles_enabled": 1,
+  "probe_ladder": {
+    "tier_tag": "LADR",
+    "level_seconds": 30,
+    "note": "GHDA probe tier LADR: pressure load levels, each level_seconds of accumulated pressure time (kept across game over / restart, reset by KEY2); per-second TEL line over UART TX. B144 = GHD9X M-144 (no angles); A144 = + plane angles; G1/G2 = + 1/2 pressure glow shots; N20/N40/N60 = shorter emission period (host model +20/+43/+60 real bullets over A144); A138/A132 = lighter fallbacks with angles.",
+    "levels": [
+      {
+        "tag": "B144",
+        "pool": 850,
+        "period_permille": 680,
+        "angles": 0,
+        "glow": 0
+      },
+      {
+        "tag": "A144",
+        "pool": 850,
+        "period_permille": 680,
+        "angles": 1,
+        "glow": 0
+      },
+      {
+        "tag": "G1",
+        "pool": 850,
+        "period_permille": 680,
+        "angles": 1,
+        "glow": 1
+      },
+      {
+        "tag": "G2",
+        "pool": 850,
+        "period_permille": 680,
+        "angles": 1,
+        "glow": 2
+      },
+      {
+        "tag": "N20",
+        "pool": 850,
+        "period_permille": 670,
+        "angles": 1,
+        "glow": 0
+      },
+      {
+        "tag": "N40",
+        "pool": 850,
+        "period_permille": 652,
+        "angles": 1,
+        "glow": 0
+      },
+      {
+        "tag": "N60",
+        "pool": 850,
+        "period_permille": 600,
+        "angles": 1,
+        "glow": 0
+      },
+      {
+        "tag": "N40G1",
+        "pool": 850,
+        "period_permille": 652,
+        "angles": 1,
+        "glow": 1
+      },
+      {
+        "tag": "A138",
+        "pool": 825,
+        "period_permille": 715,
+        "angles": 1,
+        "glow": 0
+      },
+      {
+        "tag": "A132",
+        "pool": 800,
+        "period_permille": 750,
+        "angles": 1,
+        "glow": 0
+      }
+    ],
+    "enabled": 1
+  }
+}

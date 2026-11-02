@@ -1,0 +1,322 @@
+{
+  "start": "2026-11-01T20:20:17.451+08:00",
+  "mode": "execute",
+  "device_operation": true,
+  "pass": true,
+  "classification": "Post-pressure ordinary RAM read; debug halt may disturb input after the accepted measurement. Field groups are individually coherent, not an atomic whole-snapshot.",
+  "elf_sha256": "0fac4deabec6a794316c8672ec37bbe3db7201c74c6fd5c3fc0880a976101087",
+  "plan_sha256": "c47ab16e368f8c39cfb8e82d3d356ddc3500f43624734984191f0dac2b3f9aa6",
+  "source_sha256": {
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\game.c": "e13d4449c7103231f5986ce1b5f49d5f4d1beebcf5ee7ccbb43b9638cfbbbb1c",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\game_keys.c": "1a6c4bfa672da2c5c4fbba4d766fc32895a9718ffdd20861d10eabcb7e3fba8c",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\enemy_test.c": "77c8c5c802386280d9941f22782f7743f6495f6cda3d9a63b088ca8e66dd3cd4",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\joystick_ads1115.c": "26add6b82c33e485b57db911ac8cfb1d316c6304ea4292aa03a3984a7f21becd",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\joystick_ads1115.h": "257256363872d529e958dd6e8c5c4b47c4e03e2c20fdef88e64f06191a8a84e2",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\player_input.c": "826d9888262ce401a5ffec5439f0792992e4ebab37db754ecab8854b3ebc8950",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\player_input.h": "5d7fecf187151877eea953ad7895f19cc51ab37718fde29007a5bba2b129d97b",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\main_single.c": "8baef879b6e288c6027517f0137fd9fa880961d19369787ae7d8804b15b84573",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\build_id.h": "6a7e84bf1bd6605f4240987f9b2817c95b0ec387bbaea4c59de3ccdcb3407fa7"
+  },
+  "validator_sha256": "ee8b7729c20001ffb48e12c8b0e38fdb60e336b14bb293e56db816249580adf2",
+  "script_sha256": "576ae14cf1893f0b1ae725076545496b50a63da12b78c47f994b241ba528e555",
+  "symbols": {
+    "app_state": {
+      "address": 4177617096,
+      "size": 4,
+      "type": "b"
+    },
+    "combat_hits": {
+      "address": 4177618152,
+      "size": 4,
+      "type": "b"
+    },
+    "combat_kills": {
+      "address": 4177618148,
+      "size": 4,
+      "type": "b"
+    },
+    "combat_pb_kills": {
+      "address": 4177618160,
+      "size": 4,
+      "type": "b"
+    },
+    "en_frames": {
+      "address": 4177617216,
+      "size": 4,
+      "type": "b"
+    },
+    "en_state": {
+      "address": 4177617288,
+      "size": 4,
+      "type": "b"
+    },
+    "flow": {
+      "address": 4177618792,
+      "size": 48,
+      "type": "b"
+    },
+    "fx_display_active": {
+      "address": 4177617328,
+      "size": 4,
+      "type": "b"
+    },
+    "fx_display_dropped": {
+      "address": 4177617320,
+      "size": 4,
+      "type": "b"
+    },
+    "fx_display_evicted": {
+      "address": 4177617316,
+      "size": 4,
+      "type": "b"
+    },
+    "fx_display_snapshot": {
+      "address": 4177618904,
+      "size": 32,
+      "type": "b"
+    },
+    "fx_display_spawned": {
+      "address": 4177617324,
+      "size": 4,
+      "type": "b"
+    },
+    "fx_dropped": {
+      "address": 4177617336,
+      "size": 4,
+      "type": "b"
+    },
+    "fx_enabled": {
+      "address": 4177617364,
+      "size": 4,
+      "type": "b"
+    },
+    "fx_evicted": {
+      "address": 4177617332,
+      "size": 4,
+      "type": "b"
+    },
+    "fx_merged": {
+      "address": 4177617304,
+      "size": 4,
+      "type": "b"
+    },
+    "fx_session": {
+      "address": 4177617300,
+      "size": 4,
+      "type": "b"
+    },
+    "fx_spawned": {
+      "address": 4177617340,
+      "size": 4,
+      "type": "b"
+    },
+    "game_display_lives": {
+      "address": 4177618184,
+      "size": 4,
+      "type": "b"
+    },
+    "game_display_over": {
+      "address": 4177618176,
+      "size": 4,
+      "type": "b"
+    },
+    "game_enabled": {
+      "address": 4177618236,
+      "size": 4,
+      "type": "b"
+    },
+    "game_lives": {
+      "address": 4177618232,
+      "size": 4,
+      "type": "b"
+    },
+    "game_over_flag": {
+      "address": 4177618224,
+      "size": 4,
+      "type": "b"
+    },
+    "jrec": {
+      "address": 4177644256,
+      "size": 96,
+      "type": "b"
+    },
+    "js": {
+      "address": 4177644736,
+      "size": 144,
+      "type": "b"
+    },
+    "shield_absorbed": {
+      "address": 4177617308,
+      "size": 4,
+      "type": "b"
+    },
+    "shield_mode": {
+      "address": 4177617312,
+      "size": 4,
+      "type": "b"
+    },
+    "shield_toggles": {
+      "address": 4177617296,
+      "size": 4,
+      "type": "b"
+    }
+  },
+  "fields": {
+    "app_state": 4177617096,
+    "en_state": 4177617288,
+    "en_frames": 4177617216,
+    "game_enabled": 4177618236,
+    "game_lives": 4177618232,
+    "game_over_flag": 4177618224,
+    "game_display_lives": 4177618184,
+    "game_display_over": 4177618176,
+    "fx_enabled": 4177617364,
+    "fx_spawned": 4177617340,
+    "fx_dropped": 4177617336,
+    "fx_merged": 4177617304,
+    "fx_evicted": 4177617332,
+    "fx_session": 4177617300,
+    "fx_display_active": 4177617328,
+    "fx_display_spawned": 4177617324,
+    "fx_display_dropped": 4177617320,
+    "fx_display_evicted": 4177617316,
+    "shield_toggles": 4177617296,
+    "shield_absorbed": 4177617308,
+    "shield_mode": 4177617312,
+    "combat_hits": 4177618152,
+    "combat_kills": 4177618148,
+    "combat_pb_kills": 4177618160,
+    "flow_round": 4177618808,
+    "flow_phase_word": 4177618828,
+    "joy_sequence": 4177644808,
+    "joy_pairs": 4177644816,
+    "joy_faults": 4177644820,
+    "joy_error": 4177644824,
+    "joy_flags": 4177644852,
+    "joy_valid_word": 4177644856,
+    "joy_stale": 4177644864,
+    "recovery_attempts": 4177644260,
+    "recovery_ok": 4177644264,
+    "recovery_fail": 4177644268,
+    "bus_recovers": 4177644288,
+    "bus_recover_ok": 4177644292,
+    "recovery_consecutive": 4177644344,
+    "recovery_exhausted": 4177644348,
+    "display_fx_remaining_lo": 4177618904,
+    "display_fx_remaining_hi": 4177618908,
+    "display_fx_sequence": 4177618912,
+    "display_fx_session": 4177618916,
+    "display_fx_absorbed": 4177618920,
+    "display_fx_merged": 4177618924,
+    "display_fx_flags": 4177618928,
+    "display_fx_counts": 4177618932
+  },
+  "memory_write_whitelist": [],
+  "events": [
+    {
+      "time": "2026-11-01T20:20:17.794+08:00",
+      "owned_openocd": 31528
+    },
+    {
+      "time": "2026-11-01T20:20:17.898+08:00",
+      "initial_state": "running"
+    },
+    {
+      "time": "2026-11-01T20:20:17.918+08:00",
+      "identity_batch": "OK\nHALT_MS=8\n1793535617899:1793535617918\nRAM_IDENTITY_MATCH\nRESUME_STATE=running"
+    },
+    {
+      "time": "2026-11-01T20:20:18.140+08:00",
+      "ram_group_1": "OK\nHALT_MS=9\n1793535618119:1793535618139\napp_state=5\nen_state=3\nen_frames=63305\ngame_enabled=1\ngame_lives=855\ngame_over_flag=0\ngame_display_lives=855\ngame_display_over=0\nfx_enabled=1\nfx_spawned=376\n\nRESUME_STATE=running"
+    },
+    {
+      "time": "2026-11-01T20:20:18.364+08:00",
+      "ram_group_2": "OK\nHALT_MS=10\n1793535618342:1793535618363\nfx_dropped=60\nfx_merged=2\nfx_evicted=0\nfx_session=13\nfx_display_active=1\nfx_display_spawned=377\nfx_display_dropped=60\nfx_display_evicted=0\nshield_toggles=1\nshield_absorbed=9879\n\nRESUME_STATE=running"
+    },
+    {
+      "time": "2026-11-01T20:20:18.589+08:00",
+      "ram_group_3": "OK\nHALT_MS=9\n1793535618566:1793535618587\nshield_mode=0\ncombat_hits=375\ncombat_kills=401\ncombat_pb_kills=337\nflow_round=13\nflow_phase_word=65799\njoy_sequence=180994\njoy_pairs=180994\njoy_faults=36\njoy_error=0\n\nRESUME_STATE=running"
+    },
+    {
+      "time": "2026-11-01T20:20:18.811+08:00",
+      "ram_group_4": "OK\nHALT_MS=9\n1793535618790:1793535618810\njoy_flags=65793\njoy_valid_word=1\njoy_stale=1\nrecovery_attempts=0\nrecovery_ok=0\nrecovery_fail=0\nbus_recovers=3\nbus_recover_ok=3\nrecovery_consecutive=0\nrecovery_exhausted=0\n\nRESUME_STATE=running"
+    },
+    {
+      "time": "2026-11-01T20:20:19.034+08:00",
+      "ram_group_5": "OK\nHALT_MS=8\n1793535619012:1793535619032\ndisplay_fx_remaining_lo=0\ndisplay_fx_remaining_hi=0\ndisplay_fx_sequence=63352\ndisplay_fx_session=13\ndisplay_fx_absorbed=9879\ndisplay_fx_merged=2\ndisplay_fx_flags=65539\ndisplay_fx_counts=0\n\nRESUME_STATE=running"
+    },
+    {
+      "time": "2026-11-01T20:20:19.034+08:00",
+      "final_resume": {
+        "attempt": 1,
+        "state": "running"
+      }
+    }
+  ],
+  "values": {
+    "app_state": 5,
+    "en_state": 3,
+    "en_frames": 63305,
+    "game_enabled": 1,
+    "game_lives": 855,
+    "game_over_flag": 0,
+    "game_display_lives": 855,
+    "game_display_over": 0,
+    "fx_enabled": 1,
+    "fx_spawned": 376,
+    "fx_dropped": 60,
+    "fx_merged": 2,
+    "fx_evicted": 0,
+    "fx_session": 13,
+    "fx_display_active": 1,
+    "fx_display_spawned": 377,
+    "fx_display_dropped": 60,
+    "fx_display_evicted": 0,
+    "shield_toggles": 1,
+    "shield_absorbed": 9879,
+    "shield_mode": 0,
+    "combat_hits": 375,
+    "combat_kills": 401,
+    "combat_pb_kills": 337,
+    "flow_round": 13,
+    "flow_phase_word": 65799,
+    "joy_sequence": 180994,
+    "joy_pairs": 180994,
+    "joy_faults": 36,
+    "joy_error": 0,
+    "joy_flags": 65793,
+    "joy_valid_word": 1,
+    "joy_stale": 1,
+    "recovery_attempts": 0,
+    "recovery_ok": 0,
+    "recovery_fail": 0,
+    "bus_recovers": 3,
+    "bus_recover_ok": 3,
+    "recovery_consecutive": 0,
+    "recovery_exhausted": 0,
+    "display_fx_remaining_lo": 0,
+    "display_fx_remaining_hi": 0,
+    "display_fx_sequence": 63352,
+    "display_fx_session": 13,
+    "display_fx_absorbed": 9879,
+    "display_fx_merged": 2,
+    "display_fx_flags": 65539,
+    "display_fx_counts": 0
+  },
+  "cleanup_errors": [],
+  "decoded": {
+    "flow_phase": 7,
+    "display_small_explosions": 0,
+    "display_large_explosions": 0,
+    "display_sparks": 0,
+    "display_shield_visible": true,
+    "display_shield_mode": 3,
+    "joy_enabled": 1,
+    "joy_armed": 1,
+    "joy_calibrated": 1,
+    "joy_latched": 0,
+    "joy_valid": 1
+  },
+  "owned_openocd_exit": 0,
+  "end": "2026-11-01T20:20:19.038+08:00"
+}

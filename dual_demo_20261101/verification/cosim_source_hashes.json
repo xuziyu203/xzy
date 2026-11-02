@@ -1,0 +1,11 @@
+{
+  "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\audit\\driver_final.c": "24e2ff4014ae3900cec357147824e5a9afc4e8bf9878987b4ba61f7ecd70b71a",
+  "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\audit\\driver_final.exe": "191b86e518a3e1e6be02615345ea183672ebf3a4b79f3e4a041a113470ffc4e8",
+  "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\ads1115_game_runtime_fix_20261025\\repro\\fix_tb.v": "0e739e70232a39bb84878b2e7c516225ee5305fa73cdfd6ecaf58c9b21dd5f5a",
+  "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\ads1115_game_runtime_fix_20261025\\repro\\selected_modules.v": "86e005a96bcfeabe1b04b10684c6aaae6409f93f889d7d10ed44f5ca90c3be0e",
+  "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\ads1115_game_runtime_fix_20261025\\repro\\fix.vvp": "385e0fd8db02d8c7ee6d9b9d7f3e8d442e3d06bf5625e9f3488ac6d7543c8184",
+  "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\joystick_ads1115.c": "26add6b82c33e485b57db911ac8cfb1d316c6304ea4292aa03a3984a7f21becd",
+  "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\joystick_ads1115.h": "257256363872d529e958dd6e8c5c4b47c4e03e2c20fdef88e64f06191a8a84e2",
+  "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\player_input.c": "826d9888262ce401a5ffec5439f0792992e4ebab37db754ecab8854b3ebc8950",
+  "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\player_input.h": "5d7fecf187151877eea953ad7895f19cc51ab37718fde29007a5bba2b129d97b"
+}

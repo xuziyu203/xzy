@@ -1,0 +1,150 @@
+{
+  "basic": {
+    "pair": {
+      "bit": "pair/basic_demo.bit",
+      "bit_sha256": "ca722493e2abed677c543dec61db9c2c6e95ae29ca39895ee1f3978f2a126998",
+      "elf": "pair/basic_demo.elf",
+      "elf_sha256": "4a481583cb33e41a5478d10a9012aa53b44ffca055950293527f30c10f2efb3a"
+    },
+    "source_file_count": 242,
+    "source_head": "665157205c969c64b0de12848f598c2f94f67e62",
+    "source_note": "Frozen scope hw_05 + elf_source_inputs; original workspace preserved",
+    "source_tree_sha256": "ba5fbfcf34adfffad2e7ef204c417d2c6c691034893f828a448d6b34c31d0b93",
+    "validation": {
+      "board": {
+        "evidence": [],
+        "status": "NOT_RUN"
+      },
+      "firmware_build": "PASS: RC ZIP extracted to a fresh short TEMP directory containing spaces; clean build exactly matches paired ELF; 15 object dependency scans, 80 unique declared dependencies",
+      "fpga_rebuild": "NOT_RUN this round; frozen existing bit",
+      "timing": "Existing FAIL; 183 setup paths / 0 hold; core->HDMI -1.711 ns, HDMI->core -0.724 ns"
+    }
+  },
+  "delivery_status": "RELEASE_WITH_LIMITATIONS",
+  "game": {
+    "fix_commit": "b74b29b78d5845fb2b64defe5fda4b2f16a7c0ac",
+    "pair": {
+      "bit": "pair/ti60f225_oob.bit",
+      "bit_sha256": "72d4f01497b5599bc633a35162388f312a0631ea17b348fdf97a5efea335bd54",
+      "elf": "pair/apbTest.elf",
+      "elf_sha256": "0fac4deabec6a794316c8672ec37bbe3db7201c74c6fd5c3fc0880a976101087"
+    },
+    "source_checkpoint": "6f20230d0b4fbb2b433bfaf0efe5bdccda070f79",
+    "source_file_count": 289,
+    "source_tree_sha256": "e2f1fee563f58035e0e0c8c169d582a022e77a69a4b7f5d04e8894fb54c7d826",
+    "validation": {
+      "board": {
+        "continuous_stress": {
+          "automatic_retries": 0,
+          "boundary_samples": 325,
+          "bus_recover_commands": 0,
+          "completed_frames": 19440,
+          "effective_directions_observed": [
+            "left",
+            "right",
+            "up_left",
+            "up_right",
+            "down_left",
+            "down_right",
+            "neutral"
+          ],
+          "end": "2026-11-01T20:19:47.846+08:00",
+          "evidence": [
+            "verification/PRESSURE_V2_RESULT_zh.md",
+            "verification/pressure_v2/analysis.json",
+            "verification/pressure_v2/rx.jsonl"
+          ],
+          "fire_request_snapshots": 89,
+          "first_transition_window_excluded": true,
+          "fps_each_full_window": 60,
+          "full_windows": 324,
+          "host_monotonic_span_seconds": 323.9946136,
+          "input_fault_windows": 0,
+          "invalid_windows": 0,
+          "latched_windows": 0,
+          "long_frame_count": 0,
+          "maximum_actual_bullets": 2439,
+          "maximum_completed_frame_interval_us": 16703,
+          "maximum_groups": 850,
+          "neutral_return_adjacent_snapshots": 5,
+          "new_adc_pairs": 20538,
+          "no_update_windows": 0,
+          "score_growth": 36700,
+          "shield_absorption_growth": 9027,
+          "start": "2026-11-01T20:14:23.852+08:00",
+          "status": "PASS_FOR_DURATION_INPUT_AND_FRAME_RATE",
+          "test_setup": "Only game_lives RAM temporarily 1000 to avoid premature collision GameOver; source and delivered ELF still start with 10; JTAG closed throughout measured interval",
+          "unarmed_windows": 0
+        },
+        "coverage_limits": [
+          "Requested 35-second continuous direction hold NOT_COMPLETED; longest same-direction pressure snapshot run 6.992 seconds (eight down-left points). One-Hz snapshots do not prove uninterrupted physical hold.",
+          "Ten repeats use logical KEY3 injection; not ten physical-button debounce trials or natural collision deaths.",
+          "No physical electrical I2C fault injection this round; bounded electrical/controller recovery verified by real C plus I2C/GPIO RTL co-simulation.",
+          "Extended-life pressure is not default-ten-lives natural survival for five minutes."
+        ],
+        "evidence": [
+          "verification/BOARD_RESTARTS_RESULT_zh.md",
+          "verification/PRESSURE_V2_RESULT_zh.md",
+          "verification/MANUAL_V1_RESULT_zh.md"
+        ],
+        "manual_v1": {
+          "active_stress_seconds": 44.013,
+          "fps_each_full_window": 60,
+          "full_windows": 44,
+          "input_faults": 0,
+          "long_frames": 0
+        },
+        "post_pressure": {
+          "counter_scope": "Read after measured interval; sequential RAM snapshots, not an atomic last-second pressure sample. Effect drops use existing capacity policy.",
+          "effect_drop_count": 60,
+          "effect_spawn_count": 377,
+          "original_restart": "PASS 1/1, flow 13->14, default and display HP10, input continues",
+          "player_bullet_kills": 337,
+          "restore_evidence": "verification/pressure_v2/restore_normal_lives.json",
+          "serial_jtag_released": true,
+          "shield_absorption_count": 9879,
+          "snapshot_evidence": "verification/pressure_v2/post_snapshot.json",
+          "test_lives_removed": true
+        },
+        "repeated_starts": {
+          "completed": 10,
+          "evidence": [
+            "verification/BOARD_RESTARTS_RESULT_zh.md",
+            "verification/restarts/results.json",
+            "verification/restarts/independent.json"
+          ],
+          "first_restart_mode": "PRESSURE GameOver to LIGHT; following nine LIGHT restarts",
+          "method": "Actual FPGA, controlled JTAG GameOver/logical KEY3 RAM event injection through unchanged original game flow; not ten physical-key debounce tests or natural collision deaths",
+          "per_round": "Default/display lives 10, round exactly +1, fresh input/display advancement; faults inside JTAG disturbance windows disclosed separately",
+          "requested": 10,
+          "status": "PASS"
+        },
+        "status": "PASS_WITH_COVERAGE_LIMITS",
+        "user_confirmation": "正常了，可以开始整理代码了"
+      },
+      "c_rtl_cosimulation": "PASS: four bounded-recovery scenarios; this is simulation, not physical board recovery fault injection",
+      "firmware_build": "PASS: RC ZIP extracted to a fresh short TEMP directory containing spaces; clean build exactly matches paired ELF; 30 object dependency scans, 112 unique declared dependencies",
+      "fpga_rebuild": "NOT_RUN: firmware-only change, preserved FRAME_DONE_PULSE bit",
+      "offline_contracts": "PASS: 105 existing contracts and additional 10 repeated starts/mode transitions in C/MMIO model",
+      "stack": "PASS: conservative 1232 / 8192 bytes; image matches analysis build",
+      "timing": "Inherited FAIL: GHDPP 19 negative setup endpoints, WNS -1.139 ns, TNS -11.469 ns; hold minimum +0.027 ns. No RTL change or new STA in this firmware repair."
+    }
+  },
+  "packaging_preflight": {
+    "dependency_proof": "All 15 basic and 30 game objects scanned with actual compiler options; source/header paths restricted to that extracted demo or the declared IDE root",
+    "final_zip_acceptance": "Separate final-archive sidecar dual_demo_20261101.verification.json; RC is not a substitute",
+    "fresh_extraction": "TEMP/dual demo rc verify",
+    "status": "PASS_RC_ONLY",
+    "windows_path_limit": "Unnormalized complete GCC include path must remain below 260 characters; recommend C:/demos. Spaces are verified when the path is short.",
+    "zip_bytes": 10749690,
+    "zip_sha256": "7e47acbf85af1b2f381989ae109d8ebf31641870ee3c2e2eb3e8324c43053021"
+  },
+  "packaging_validation": {
+    "archive_name": "dual_demo_20261101.zip",
+    "checks": "Fresh short TEMP directory containing spaces; every manifest/hash; both clean firmware builds and actual compiler dependency proofs; FPGA dependency prepare; offline loading and all assets",
+    "final_archive_result": "See external sibling dual_demo_20261101.verification.json after archive SHA is frozen",
+    "reason": "The final ZIP digest and its extraction result are an external sidecar to avoid recursive archive hashes"
+  },
+  "release_date": "2026-11-01",
+  "release_name": "Ti60 basic + joystick recovery game"
+}

@@ -1,0 +1,63 @@
+{
+  "variant": "ghda",
+  "tree": "GHDAD",
+  "exe": "driver_final.exe",
+  "scenarios": [
+    {
+      "scenario": 52,
+      "pass_": true,
+      "requests": 9007,
+      "seconds": 67.0,
+      "error": null,
+      "return_code": 0,
+      "result": [
+        "RESULT sc=52 recovered=1 faults=0 pairs_after=3 bus=0/0 reasonsMMIO R f801600c -> 00000001"
+      ]
+    },
+    {
+      "scenario": 62,
+      "pass_": true,
+      "requests": 9668,
+      "seconds": 68.76,
+      "error": null,
+      "return_code": 0,
+      "result": [
+        "RESULT sc=62 recovered=1 faults=0 pairs_after=3 bus=1/1 reasonsMMIO R f801600c -> 00000001"
+      ]
+    },
+    {
+      "scenario": 72,
+      "pass_": true,
+      "requests": 13682,
+      "seconds": 80.11,
+      "error": null,
+      "return_code": 0,
+      "result": [
+        "ATTEMPT 1 t=185459275 latch_since=85459271 since_latch_ms=1000",
+        "ATTEMPT_FAIL n=1 dur_ms=854 reasons 8:8MMIO R f8016040 -> 00000000",
+        "ATTEMPT 2 t=370918531 latch_since=270918527 since_latch_ms=1000",
+        "ATTEMPT_FAIL n=2 dur_ms=854 reasons 8:12MMIO R f8016040 -> 00000000",
+        "ATTEMPT 3 t=556377787 latch_since=456377783 since_latch_ms=1000",
+        "ATTEMPT_FAIL n=3 dur_ms=854 reasons 8:16MMIO R f8016040 -> 00000000",
+        "RESULT sc=72 cap=3 resumed_pairs=3 restart=1 consecutive=0 exhausted=0"
+      ]
+    },
+    {
+      "scenario": 73,
+      "pass_": true,
+      "requests": 38178,
+      "seconds": 138.93,
+      "error": null,
+      "return_code": 0,
+      "result": [
+        "ATTEMPT 1 t=187005311 latch_since=87005307 since_latch_ms=1000",
+        "ATTEMPT_FAIL n=1 dur_ms=870 reasons 18:6 19:8MMIO R f8016040 -> 00000400",
+        "ATTEMPT 2 t=374010583 latch_since=274010579 since_latch_ms=1000",
+        "ATTEMPT_FAIL n=2 dur_ms=870 reasons 18:9 19:12MMIO R f8016040 -> 00000400",
+        "ATTEMPT 3 t=561015855 latch_since=461015851 since_latch_ms=1000",
+        "ATTEMPT_FAIL n=3 dur_ms=870 reasons 18:12 19:16MMIO R f8016040 -> 00000400",
+        "RESULT sc=73 cap=3 resumed_pairs=3 restart=1 consecutive=0 exhausted=0"
+      ]
+    }
+  ]
+}

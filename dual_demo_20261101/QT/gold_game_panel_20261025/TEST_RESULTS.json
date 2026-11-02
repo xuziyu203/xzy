@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-30",
+  "tests": 81,
+  "passed": 81,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "modules": {
+    "test_gold_game_panel": 37,
+    "test_keyboard_transport": 28,
+    "test_qt_console": 16
+  },
+  "platform": "Linux",
+  "python": "3.12.14",
+  "pyside6": "6.12.0",
+  "qt": "6.12.0",
+  "qt_platform": "offscreen",
+  "BOARD_TESTED": false,
+  "windows_launcher": "static_review_only_not_run_on_windows",
+  "scope": [
+    "original identity/protocol regression",
+    "fake serial keyboard heartbeat/lease and command tests",
+    "real Qt key and mouse events",
+    "real Qt controller + real worker thread + fake serial end-to-end",
+    "GUI release/rearm race"
+  ],
+  "unchanged_original_files": [
+    "gold_game_panel.py",
+    "test_gold_game_panel.py"
+  ]
+}

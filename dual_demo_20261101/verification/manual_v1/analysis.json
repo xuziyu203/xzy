@@ -1,0 +1,410 @@
+{
+  "TEL_rows": 144,
+  "paired_JOY_rows": 144,
+  "unpaired_JOY_rows": 0,
+  "events": [],
+  "active_metrics": {
+    "rows": 62,
+    "frames": 3684,
+    "frame_count_min": 24,
+    "frame_count_mean": 59.4194,
+    "frame_count_median": 60.0,
+    "frame_count_p05": 60,
+    "long_frame_intervals": 0,
+    "max_frame_interval_us": 16701,
+    "max_compose_us": 15453,
+    "max_prep_us": 1438,
+    "max_pipeline_prep_us": 12401,
+    "new_pairs": 4601,
+    "zero_pair_rows": 0,
+    "invalid_rows": 0,
+    "latched_rows": 0,
+    "unarmed_rows": 1,
+    "faults": 0,
+    "reason_counts_reported": {},
+    "auto_attempts": 0,
+    "auto_ok": 0,
+    "auto_fail": 0,
+    "bus_recover_commands": 0,
+    "reported_fresh_age_sentinel_rows": 1,
+    "max_reported_finite_fresh_age_ms": 18,
+    "max_driver_service_gap_us": 5144,
+    "bullet_max": 2427,
+    "group_max": 850,
+    "glow_max": 15.0
+  },
+  "steady_mode_metrics": {
+    "M-144/L": {
+      "rows": 16,
+      "frames": 960,
+      "frame_count_min": 60,
+      "frame_count_mean": 60,
+      "frame_count_median": 60.0,
+      "frame_count_p05": 60,
+      "long_frame_intervals": 0,
+      "max_frame_interval_us": 16689,
+      "max_compose_us": 12830,
+      "max_prep_us": 1438,
+      "max_pipeline_prep_us": 0,
+      "new_pairs": 1599,
+      "zero_pair_rows": 0,
+      "invalid_rows": 0,
+      "latched_rows": 0,
+      "unarmed_rows": 0,
+      "faults": 0,
+      "reason_counts_reported": {},
+      "auto_attempts": 0,
+      "auto_ok": 0,
+      "auto_fail": 0,
+      "bus_recover_commands": 0,
+      "reported_fresh_age_sentinel_rows": 0,
+      "max_reported_finite_fresh_age_ms": 9,
+      "max_driver_service_gap_us": 345,
+      "bullet_max": 115,
+      "group_max": 48,
+      "glow_max": 10.0
+    },
+    "M-144/S": {
+      "rows": 44,
+      "frames": 2640,
+      "frame_count_min": 60,
+      "frame_count_mean": 60,
+      "frame_count_median": 60.0,
+      "frame_count_p05": 60,
+      "long_frame_intervals": 0,
+      "max_frame_interval_us": 16701,
+      "max_compose_us": 15453,
+      "max_prep_us": 84,
+      "max_pipeline_prep_us": 12401,
+      "new_pairs": 2805,
+      "zero_pair_rows": 0,
+      "invalid_rows": 0,
+      "latched_rows": 0,
+      "unarmed_rows": 0,
+      "faults": 0,
+      "reason_counts_reported": {},
+      "auto_attempts": 0,
+      "auto_ok": 0,
+      "auto_fail": 0,
+      "bus_recover_commands": 0,
+      "reported_fresh_age_sentinel_rows": 1,
+      "max_reported_finite_fresh_age_ms": 18,
+      "max_driver_service_gap_us": 5144,
+      "bullet_max": 2427,
+      "group_max": 850,
+      "glow_max": 15.0
+    }
+  },
+  "pressure_intervals": [
+    {
+      "session": 0,
+      "first_sec": 106,
+      "last_sec": 150,
+      "rows": 45,
+      "first_time": "2026-11-01T20:04:25.846+08:00",
+      "last_time": "2026-11-01T20:05:09.859+08:00",
+      "nominal_boundary_span_s": 44,
+      "host_boundary_span_s": 44.013,
+      "metrics_excluding_first_boundary": {
+        "rows": 44,
+        "frames": 2640,
+        "frame_count_min": 60,
+        "frame_count_mean": 60,
+        "frame_count_median": 60.0,
+        "frame_count_p05": 60,
+        "long_frame_intervals": 0,
+        "max_frame_interval_us": 16701,
+        "max_compose_us": 15453,
+        "max_prep_us": 84,
+        "max_pipeline_prep_us": 12401,
+        "new_pairs": 2805,
+        "zero_pair_rows": 0,
+        "invalid_rows": 0,
+        "latched_rows": 0,
+        "unarmed_rows": 0,
+        "faults": 0,
+        "reason_counts_reported": {},
+        "auto_attempts": 0,
+        "auto_ok": 0,
+        "auto_fail": 0,
+        "bus_recover_commands": 0,
+        "reported_fresh_age_sentinel_rows": 1,
+        "max_reported_finite_fresh_age_ms": 18,
+        "max_driver_service_gap_us": 5144,
+        "bullet_max": 2427,
+        "group_max": 850,
+        "glow_max": 15.0
+      },
+      "five_minute_candidate": false
+    }
+  ],
+  "observed_start_edges": [
+    {
+      "time": "2026-11-01T20:04:08.855+08:00",
+      "session": 0,
+      "sec": 89,
+      "classification": "observed_hp_zero_to_positive"
+    }
+  ],
+  "mode_transitions": [
+    {
+      "time": "2026-11-01T20:04:25.846+08:00",
+      "from": "M-144/L",
+      "to": "M-144/S",
+      "contiguous": true
+    }
+  ],
+  "active_input_anomalies": [],
+  "direction_snapshot_counts_valid_armed_active": {
+    "neutral": 39,
+    "left": 11,
+    "right": 10,
+    "down_left": 1
+  },
+  "longest_matching_direction_snapshot_runs": [
+    {
+      "session": 0,
+      "first_sec": 112,
+      "last_sec": 116,
+      "rows": 5,
+      "first_time": "2026-11-01T20:04:31.862+08:00",
+      "last_time": "2026-11-01T20:04:35.862+08:00",
+      "nominal_boundary_span_s": 4,
+      "host_boundary_span_s": 4.001,
+      "direction": "right",
+      "sequence_delta": 248,
+      "raw_first": [
+        17690,
+        12989
+      ],
+      "raw_last": [
+        26690,
+        12989
+      ],
+      "xy_first": [
+        262,
+        936
+      ],
+      "xy_last": [
+        1462,
+        936
+      ]
+    },
+    {
+      "session": 0,
+      "first_sec": 124,
+      "last_sec": 127,
+      "rows": 4,
+      "first_time": "2026-11-01T20:04:43.861+08:00",
+      "last_time": "2026-11-01T20:04:46.853+08:00",
+      "nominal_boundary_span_s": 3,
+      "host_boundary_span_s": 2.992,
+      "direction": "left",
+      "sequence_delta": 181,
+      "raw_first": [
+        6,
+        12992
+      ],
+      "raw_last": [
+        6,
+        12995
+      ],
+      "xy_first": [
+        1506,
+        984
+      ],
+      "xy_last": [
+        606,
+        984
+      ]
+    },
+    {
+      "session": 0,
+      "first_sec": 107,
+      "last_sec": 109,
+      "rows": 3,
+      "first_time": "2026-11-01T20:04:26.855+08:00",
+      "last_time": "2026-11-01T20:04:28.854+08:00",
+      "nominal_boundary_span_s": 2,
+      "host_boundary_span_s": 2.0,
+      "direction": "left",
+      "sequence_delta": 169,
+      "raw_first": [
+        6,
+        12991
+      ],
+      "raw_last": [
+        5,
+        12991
+      ],
+      "xy_first": [
+        780,
+        936
+      ],
+      "xy_last": [
+        180,
+        936
+      ]
+    },
+    {
+      "session": 0,
+      "first_sec": 121,
+      "last_sec": 123,
+      "rows": 3,
+      "first_time": "2026-11-01T20:04:40.853+08:00",
+      "last_time": "2026-11-01T20:04:42.853+08:00",
+      "nominal_boundary_span_s": 2,
+      "host_boundary_span_s": 2.0,
+      "direction": "right",
+      "sequence_delta": 127,
+      "raw_first": [
+        26697,
+        12993
+      ],
+      "raw_last": [
+        26696,
+        12993
+      ],
+      "xy_first": [
+        768,
+        984
+      ],
+      "xy_last": [
+        1368,
+        984
+      ]
+    },
+    {
+      "session": 0,
+      "first_sec": 104,
+      "last_sec": 105,
+      "rows": 2,
+      "first_time": "2026-11-01T20:04:23.862+08:00",
+      "last_time": "2026-11-01T20:04:24.855+08:00",
+      "nominal_boundary_span_s": 1,
+      "host_boundary_span_s": 0.992,
+      "direction": "left",
+      "sequence_delta": 100,
+      "raw_first": [
+        6,
+        12984
+      ],
+      "raw_last": [
+        5,
+        12986
+      ],
+      "xy_first": [
+        768,
+        936
+      ],
+      "xy_last": [
+        468,
+        936
+      ]
+    },
+    {
+      "session": 0,
+      "first_sec": 128,
+      "last_sec": 129,
+      "rows": 2,
+      "first_time": "2026-11-01T20:04:47.861+08:00",
+      "last_time": "2026-11-01T20:04:48.853+08:00",
+      "nominal_boundary_span_s": 1,
+      "host_boundary_span_s": 0.992,
+      "direction": "right",
+      "sequence_delta": 60,
+      "raw_first": [
+        26699,
+        12990
+      ],
+      "raw_last": [
+        26702,
+        12992
+      ],
+      "xy_first": [
+        521,
+        984
+      ],
+      "xy_last": [
+        813,
+        984
+      ]
+    }
+  ],
+  "neutral_return_snapshots": [
+    {
+      "time": "2026-11-01T20:04:29.862+08:00",
+      "from": "left",
+      "raw": [
+        12914,
+        12987
+      ],
+      "display_xy": [
+        0,
+        936
+      ]
+    },
+    {
+      "time": "2026-11-01T20:04:38.853+08:00",
+      "from": "left",
+      "raw": [
+        12911,
+        12990
+      ],
+      "display_xy": [
+        897,
+        984
+      ]
+    },
+    {
+      "time": "2026-11-01T20:04:49.861+08:00",
+      "from": "right",
+      "raw": [
+        12908,
+        12991
+      ],
+      "display_xy": [
+        1107,
+        984
+      ]
+    }
+  ],
+  "fire_request_snapshots_valid_active": 38,
+  "stable_intervals_cumulative_counter_growth": {
+    "sc": 11600,
+    "abs": 1577,
+    "hit": 9
+  },
+  "raw_ranges_valid_active": [
+    [
+      4,
+      26702
+    ],
+    [
+      12984,
+      15869
+    ]
+  ],
+  "sequence_stalls_contiguous_snapshots": [],
+  "sequence_resets_or_backward_contiguous_snapshots": [],
+  "limitations": [
+    "JOY is one snapshot per nominal second; it cannot measure each ADC interval, subsecond release or uninterrupted physical hold.",
+    "jg=99999 is an unavailable/saturated sentinel, including when the caller now precedes a later last_fresh update; it alone is not proof that sampling stopped.",
+    "TEL fr counts completed/displayed frames in the preceding firmware window; it is approximately FPS only for uninterrupted one-second windows. Transition windows are separated.",
+    "A pressure interval is sampled continuity evidence. First boundary row is excluded from its nominal duration; timestamps are host receive times, not FPGA cycle timestamps.",
+    "hp edges are observed starts, not a complete restart acceptance test. Use per-round flow/display/input evidence separately.",
+    "mask bit 32 proves an observed effective fire request; TEL has no separate fired/displayed projectile count.",
+    "abs growth proves shield absorption. No abs growth does not prove shield toggle failure; TEL/JOY omit toggle state.",
+    "score growth implies player-bullet kills and explosion spawn requests from audited combat.c. It does not prove every explosion was rendered; effect pool may merge/drop effects.",
+    "Input directions are from effective input_mask and could also originate from UART input if another sender supplied it; physical-only attribution requires session/operator evidence."
+  ],
+  "automatic_board_acceptance": false,
+  "input": {
+    "path": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\board\\capture_manual_v1\\rx.jsonl",
+    "bytes_read": 84129,
+    "sha256": "d8e4c9a9fe5c5f82150da3895ab443fe0004c3e49997ff3326b44292deb114c4",
+    "incomplete_last_line": false,
+    "parse_errors": []
+  },
+  "analyzer_sha256": "5313fe0f10bcc427d873a158c8171df7d103053819f51b6a1442e8f7d437faee"
+}

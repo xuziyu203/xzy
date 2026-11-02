@@ -1,0 +1,406 @@
+{
+  "board_acceptance": {
+    "continuous_stress": {
+      "automatic_retries": 0,
+      "boundary_samples": 325,
+      "bus_recover_commands": 0,
+      "completed_frames": 19440,
+      "effective_directions_observed": [
+        "left",
+        "right",
+        "up_left",
+        "up_right",
+        "down_left",
+        "down_right",
+        "neutral"
+      ],
+      "end": "2026-11-01T20:19:47.846+08:00",
+      "evidence": [
+        "verification/PRESSURE_V2_RESULT_zh.md",
+        "verification/pressure_v2/analysis.json",
+        "verification/pressure_v2/rx.jsonl"
+      ],
+      "fire_request_snapshots": 89,
+      "first_transition_window_excluded": true,
+      "fps_each_full_window": 60,
+      "full_windows": 324,
+      "host_monotonic_span_seconds": 323.9946136,
+      "input_fault_windows": 0,
+      "invalid_windows": 0,
+      "latched_windows": 0,
+      "long_frame_count": 0,
+      "maximum_actual_bullets": 2439,
+      "maximum_completed_frame_interval_us": 16703,
+      "maximum_groups": 850,
+      "neutral_return_adjacent_snapshots": 5,
+      "new_adc_pairs": 20538,
+      "no_update_windows": 0,
+      "score_growth": 36700,
+      "shield_absorption_growth": 9027,
+      "start": "2026-11-01T20:14:23.852+08:00",
+      "status": "PASS_FOR_DURATION_INPUT_AND_FRAME_RATE",
+      "test_setup": "Only game_lives RAM temporarily 1000 to avoid premature collision GameOver; source and delivered ELF still start with 10; JTAG closed throughout measured interval",
+      "unarmed_windows": 0
+    },
+    "coverage_limits": [
+      "Requested 35-second continuous direction hold NOT_COMPLETED; longest same-direction pressure snapshot run 6.992 seconds (eight down-left points). One-Hz snapshots do not prove uninterrupted physical hold.",
+      "Ten repeats use logical KEY3 injection; not ten physical-button debounce trials or natural collision deaths.",
+      "No physical electrical I2C fault injection this round; bounded electrical/controller recovery verified by real C plus I2C/GPIO RTL co-simulation.",
+      "Extended-life pressure is not default-ten-lives natural survival for five minutes."
+    ],
+    "evidence": [
+      "verification/BOARD_RESTARTS_RESULT_zh.md",
+      "verification/PRESSURE_V2_RESULT_zh.md",
+      "verification/MANUAL_V1_RESULT_zh.md"
+    ],
+    "manual_v1": {
+      "active_stress_seconds": 44.013,
+      "fps_each_full_window": 60,
+      "full_windows": 44,
+      "input_faults": 0,
+      "long_frames": 0
+    },
+    "post_pressure": {
+      "counter_scope": "Read after measured interval; sequential RAM snapshots, not an atomic last-second pressure sample. Effect drops use existing capacity policy.",
+      "effect_drop_count": 60,
+      "effect_spawn_count": 377,
+      "original_restart": "PASS 1/1, flow 13->14, default and display HP10, input continues",
+      "player_bullet_kills": 337,
+      "restore_evidence": "verification/pressure_v2/restore_normal_lives.json",
+      "serial_jtag_released": true,
+      "shield_absorption_count": 9879,
+      "snapshot_evidence": "verification/pressure_v2/post_snapshot.json",
+      "test_lives_removed": true
+    },
+    "repeated_starts": {
+      "completed": 10,
+      "evidence": [
+        "verification/BOARD_RESTARTS_RESULT_zh.md",
+        "verification/restarts/results.json",
+        "verification/restarts/independent.json"
+      ],
+      "first_restart_mode": "PRESSURE GameOver to LIGHT; following nine LIGHT restarts",
+      "method": "Actual FPGA, controlled JTAG GameOver/logical KEY3 RAM event injection through unchanged original game flow; not ten physical-key debounce tests or natural collision deaths",
+      "per_round": "Default/display lives 10, round exactly +1, fresh input/display advancement; faults inside JTAG disturbance windows disclosed separately",
+      "requested": 10,
+      "status": "PASS"
+    },
+    "status": "PASS_WITH_COVERAGE_LIMITS",
+    "user_confirmation": "正常了，可以开始整理代码了"
+  },
+  "board_tested": true,
+  "candidate": {
+    "abi": {
+      "bullet_abi_0x240": "0x42550700",
+      "bullet_capacity_0x244": 850,
+      "ddrcrc_abi_0x3E0": "0x44435201",
+      "hud_abi_0x1EC": "0x48440900",
+      "perf_abi_0x184": "0x45500103",
+      "rtl_cap_0x1E8": "0x42330163"
+    },
+    "angles": {
+      "assignment": "rank of the plane among the session planes of the same type (pressure: RICH role, light: material) % 3; stable for the wave",
+      "deg": [
+        30,
+        45,
+        60
+      ],
+      "enabled_in_tiers": true,
+      "light_fire_deg": [
+        30,
+        45,
+        60
+      ],
+      "rich_rows": {
+        "BLUE3": [
+          [
+            1,
+            2
+          ]
+        ],
+        "FANX": [
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "THREE": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "speed": 360
+    },
+    "asset_changes": "none (GHD9X payloads and manifest, byte-identical)",
+    "bit": "pair/ti60f225_oob.bit",
+    "bit_sha256": "72d4f01497b5599bc633a35162388f312a0631ea17b348fdf97a5efea335bd54",
+    "build_id": "GHDB1_20261101",
+    "build_tool": "bit: Efinity 2026.1.132, Ti60F225, I3, seed 5, TIMING_1; unchanged GHDPP FRAME_DONE_PULSE hardware. ELF: repaired GHDB1, RISC-V IDE 2026.1, GCC 13.4.0, DEBUG=no BENCH=no BSP=efinix/EfxSapphireSoc, default single-ELF variant.",
+    "bullet_capacity": {
+      "direction_ram_entries_per_bank": 1024,
+      "logical": 850,
+      "row_list_depth": 1024,
+      "scene_bank_words": 3072,
+      "scene_entries_used": 931,
+      "valid_index": "0..849"
+    },
+    "config_changes_vs_GHD9X": [
+      "angles_enabled",
+      "density_tiers.glow",
+      "fire.angle_deg",
+      "probe_ladder",
+      "rich.angle_deg",
+      "rich.angle_rows",
+      "rich.angle_speed"
+    ],
+    "delivery_status": "RELEASE_WITH_LIMITATIONS",
+    "density_tiers": {
+      "M-110": "pool 620, periods 850 per mille, glow +0",
+      "M-132": "pool 800, periods 750 per mille, glow +0",
+      "M-144": "pool 850, periods 680 per mille, glow +0 (default)"
+    },
+    "elf": "pair/apbTest.elf",
+    "elf_build_dir": "build_joy_recovery_20261101_final",
+    "elf_sha256": "0fac4deabec6a794316c8672ec37bbe3db7201c74c6fd5c3fc0880a976101087",
+    "frame_probe": {
+      "bit_tree": "GHDPP",
+      "events": "enemy_compositor.v state: probe_composing = state not IDLE/PRESENT/SHOWN/DRAIN/CLEAN; completion = entry into PRESENT (all 2073600 pixels committed, DDR writes drained); core_clk 100 MHz, registered, reset low (test_rst_n)",
+      "excludes": "CPU preparation (overlaps the previous compose in pressure mode), present wait (VSYNC), release / drain; aborted frames: busy without a pulse",
+      "mode": "1 FRAME_DONE_PULSE: 10 us (1000 core_clk) pulse per completed frame; rising-edge interval = completed-frame interval",
+      "pin": "header pin 08 = package ball F3 = GPIOL_P_13 (CBSEL0 pad, configuration use disabled), bank 1B, 1.8 V LVCMOS output, drive 4; scope ground header pin 06",
+      "switch": "compile define FRAME_PROBE_MODE in rtl/frame_probe_mode.vh (two bits, same ELF)"
+    },
+    "fw_source_provenance": "Packaged candidate firmware; source checkpoint/fix commit and tree digest recorded in VERSIONS.json",
+    "hw_source_provenance": "Packaged GHDPP FRAME_DONE_PULSE source and IP/init; source checkpoint recorded in VERSIONS.json",
+    "joystick": {
+      "description": "Repeated-start controller receive/TX cleanup and bounded bus recovery; 10 ms controller timeout preserved",
+      "previous_elf_sha256": "d191d7a00c0cae3393027eed7589e131be95d75ae3b93cf7a4b1dc61bd4d7c18",
+      "source_files": [
+        "joystick_ads1115.c",
+        "joystick_ads1115.h"
+      ],
+      "state": "BOARD_ACCEPTED_WITH_COVERAGE_LIMITS"
+    },
+    "label": "GHDB1_JOYSTICK_RECOVERY",
+    "light_period_pct": 60,
+    "load_tool": {
+      "dir": "tools",
+      "revision": "Portable LT3 delivery layout; validation status recorded in VERSIONS.json",
+      "sha256": {
+        "asset_upload.py": "51500b30a7a16b4edd6cbb57ddc0498be31d87511f9f96797881dc6f28008ece",
+        "load_session_pkg.py": "1a12b36badf6253053a520d8ea443b21e1d61dbd03390a80cdb1247cb12b48c5",
+        "pkg_env.py": "b520fbd6f2b1f0a5304a8947cd0ffc0a0edec3589503c884dce28c7fb41abd06",
+        "portable_runtime.py": "d7134a9e5279217304c989902f6061186d0b8861a36ebf3bf4e55e905b6d9707",
+        "program_bit.py": "2942b6aef152a97c440e43be7fd840035f58f363f55871f3ea4fd48ebec8b04e",
+        "read_fpga_status.py": "e3d23ca7d3b8fbe8c0c0cc50bc88cbcad2db2ea865701e628386881f15b4f236",
+        "tool_paths.example.json": "97bbaae8197f4a69b5d62a12ee458f62fc1ac4c68b53479bc8fb1e9c44aae567",
+        "upload_assets.py": "17df25c5986dd93bd9cd215822e0700eb7c9451c7c6cc99b02572c58f7ea04a9",
+        "upload_single.py": "def52ab4ecd9b303f315eb9a0f851be57917f7afeea1b3d9210856762180b017"
+      }
+    },
+    "map": "pair/apbTest.map",
+    "map_sha256": "14f784998531805ede8f726726689b605a9523a15efa3e6e7fb1f2a9374585db",
+    "memory": {
+      "cpu_ram_kib": 144,
+      "end": "0xf901f090",
+      "gap_to_bootloader_0xF9023C00": 11120,
+      "image_plus_stack": 135312,
+      "reserve_rule_min": 3072,
+      "sections": {
+        ".bss": 36952,
+        ".comment": 51,
+        ".data": 5364,
+        ".debug_abbrev": 1921,
+        ".debug_aranges": 184,
+        ".debug_info": 8426,
+        ".debug_line": 11015,
+        ".debug_line_str": 735,
+        ".debug_loclists": 8924,
+        ".debug_rnglists": 1019,
+        ".debug_str": 1615,
+        ".init": 200,
+        ".riscv.attributes": 67,
+        ".stack": 8192,
+        ".text": 84600
+      },
+      "sp": "0xf9021090",
+      "stack": 8192
+    },
+    "name": "GHDB1 joystick repeated-start bounded bus recovery candidate",
+    "probe_ladder": {
+      "level_seconds": 30,
+      "levels": [
+        {
+          "angles": 0,
+          "glow": 0,
+          "period_permille": 680,
+          "pool": 850,
+          "tag": "B144"
+        },
+        {
+          "angles": 1,
+          "glow": 0,
+          "period_permille": 680,
+          "pool": 850,
+          "tag": "A144"
+        },
+        {
+          "angles": 1,
+          "glow": 1,
+          "period_permille": 680,
+          "pool": 850,
+          "tag": "G1"
+        },
+        {
+          "angles": 1,
+          "glow": 2,
+          "period_permille": 680,
+          "pool": 850,
+          "tag": "G2"
+        },
+        {
+          "angles": 1,
+          "glow": 0,
+          "period_permille": 670,
+          "pool": 850,
+          "tag": "N20"
+        },
+        {
+          "angles": 1,
+          "glow": 0,
+          "period_permille": 652,
+          "pool": 850,
+          "tag": "N40"
+        },
+        {
+          "angles": 1,
+          "glow": 0,
+          "period_permille": 600,
+          "pool": 850,
+          "tag": "N60"
+        },
+        {
+          "angles": 1,
+          "glow": 1,
+          "period_permille": 652,
+          "pool": 850,
+          "tag": "N40G1"
+        },
+        {
+          "angles": 1,
+          "glow": 0,
+          "period_permille": 715,
+          "pool": 825,
+          "tag": "A138"
+        },
+        {
+          "angles": 1,
+          "glow": 0,
+          "period_permille": 750,
+          "pool": 800,
+          "tag": "A132"
+        }
+      ],
+      "tier_tag": "LADR"
+    },
+    "ram": {
+      "base": "0xF9000000",
+      "bootloader_code_range": [
+        "0xF9023C00",
+        "0xF9023EF4"
+      ],
+      "bootloader_region_file": "ram/bootloader_region_F9023C00.bin",
+      "bootloader_region_sha256": "71df84cabf581eb6487cef226de9d7ab5671f4189febf2bc22360f583fa0ee48",
+      "bootloader_runtime_layout": {
+        "bss": "[0xF9023F04, 0xF9023F08)",
+        "code_init_text": "[0xF9023C00, 0xF9023EF4) immutable (last instruction 0xF9023EF0)",
+        "data_rodata": "[0xF9023EF4, 0xF9023F04) writable",
+        "evidence": "validation/pool850_ram144_20261031/reports/bootloader144 (start_disasm.txt, boot_disasm.txt); board read-back board/load_GHD6X_20261031_184220/ram_bootloader_region.bin",
+        "observed_runtime_write": "0xF9023F80 = 0xF900004C: ra of jal 0xF9023E70 at 0xF9000048, saved by sw x1,12(x2) after addi x2,x2,-16",
+        "stack_top_sp": "0xF9023F84 (start code: gp = 0xF90246E8, sp = gp - 0x764)"
+      },
+      "bootloader_start": "0xF9023C00",
+      "bytes": 147456,
+      "end": "0xF9024000",
+      "reserve_min": 3072,
+      "stack": 8192
+    },
+    "stack_bound_proven": true,
+    "stack_evidence": "verification/stack_bound.json",
+    "stack_static_worst_bytes": 1232,
+    "tools_changed": "Portable LT3 runtime/project-root configuration and owned-resource cleanup; package-local dependencies; obsolete upload_assets CLI redirected to upload_single; see per-tool SHA-256.",
+    "variant": "probe"
+  },
+  "candidate_available": true,
+  "delivery_status": "RELEASE_WITH_LIMITATIONS",
+  "device_operation": false,
+  "package_purpose": "Independent game project in two-demo delivery",
+  "tool_dependencies": {
+    "assets/payloads/id01_background_1920x1080.rgb565": "349dcb613203f8aea09fcaa7555871d54670c369c6ddf7e27aeba046b0fc26e6",
+    "assets/payloads/id02_mini_boss_01_64.rgb565": "07a932ccb95b27d3fc5300cf26c42567447b476703b8e08bbdf244f348021932",
+    "assets/payloads/id03_mini_boss_01_64.mask1": "94b6a16cd4ac992dfec3008a2b952bc81be9525811ae813604a8ff64e0321db2",
+    "assets/payloads/id04_mini_boss_02_64.rgb565": "2f814e75f273d615e869e39e925a652bbcdbf1b5017f332330a350ce90a65c55",
+    "assets/payloads/id05_mini_boss_02_64.mask1": "359081dd5f5e681258b43d66003efda7a137418000f9c306c5a2464998a8a948",
+    "assets/payloads/id06_mini_boss_03_64.rgb565": "f0d61b3e68c2fed72f842daf506838feafcc5ec4c0e0fffd49dcc0d1613f98cf",
+    "assets/payloads/id07_mini_boss_03_64.mask1": "748f1155a7dede623c2be734d8d19b44996d637349387aff9ba8e57f355c3e92",
+    "assets/payloads/id08_boss_large_128.rgb565": "c6c3d583bbc630090babdeb1326651f93d0b140363c9dccf4e989f44f665860c",
+    "assets/payloads/id09_boss_large_128.mask1": "71efb2dc9d9c017948dcb1837f410649b07ac275a809742a5da96fc0f5e6fdad",
+    "assets/payloads/id10_enemy_styles4_packed.rgb565le": "33124484fe727a0b6d6695fe14dbd17f1fc380be984dffe3a38aed355e48d919",
+    "assets/payloads/id11_enemy_styles4_packed.mask1": "553c9fc2335b2bf5620261b6afab13edc5ec61df06db3ff7eca172dbe6141bfd",
+    "assets/payloads/id12_blue_16x32.rgb565le": "55c8076e8d0e936ded54df40bf5ffd19a8eb487f72c84664e698a5afd4d6a12a",
+    "assets/payloads/id13_blue_16x32.mask1": "d994caeda7226c2c2f410fc9691991d8dddba9f03fa7666f48e5495627838075",
+    "assets/payloads/id14_player_ship_96.rgb565": "fd46d04763fbe68a32a86196c85ad541fc8db748af14869aacdfba2439c7c68d",
+    "assets/payloads/id15_player_ship_96.mask1": "294029438ba7fbb145b52bfe0e6c6891a857ecd0f99efb04aa060f1104c0377e",
+    "assets/payloads/id16_fx_small_64.rgb565": "fb83db28313c1e7beb6aa17307ca20af5b16ce3f3e2f49630a0d381f44f14652",
+    "assets/payloads/id17_fx_small_64.a4": "aaed371ef2afd93fce31e5a075e089fdba570329ece1789392c3459a24274432",
+    "assets/payloads/id18_fx_large_128.rgb565": "8335a0d8c72097fe7eab6f50754108e27d96905c72d134d1e51513e308c6bebe",
+    "assets/payloads/id19_fx_large_128.a4": "33c8b12b746c4d963c8000f5735648390989979b21c74a7496c5a0589a8ff52b",
+    "assets/payloads/id20_spark_64.rgb565": "f69eee6fc432cbc8d0e1e3870103789d1921ca65d55aa2c7a2f72cf3fd88798f",
+    "assets/payloads/id21_spark_64.a4": "39bd5634d51ca6286ea8242f36cbefe7070999538f92d89d5672b50a28c809a7",
+    "assets/payloads/id22_shield_128.rgb565": "2de3246fa3c4cae03baeec39615abf8aa6c4172a0b6f8ccb8e106e0a456e126f",
+    "assets/payloads/id23_shield_128.a4": "39ebc847a0bbd0240c3562de024cf831994bcc50d4753ed4f6cd87fa3ac08e66",
+    "assets/payloads/id24_missile_blue_storage16.rgb565le": "b1e14967b4b81489cf0038a03edd679878033fd64cdc137665fa0be44eeed211",
+    "assets/payloads/id25_missile_blue_storage16.mask1": "a8a17ab58bc84a2be10c618bd32a2db16f4fa8c300e393b5c1ee4041e20ed0e3",
+    "assets/payloads/id26_missile_red_storage16.rgb565le": "c2ad5968f154a1e663cf3caef389ca7d4db2dc2b32736e9d64b04603d79c23ad",
+    "assets/payloads/id27_missile_red_storage16.mask1": "58056ff516e82c88a660f5e345e00d3725ed726784989798be176bcc32f8f189",
+    "assets/payloads/id28_background_1080p_i4.bin": "1408ca973b27409bc6ae4aa529df64b734fe7cbfc9b94d926a6a44e35f15151f",
+    "assets/payloads/id29_decor_cyan_32_rgb565le_a4.bin": "1833be20e04207c9ab0815fbf2d165d458dc4509a8942889b9bd6abe898b61e6",
+    "assets/payloads/id30_decor_orange_32_rgb565le_a4.bin": "e747c3eeb5aed1c843b0eaab0bf90efb33d540d5a671d15c249010550fb357a6",
+    "assets/payloads/id31_palette_rgb565le_pad128.bin": "5011110fb012de2e839f3a26431b24c4282f585fb9a9abdf40cdce731282cf9b",
+    "assets/payloads/id32_menu_1080p_i4.bin": "747128dee26b8088a982f26c9f9d6310a180680b2f8e4ceba7bd0bdf0ad33f42",
+    "assets/payloads/id33_menu_palette_pad128.bin": "a9de22f2295f15e7c1fadb5427b34ca4e8c38dbfe9942e461b82decc4bbd15d3",
+    "assets/upload_manifest.json": "c87d333a59f224089aec4713347cd73721515a4ee176c25c15b81327597cf8ee",
+    "config/enemy_scene.json": "f034a38488a0390b1d073b2cee0a9e9494fc4bf362e6c6e8f8a440b864a26b0f",
+    "embedded_sw/riscv_soc/bsp/efinix/EfxSapphireSoc/openocd/debug_ti.cfg": "0ebe27f0f8368d1aa4ab6f99103acb5473a001e588b5d6875a77bdbbb4367832",
+    "embedded_sw/riscv_soc/bsp/efinix/EfxSapphireSoc/openocd/ftdi_ti.cfg": "fdee2e8dfb789f4a1a4e30aea4e7dc10caca9c797d5afeefafbbf6d3d0f3861e",
+    "embedded_sw/riscv_soc/cpu0.yaml": "c05d5637226b5ab5a5cf66806673db4c55fd8c4a30399a59de31442aedee5fbb",
+    "load_layout.json": "ffb3045a890b2d40fefeb1aaef240ce62703ccb6e2ccf2881144bd5cd40d350c",
+    "ram/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin": "19d1b02ea4d37c261207c11bb7fc37f654e7b62d675d1c129d4eef5fb74c49dd",
+    "ram/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin": "67fe285d60a6888cbb56d281d4fe268d9f0087f9d958015ff65b782c15fff10c",
+    "ram/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin": "860a47885bcf58c6c22829f3c388525c38d35a0fad69f159590f5724641ec6f0",
+    "ram/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin": "da410f698d49b9c435e015ebc337fad3df3e579b732c8907c5a2e2052969dbb5",
+    "ram/bootloader_region_F9023C00.bin": "71df84cabf581eb6487cef226de9d7ab5671f4189febf2bc22360f583fa0ee48",
+    "ram/ram_layout.json": "62d3831525922cdf337f860cbba8def96617cb8826f9403fd7a7f5879ff74cba",
+    "tools/asset_upload.py": "51500b30a7a16b4edd6cbb57ddc0498be31d87511f9f96797881dc6f28008ece",
+    "tools/build_firmware.py": "4148a7b6a6f13a84b01902bffd4a28ced735b45815645e13aba708d7939ab58d",
+    "tools/build_fpga.py": "62485d10b90db6634163f9f4af4fc1fec1293750bcb882cc36d3c227bd414705",
+    "tools/delivery_common.py": "11b2db152cd3838cda69d03f995446a7fcd18c7f1f7fa08cee17e96c40279653",
+    "tools/generate_enemy_config.py": "2106c155bf1eae5f43630ef1418c35e944e48737f5c454873c89c8c19703f2e8",
+    "tools/hardware_recipes.json": "be5c7a33aa1894c8ccd2cc63e3a2b46556099e005fa55485a0ade3f3c6bba8dc",
+    "tools/load_session_pkg.py": "1a12b36badf6253053a520d8ea443b21e1d61dbd03390a80cdb1247cb12b48c5",
+    "tools/pkg_env.py": "b520fbd6f2b1f0a5304a8947cd0ffc0a0edec3589503c884dce28c7fb41abd06",
+    "tools/portable_runtime.py": "d7134a9e5279217304c989902f6061186d0b8861a36ebf3bf4e55e905b6d9707",
+    "tools/program_bit.py": "2942b6aef152a97c440e43be7fd840035f58f363f55871f3ea4fd48ebec8b04e",
+    "tools/read_fpga_status.py": "e3d23ca7d3b8fbe8c0c0cc50bc88cbcad2db2ea865701e628386881f15b4f236",
+    "tools/tool_paths.example.json": "97bbaae8197f4a69b5d62a12ee458f62fc1ac4c68b53479bc8fb1e9c44aae567",
+    "tools/upload_assets.py": "17df25c5986dd93bd9cd215822e0700eb7c9451c7c6cc99b02572c58f7ea04a9",
+    "tools/upload_single.py": "def52ab4ecd9b303f315eb9a0f851be57917f7afeea1b3d9210856762180b017"
+  },
+  "validation_status": "BOARD_ACCEPTED_WITH_COVERAGE_LIMITS"
+}

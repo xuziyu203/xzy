@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-25T06:30:58.302925+00:00",
+  "tests_run": 37,
+  "failures": 0,
+  "errors": 0,
+  "status": "PASS",
+  "scope": "Host-side protocol/action tests with fake serial; exact reported UNKNOWN_COMMAND included.",
+  "serial_or_jtag_opened": false,
+  "board_tested": false,
+  "gui_render_test": "NOT_RUN: no display server in this environment; Tkinter import and Python syntax available.",
+  "windows_launcher_executed": false,
+  "real_candidate_files_hash_checked_here": false,
+  "candidate_verification": "Checks pinned manifest/bit/ELF/map on the user PC before opening COM. Offline hash-gate tests use synthetic files.",
+  "firmware_behavior": "No firmware or bit edits. UNKNOWN_COMMAND is surfaced, not fixed by this panel."
+}

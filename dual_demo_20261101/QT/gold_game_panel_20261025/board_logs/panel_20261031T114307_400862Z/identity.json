@@ -1,0 +1,25 @@
+{
+  "firmware_id": "GOLD_SHIELD_FLOW_20261025_CANDIDATE_PENDING_BOARD",
+  "manifest_sha256": "bb26ba4b90206fb78eb2e3077b2eff4f8046c4d3617d4cd9514d0e8edb5c24fd",
+  "files": {
+    "bit": {
+      "path": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\gold_shield_flow_20261025\\sol\\pair\\ti60f225_oob.bit",
+      "sha256": "12666ad6b3566690e0a64ac3549ed1ad339419a86325e9446fcd866be8fe5576",
+      "bytes": 2837364
+    },
+    "elf": {
+      "path": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\gold_shield_flow_20261025\\sol\\pair\\apbTest.elf",
+      "sha256": "1cf4dd9ef7ca5ce362fbe194221bedf0ac73bb48c31919c78d3554f670ecabb7",
+      "bytes": 200952
+    },
+    "map": {
+      "path": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\gold_shield_flow_20261025\\sol\\pair\\apbTest.map",
+      "sha256": "0f60ae8556420b1130b7fb6a877551c20af7203900a35c52eb8f292a57da89a7",
+      "bytes": 218783
+    }
+  },
+  "identity_scope": "LOCAL_SHA_PLUS_OPERATOR_DECLARATION_NOT_TARGET_READBACK",
+  "port": "COM15",
+  "loaded_identity_evidence": "operator declaration",
+  "baudrate": 115200
+}

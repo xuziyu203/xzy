@@ -1,0 +1,127 @@
+{
+ "ref": {
+  "negative_endpoints": 19,
+  "wns": -0.792,
+  "tns": -10.356,
+  "in_domain_setup": {
+   "core_clk": 0.709,
+   "hdmi_tx_slow_clk": 0.681,
+   "cpu_clk200": 0.332,
+   "tx_cal_clk": 0.351
+  },
+  "hold_worst": {
+   "core_clk__core_clk": 0.026,
+   "core_clk__cpu_clk200": 0.082,
+   "core_clk__hdmi_tx_slow_clk": 0.086,
+   "cpu_clk200__core_clk": 0.127,
+   "cpu_clk200__cpu_clk200": 0.09,
+   "hdmi_tx_slow_clk__core_clk": 0.196,
+   "hdmi_tx_slow_clk__hdmi_tx_slow_clk": 0.042,
+   "tx_cal_clk__tx_cal_clk": 0.092
+  },
+  "snapshot_maxdelay_setup": 5.183
+ },
+ "new": {
+  "negative_endpoints": 19,
+  "wns": -1.139,
+  "tns": -11.469,
+  "in_domain_setup": {
+   "core_clk": 0.579,
+   "hdmi_tx_slow_clk": 0.417,
+   "cpu_clk200": 0.248,
+   "tx_cal_clk": 0.315
+  },
+  "hold_worst": {
+   "core_clk__core_clk": 0.027,
+   "core_clk__cpu_clk200": 0.082,
+   "core_clk__hdmi_tx_slow_clk": 0.086,
+   "cpu_clk200__core_clk": 0.127,
+   "cpu_clk200__cpu_clk200": 0.09,
+   "hdmi_tx_slow_clk__core_clk": 0.208,
+   "hdmi_tx_slow_clk__hdmi_tx_slow_clk": 0.031,
+   "tx_cal_clk__tx_cal_clk": 0.099
+  },
+  "snapshot_maxdelay_setup": 5.439
+ },
+ "same_endpoint_set": true,
+ "new_only_endpoints": {},
+ "ref_only_endpoints": {},
+ "common_slack_change": {
+  "async_event_status_r[0]~FF|CE": [
+   -0.699,
+   -0.722
+  ],
+  "checker0/fifo_rd_period_r0~FF|D": [
+   -0.611,
+   -0.714
+  ],
+  "checker0/u_ddr_buffer/ddr_rd_buffer_inst/safe_reader.start_sync[0]~FF|D": [
+   -0.607,
+   -0.755
+  ],
+  "checker0/u_ddr_buffer/ddr_rd_buffer_inst/safe_reader.u_rd_fifo/RdWrAddr_meta[0]~FF|D": [
+   -0.463,
+   -0.454
+  ],
+  "checker0/u_ddr_buffer/ddr_rd_buffer_inst/safe_reader.u_rd_fifo/RdWrAddr_meta[10]~FF|D": [
+   -0.496,
+   -0.463
+  ],
+  "checker0/u_ddr_buffer/ddr_rd_buffer_inst/safe_reader.u_rd_fifo/RdWrAddr_meta[1]~FF|D": [
+   -0.45,
+   -0.417
+  ],
+  "checker0/u_ddr_buffer/ddr_rd_buffer_inst/safe_reader.u_rd_fifo/RdWrAddr_meta[2]~FF|D": [
+   -0.46,
+   -0.452
+  ],
+  "checker0/u_ddr_buffer/ddr_rd_buffer_inst/safe_reader.u_rd_fifo/RdWrAddr_meta[3]~FF|D": [
+   -0.477,
+   -0.466
+  ],
+  "checker0/u_ddr_buffer/ddr_rd_buffer_inst/safe_reader.u_rd_fifo/RdWrAddr_meta[4]~FF|D": [
+   -0.463,
+   -0.413
+  ],
+  "checker0/u_ddr_buffer/ddr_rd_buffer_inst/safe_reader.u_rd_fifo/RdWrAddr_meta[5]~FF|D": [
+   -0.46,
+   -0.48
+  ],
+  "checker0/u_ddr_buffer/ddr_rd_buffer_inst/safe_reader.u_rd_fifo/RdWrAddr_meta[6]~FF|D": [
+   -0.46,
+   -0.413
+  ],
+  "checker0/u_ddr_buffer/ddr_rd_buffer_inst/safe_reader.u_rd_fifo/RdWrAddr_meta[7]~FF|D": [
+   -0.463,
+   -0.454
+  ],
+  "checker0/u_ddr_buffer/ddr_rd_buffer_inst/safe_reader.u_rd_fifo/RdWrAddr_meta[8]~FF|D": [
+   -0.463,
+   -0.475
+  ],
+  "checker0/u_ddr_buffer/ddr_rd_buffer_inst/safe_reader.u_rd_fifo/RdWrAddr_meta[9]~FF|D": [
+   -0.46,
+   -0.465
+  ],
+  "checker0/u_ddr_buffer/ddr_rd_buffer_inst/safe_reader.u_rd_fifo/WrReadyToRdMeta~FF|D": [
+   -0.792,
+   -1.139
+  ],
+  "checker0/u_ddr_buffer/ddr_rd_buffer_inst/safe_reader.u_rd_fifo/WrResetReqToRdMeta~FF|D": [
+   -0.74,
+   -0.826
+  ],
+  "checker0/u_o_clk_rst_pip/dff_4/i1_2|D": [
+   -0.73,
+   -0.981
+  ],
+  "u_hdmi_reset_sync/sync_r[0]~FF|D": [
+   -0.446,
+   -0.466
+  ],
+  "vsync_core_d0~FF|D": [
+   -0.616,
+   -0.914
+  ]
+ }
+}

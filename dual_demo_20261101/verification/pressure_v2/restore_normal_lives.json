@@ -1,0 +1,764 @@
+{
+  "start": "2026-11-01T20:20:48.337+08:00",
+  "mode": "execute",
+  "strategy": "event_only_v6_uart_observed",
+  "rounds_requested": 1,
+  "classification": "JTAG-injected GameOver/logical KEY3; excludes physical debounce/natural death. Consecutive UART records span at least 2s after a no-JTAG recovery wait; RAM stale/fault deltas include debug disturbance.",
+  "elf_sha256": "0fac4deabec6a794316c8672ec37bbe3db7201c74c6fd5c3fc0880a976101087",
+  "plan_sha256": "c47ab16e368f8c39cfb8e82d3d356ddc3500f43624734984191f0dac2b3f9aa6",
+  "source_sha256": {
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\game.c": "e13d4449c7103231f5986ce1b5f49d5f4d1beebcf5ee7ccbb43b9638cfbbbb1c",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\game_keys.c": "1a6c4bfa672da2c5c4fbba4d766fc32895a9718ffdd20861d10eabcb7e3fba8c",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\enemy_test.c": "77c8c5c802386280d9941f22782f7743f6495f6cda3d9a63b088ca8e66dd3cd4",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\joystick_ads1115.c": "26add6b82c33e485b57db911ac8cfb1d316c6304ea4292aa03a3984a7f21becd",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\joystick_ads1115.h": "257256363872d529e958dd6e8c5c4b47c4e03e2c20fdef88e64f06191a8a84e2",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\player_input.c": "826d9888262ce401a5ffec5439f0792992e4ebab37db754ecab8854b3ebc8950",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\player_input.h": "5d7fecf187151877eea953ad7895f19cc51ab37718fde29007a5bba2b129d97b",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\main_single.c": "8baef879b6e288c6027517f0137fd9fa880961d19369787ae7d8804b15b84573",
+    "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\candidate\\embedded_sw\\riscv_soc\\software\\standalone\\apbTest\\src\\build_id.h": "6a7e84bf1bd6605f4240987f9b2817c95b0ec387bbaea4c59de3ccdcb3407fa7"
+  },
+  "config_sha256": "0c5af585856bce7f939306106d56c3e52f69394cb7a6ec03513b457ac627bd15",
+  "cpu_yaml_sha256": "c05d5637226b5ab5a5cf66806673db4c55fd8c4a30399a59de31442aedee5fbb",
+  "write_whitelist": {
+    "game_lives": 4177618232,
+    "game_over_flag": 4177618224,
+    "key_start": 4177618492
+  },
+  "code_writes": false,
+  "key_last_writes": false,
+  "max_unconsumed_event_attempts": 3,
+  "min_run_between_batches_ms": 75,
+  "telemetry_jsonl": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\board\\capture_restore_normal\\rx.jsonl",
+  "post_restart_recovery_and_uart_window_timeout_seconds": 7,
+  "events": [
+    {
+      "time": "2026-11-01T20:20:48.660+08:00",
+      "owned_openocd": 35940
+    },
+    {
+      "time": "2026-11-01T20:20:48.763+08:00",
+      "initial_state": "running"
+    },
+    {
+      "time": "2026-11-01T20:20:48.783+08:00",
+      "halt_batch": {
+        "label": "identity_before_any_write",
+        "wall_ms": 19.186,
+        "raw": "OK\nHALT_MS=7\n1793535648764:1793535648783\nRAM_IDENTITY_MATCH\nRESUME_STATE=running"
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:48.879+08:00",
+      "halt_batch": {
+        "label": "baseline",
+        "wall_ms": 20.188,
+        "raw": "OK\nHALT_MS=8\n1793535648859:1793535648878\napp_state=5\nen_state=3\nen_frames=65139\ngame_lives=850\ngame_over_flag=0\ngame_display_lives=850\ngame_display_over=0\nflow_round=13\nflow_phase_word=65799\n\nRESUME_STATE=running"
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:48.971+08:00",
+      "halt_batch": {
+        "label": "baseline_recovery",
+        "wall_ms": 16.66,
+        "raw": "OK\nHALT_MS=5\n1793535648955:1793535648971\nattempts=0\nok=0\nfail=0\nconsecutive=0\nexhausted=0\n\nRESUME_STATE=running"
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:48.972+08:00",
+      "baseline_recovery": {
+        "attempts": 0,
+        "ok": 0,
+        "fail": 0,
+        "consecutive": 0,
+        "exhausted": 0
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:49.067+08:00",
+      "halt_batch": {
+        "label": "round_1_before",
+        "wall_ms": 20.599,
+        "raw": "OK\nHALT_MS=8\n1793535649047:1793535649066\napp_state=5\nen_state=3\nen_frames=65149\ngame_lives=850\ngame_over_flag=0\ngame_display_lives=850\ngame_display_over=0\nflow_round=13\nflow_phase_word=65799\n\nRESUME_STATE=running"
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:49.589+08:00",
+      "halt_batch": {
+        "label": "round_1_before_health",
+        "wall_ms": 20.817,
+        "raw": "OK\nHALT_MS=9\n1793535649568:1793535649588\nen_frames=65179\nen_error=0\napp_errors=0\njoy_sequence=182927\njoy_pairs=182927\njoy_faults=38\njoy_flags=65793\njoy_valid_word=1\njoy_stale=1\n\nRESUME_STATE=running"
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:49.683+08:00",
+      "halt_batch": {
+        "label": "round_1_before_recovery",
+        "wall_ms": 17.955,
+        "raw": "OK\nHALT_MS=6\n1793535649665:1793535649682\nattempts=0\nok=0\nfail=0\nconsecutive=0\nexhausted=0\n\nRESUME_STATE=running"
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:49.683+08:00",
+      "pre_input_health": {
+        "round": 1,
+        "healthy": true,
+        "allow_key3_recovery": true,
+        "health": {
+          "en_frames": 65179,
+          "en_error": 0,
+          "app_errors": 0,
+          "joy_sequence": 182927,
+          "joy_pairs": 182927,
+          "joy_faults": 38,
+          "joy_flags": 65793,
+          "joy_valid_word": 1,
+          "joy_stale": 1
+        }
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:49.772+08:00",
+      "halt_batch": {
+        "label": "round_1_over",
+        "wall_ms": 14.166,
+        "raw": "OK\nHALT_MS=3\n1793535649758:1793535649772\nOVER_INJECTED\nRESUME_STATE=running"
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:49.994+08:00",
+      "halt_batch": {
+        "label": "round_1_display_over",
+        "wall_ms": 21.041,
+        "raw": "OK\nHALT_MS=8\n1793535649973:1793535649993\napp_state=5\nen_state=3\nen_frames=65200\ngame_lives=0\ngame_over_flag=1\ngame_display_lives=0\ngame_display_over=1\nflow_round=13\nflow_phase_word=65799\n\nRESUME_STATE=running"
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:50.086+08:00",
+      "halt_batch": {
+        "label": "round_1_start_before",
+        "wall_ms": 16.571,
+        "raw": "OK\nHALT_MS=4\n1793535650069:1793535650085\napp_state=5\napp_starts=1\napp_restarts=12\nflow_round=13\n\nRESUME_STATE=running"
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:50.179+08:00",
+      "halt_batch": {
+        "label": "round_1_start_event_1",
+        "wall_ms": 18.388,
+        "raw": "OK\nHALT_MS=6\n1793535650161:1793535650179\nSTART_EVENT_INJECTED\nRESUME_STATE=running"
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:50.396+08:00",
+      "halt_batch": {
+        "label": "round_1_start_ack_1",
+        "wall_ms": 15.383,
+        "raw": "OK\nHALT_MS=4\n1793535650381:1793535650396\napp_state=5\napp_starts=1\napp_restarts=13\nflow_round=14\n\nRESUME_STATE=running"
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:50.397+08:00",
+      "event_attempt": {
+        "label": "round_1_start",
+        "attempt": 1,
+        "before": {
+          "app_state": 5,
+          "app_starts": 1,
+          "app_restarts": 12,
+          "flow_round": 13
+        },
+        "after": {
+          "app_state": 5,
+          "app_starts": 1,
+          "app_restarts": 13,
+          "flow_round": 14
+        },
+        "observed_consumer_progress": true
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:50.618+08:00",
+      "halt_batch": {
+        "label": "round_1_complete",
+        "wall_ms": 21.186,
+        "raw": "OK\nHALT_MS=8\n1793535650597:1793535650617\napp_state=5\nen_state=3\nen_frames=65235\ngame_lives=10\ngame_over_flag=0\ngame_display_lives=10\ngame_display_over=0\nflow_round=14\nflow_phase_word=257\n\nRESUME_STATE=running"
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:55.039+08:00",
+      "round_1_uart_recovery_window": {
+        "tel": [
+          {
+            "kind": "TEL",
+            "sec": 1092,
+            "tier": "M-144",
+            "phase": "L",
+            "fr": 60,
+            "lf": 0,
+            "im": 16685,
+            "c": 10881,
+            "r": 1289,
+            "b": "66/38/96",
+            "g": "29/43",
+            "gl": "2.1/3",
+            "hit": 0,
+            "abs": 0,
+            "sc": 0,
+            "hp": 10,
+            "jf": "0",
+            "jl": 0,
+            "ja": 1,
+            "jv": 1,
+            "jg": 4,
+            "jp": 100,
+            "jr": "0/0/0/0",
+            "jb": "0",
+            "js": 43753,
+            "jx": 327,
+            "jn": 100,
+            "rp": 0,
+            "time": "2026-11-01T20:20:51.852+08:00",
+            "host_mono": 40219.6733255
+          },
+          {
+            "kind": "TEL",
+            "sec": 1093,
+            "tier": "M-144",
+            "phase": "L",
+            "fr": 60,
+            "lf": 0,
+            "im": 16684,
+            "c": 11120,
+            "r": 1397,
+            "b": "109/94/116",
+            "g": "48/52",
+            "gl": "4.3/6",
+            "hit": 1,
+            "abs": 0,
+            "sc": 0,
+            "hp": 9,
+            "jf": "0",
+            "jl": 0,
+            "ja": 1,
+            "jv": 1,
+            "jg": 3,
+            "jp": 100,
+            "jr": "0/0/0/0",
+            "jb": "0",
+            "js": 42986,
+            "jx": 432,
+            "jn": 100,
+            "rp": 0,
+            "time": "2026-11-01T20:20:52.844+08:00",
+            "host_mono": 40220.6653482
+          },
+          {
+            "kind": "TEL",
+            "sec": 1094,
+            "tier": "M-144",
+            "phase": "L",
+            "fr": 60,
+            "lf": 0,
+            "im": 16688,
+            "c": 11275,
+            "r": 1428,
+            "b": "105/98/116",
+            "g": "45/50",
+            "gl": "7.2/8",
+            "hit": 2,
+            "abs": 0,
+            "sc": 0,
+            "hp": 8,
+            "jf": "0",
+            "jl": 0,
+            "ja": 1,
+            "jv": 1,
+            "jg": 2,
+            "jp": 100,
+            "jr": "0/0/0/0",
+            "jb": "0",
+            "js": 43141,
+            "jx": 389,
+            "jn": 99,
+            "rp": 0,
+            "time": "2026-11-01T20:20:53.852+08:00",
+            "host_mono": 40221.6732531
+          },
+          {
+            "kind": "TEL",
+            "sec": 1095,
+            "tier": "M-144",
+            "phase": "L",
+            "fr": 60,
+            "lf": 0,
+            "im": 16687,
+            "c": 11383,
+            "r": 1355,
+            "b": "101/92/108",
+            "g": "41/45",
+            "gl": "9.6/10",
+            "hit": 3,
+            "abs": 0,
+            "sc": 0,
+            "hp": 7,
+            "jf": "0",
+            "jl": 0,
+            "ja": 1,
+            "jv": 1,
+            "jg": 1,
+            "jp": 100,
+            "jr": "0/0/0/0",
+            "jb": "0",
+            "js": 43346,
+            "jx": 313,
+            "jn": 100,
+            "rp": 0,
+            "time": "2026-11-01T20:20:54.844+08:00",
+            "host_mono": 40222.6651573
+          }
+        ],
+        "joy": [
+          {
+            "kind": "JOY",
+            "seq": 183121,
+            "raw": [
+              12910,
+              12987
+            ],
+            "mask": 0,
+            "xy": [
+              912,
+              936
+            ],
+            "cap": [
+              0,
+              0
+            ],
+            "bok": 3,
+            "time": "2026-11-01T20:20:51.852+08:00",
+            "host_mono": 40219.6733761
+          },
+          {
+            "kind": "JOY",
+            "seq": 183221,
+            "raw": [
+              12908,
+              12984
+            ],
+            "mask": 0,
+            "xy": [
+              912,
+              936
+            ],
+            "cap": [
+              0,
+              0
+            ],
+            "bok": 3,
+            "time": "2026-11-01T20:20:52.860+08:00",
+            "host_mono": 40220.6813895
+          },
+          {
+            "kind": "JOY",
+            "seq": 183321,
+            "raw": [
+              12911,
+              12987
+            ],
+            "mask": 0,
+            "xy": [
+              912,
+              936
+            ],
+            "cap": [
+              0,
+              0
+            ],
+            "bok": 3,
+            "time": "2026-11-01T20:20:53.852+08:00",
+            "host_mono": 40221.6733321
+          },
+          {
+            "kind": "JOY",
+            "seq": 183421,
+            "raw": [
+              12913,
+              12988
+            ],
+            "mask": 0,
+            "xy": [
+              912,
+              936
+            ],
+            "cap": [
+              0,
+              0
+            ],
+            "bok": 3,
+            "time": "2026-11-01T20:20:54.860+08:00",
+            "host_mono": 40222.6811162
+          }
+        ],
+        "recovery_wait_rejected_tel": [],
+        "duration_seconds": 2.991831799998181,
+        "age_sentinel_count": 0,
+        "stale_observation": "Every selected UART sample valid, armed, unlatched with fresh pairs and sequence progress. jg sentinel retained; cumulative stale is not present in TEL and RAM deltas include debug disturbance."
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:55.060+08:00",
+      "halt_batch": {
+        "label": "round_1_after_uart_health",
+        "wall_ms": 20.115,
+        "raw": "OK\nHALT_MS=8\n1793535655040:1793535655059\nen_frames=65500\nen_error=0\napp_errors=0\njoy_sequence=183442\njoy_pairs=183442\njoy_faults=39\njoy_flags=65793\njoy_valid_word=1\njoy_stale=1\n\nRESUME_STATE=running"
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:55.153+08:00",
+      "halt_batch": {
+        "label": "round_1_after_recovery",
+        "wall_ms": 17.347,
+        "raw": "OK\nHALT_MS=5\n1793535655136:1793535655152\nattempts=0\nok=0\nfail=0\nconsecutive=0\nexhausted=0\n\nRESUME_STATE=running"
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:55.154+08:00",
+      "round_pass": 1
+    },
+    {
+      "time": "2026-11-01T20:20:55.245+08:00",
+      "halt_batch": {
+        "label": "final_recovery",
+        "wall_ms": 16.985,
+        "raw": "OK\nHALT_MS=5\n1793535655228:1793535655244\nattempts=0\nok=0\nfail=0\nconsecutive=0\nexhausted=0\n\nRESUME_STATE=running"
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:55.246+08:00",
+      "final_recovery": {
+        "attempts": 0,
+        "ok": 0,
+        "fail": 0,
+        "consecutive": 0,
+        "exhausted": 0
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:55.246+08:00",
+      "REQUESTED_ROUNDS_PASS": {
+        "pass": true,
+        "completed": 1,
+        "requested": 1
+      }
+    },
+    {
+      "time": "2026-11-01T20:20:55.246+08:00",
+      "final_resume": {
+        "attempt": 1,
+        "state": "running"
+      }
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "before": {
+        "app_state": 5,
+        "en_state": 3,
+        "en_frames": 65149,
+        "game_lives": 850,
+        "game_over_flag": 0,
+        "game_display_lives": 850,
+        "game_display_over": 0,
+        "flow_round": 13,
+        "flow_phase_word": 65799,
+        "flow_phase": 7
+      },
+      "before_health": {
+        "en_frames": 65179,
+        "en_error": 0,
+        "app_errors": 0,
+        "joy_sequence": 182927,
+        "joy_pairs": 182927,
+        "joy_faults": 38,
+        "joy_flags": 65793,
+        "joy_valid_word": 1,
+        "joy_stale": 1
+      },
+      "before_recovery": {
+        "attempts": 0,
+        "ok": 0,
+        "fail": 0,
+        "consecutive": 0,
+        "exhausted": 0
+      },
+      "display_over": {
+        "app_state": 5,
+        "en_state": 3,
+        "en_frames": 65200,
+        "game_lives": 0,
+        "game_over_flag": 1,
+        "game_display_lives": 0,
+        "game_display_over": 1,
+        "flow_round": 13,
+        "flow_phase_word": 65799,
+        "flow_phase": 7
+      },
+      "completed": {
+        "app_state": 5,
+        "en_state": 3,
+        "en_frames": 65235,
+        "game_lives": 10,
+        "game_over_flag": 0,
+        "game_display_lives": 10,
+        "game_display_over": 0,
+        "flow_round": 14,
+        "flow_phase_word": 257,
+        "flow_phase": 1
+      },
+      "uart_window": {
+        "tel": [
+          {
+            "kind": "TEL",
+            "sec": 1092,
+            "tier": "M-144",
+            "phase": "L",
+            "fr": 60,
+            "lf": 0,
+            "im": 16685,
+            "c": 10881,
+            "r": 1289,
+            "b": "66/38/96",
+            "g": "29/43",
+            "gl": "2.1/3",
+            "hit": 0,
+            "abs": 0,
+            "sc": 0,
+            "hp": 10,
+            "jf": "0",
+            "jl": 0,
+            "ja": 1,
+            "jv": 1,
+            "jg": 4,
+            "jp": 100,
+            "jr": "0/0/0/0",
+            "jb": "0",
+            "js": 43753,
+            "jx": 327,
+            "jn": 100,
+            "rp": 0,
+            "time": "2026-11-01T20:20:51.852+08:00",
+            "host_mono": 40219.6733255
+          },
+          {
+            "kind": "TEL",
+            "sec": 1093,
+            "tier": "M-144",
+            "phase": "L",
+            "fr": 60,
+            "lf": 0,
+            "im": 16684,
+            "c": 11120,
+            "r": 1397,
+            "b": "109/94/116",
+            "g": "48/52",
+            "gl": "4.3/6",
+            "hit": 1,
+            "abs": 0,
+            "sc": 0,
+            "hp": 9,
+            "jf": "0",
+            "jl": 0,
+            "ja": 1,
+            "jv": 1,
+            "jg": 3,
+            "jp": 100,
+            "jr": "0/0/0/0",
+            "jb": "0",
+            "js": 42986,
+            "jx": 432,
+            "jn": 100,
+            "rp": 0,
+            "time": "2026-11-01T20:20:52.844+08:00",
+            "host_mono": 40220.6653482
+          },
+          {
+            "kind": "TEL",
+            "sec": 1094,
+            "tier": "M-144",
+            "phase": "L",
+            "fr": 60,
+            "lf": 0,
+            "im": 16688,
+            "c": 11275,
+            "r": 1428,
+            "b": "105/98/116",
+            "g": "45/50",
+            "gl": "7.2/8",
+            "hit": 2,
+            "abs": 0,
+            "sc": 0,
+            "hp": 8,
+            "jf": "0",
+            "jl": 0,
+            "ja": 1,
+            "jv": 1,
+            "jg": 2,
+            "jp": 100,
+            "jr": "0/0/0/0",
+            "jb": "0",
+            "js": 43141,
+            "jx": 389,
+            "jn": 99,
+            "rp": 0,
+            "time": "2026-11-01T20:20:53.852+08:00",
+            "host_mono": 40221.6732531
+          },
+          {
+            "kind": "TEL",
+            "sec": 1095,
+            "tier": "M-144",
+            "phase": "L",
+            "fr": 60,
+            "lf": 0,
+            "im": 16687,
+            "c": 11383,
+            "r": 1355,
+            "b": "101/92/108",
+            "g": "41/45",
+            "gl": "9.6/10",
+            "hit": 3,
+            "abs": 0,
+            "sc": 0,
+            "hp": 7,
+            "jf": "0",
+            "jl": 0,
+            "ja": 1,
+            "jv": 1,
+            "jg": 1,
+            "jp": 100,
+            "jr": "0/0/0/0",
+            "jb": "0",
+            "js": 43346,
+            "jx": 313,
+            "jn": 100,
+            "rp": 0,
+            "time": "2026-11-01T20:20:54.844+08:00",
+            "host_mono": 40222.6651573
+          }
+        ],
+        "joy": [
+          {
+            "kind": "JOY",
+            "seq": 183121,
+            "raw": [
+              12910,
+              12987
+            ],
+            "mask": 0,
+            "xy": [
+              912,
+              936
+            ],
+            "cap": [
+              0,
+              0
+            ],
+            "bok": 3,
+            "time": "2026-11-01T20:20:51.852+08:00",
+            "host_mono": 40219.6733761
+          },
+          {
+            "kind": "JOY",
+            "seq": 183221,
+            "raw": [
+              12908,
+              12984
+            ],
+            "mask": 0,
+            "xy": [
+              912,
+              936
+            ],
+            "cap": [
+              0,
+              0
+            ],
+            "bok": 3,
+            "time": "2026-11-01T20:20:52.860+08:00",
+            "host_mono": 40220.6813895
+          },
+          {
+            "kind": "JOY",
+            "seq": 183321,
+            "raw": [
+              12911,
+              12987
+            ],
+            "mask": 0,
+            "xy": [
+              912,
+              936
+            ],
+            "cap": [
+              0,
+              0
+            ],
+            "bok": 3,
+            "time": "2026-11-01T20:20:53.852+08:00",
+            "host_mono": 40221.6733321
+          },
+          {
+            "kind": "JOY",
+            "seq": 183421,
+            "raw": [
+              12913,
+              12988
+            ],
+            "mask": 0,
+            "xy": [
+              912,
+              936
+            ],
+            "cap": [
+              0,
+              0
+            ],
+            "bok": 3,
+            "time": "2026-11-01T20:20:54.860+08:00",
+            "host_mono": 40222.6811162
+          }
+        ],
+        "recovery_wait_rejected_tel": [],
+        "duration_seconds": 2.991831799998181,
+        "age_sentinel_count": 0,
+        "stale_observation": "Every selected UART sample valid, armed, unlatched with fresh pairs and sequence progress. jg sentinel retained; cumulative stale is not present in TEL and RAM deltas include debug disturbance."
+      },
+      "after_health": {
+        "en_frames": 65500,
+        "en_error": 0,
+        "app_errors": 0,
+        "joy_sequence": 183442,
+        "joy_pairs": 183442,
+        "joy_faults": 39,
+        "joy_flags": 65793,
+        "joy_valid_word": 1,
+        "joy_stale": 1
+      },
+      "after_recovery": {
+        "attempts": 0,
+        "ok": 0,
+        "fail": 0,
+        "consecutive": 0,
+        "exhausted": 0
+      },
+      "whole_debug_window_stale_delta": 0,
+      "whole_debug_window_fault_delta": 1,
+      "pass": true
+    }
+  ],
+  "completed": 1,
+  "pass": true,
+  "owned_openocd_exit": 0,
+  "end": "2026-11-01T20:20:55.250+08:00"
+}

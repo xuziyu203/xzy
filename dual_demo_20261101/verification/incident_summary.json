@@ -1,0 +1,135 @@
+{
+  "raw_sha256": "968c982954be7185116e3ae5165f06dd42db47bb9c49948bbd305e93765ebd4c",
+  "rows": 1002,
+  "observed_starts_including_first": [
+    {
+      "time": "2026-11-01T19:10:13.955",
+      "second": 1,
+      "tier": "M-144",
+      "line": 2,
+      "jp": 99,
+      "jg": 3,
+      "jl": 0
+    },
+    {
+      "time": "2026-11-01T19:16:45.953",
+      "second": 393,
+      "tier": "M-144",
+      "line": 394,
+      "jp": 100,
+      "jg": 0,
+      "jl": 0
+    },
+    {
+      "time": "2026-11-01T19:19:19.959",
+      "second": 547,
+      "tier": "M-144",
+      "line": 548,
+      "jp": 24,
+      "jg": 757,
+      "jl": 1
+    },
+    {
+      "time": "2026-11-01T19:19:48.949",
+      "second": 576,
+      "tier": "M-144",
+      "line": 577,
+      "jp": 0,
+      "jg": 29757,
+      "jl": 1
+    },
+    {
+      "time": "2026-11-01T19:20:03.956",
+      "second": 591,
+      "tier": "M-144",
+      "line": 592,
+      "jp": 0,
+      "jg": 44757,
+      "jl": 0
+    },
+    {
+      "time": "2026-11-01T19:22:13.948",
+      "second": 721,
+      "tier": "LADR",
+      "line": 722,
+      "jp": 0,
+      "jg": 99999,
+      "jl": 1
+    },
+    {
+      "time": "2026-11-01T19:22:37.946",
+      "second": 745,
+      "tier": "M-110",
+      "line": 746,
+      "jp": 0,
+      "jg": 99999,
+      "jl": 1
+    }
+  ],
+  "observed_starts_count": 7,
+  "stress_intervals_hp_positive": [
+    {
+      "begin": "2026-11-01T19:15:20.951",
+      "end": "2026-11-01T19:16:41.953",
+      "tel_seconds": 82,
+      "fps_count_min": 24,
+      "pairs_min": 59,
+      "max_gap_us": 5113
+    },
+    {
+      "begin": "2026-11-01T19:17:16.959",
+      "end": "2026-11-01T19:17:55.950",
+      "tel_seconds": 40,
+      "fps_count_min": 25,
+      "pairs_min": 60,
+      "max_gap_us": 5137
+    }
+  ],
+  "first_fault": {
+    "fr": 60,
+    "lf": 0,
+    "im": 16681,
+    "c": "10520",
+    "r": "634",
+    "b": "17/0/36",
+    "g": "6/16",
+    "gl": "4.0/14",
+    "hit": "0",
+    "abs": "0",
+    "sc": "0",
+    "hp": 10,
+    "jf": "1:18x1,19x1",
+    "jl": 1,
+    "ja": 0,
+    "jv": 0,
+    "jg": 757,
+    "jp": 24,
+    "jr": "0/0/0/16",
+    "jb": "1",
+    "js": "19264",
+    "jx": 537,
+    "jn": "26",
+    "rp": "943",
+    "time": "2026-11-01T19:19:19.959",
+    "second": 547,
+    "tier": "M-144",
+    "phase": "L",
+    "line": 548
+  },
+  "fault_interval": {
+    "seconds": 456,
+    "pairs_after_first_second": 0,
+    "fps_count_min": 60,
+    "max_frame_interval_us": 16688,
+    "max_service_gap_us": 584,
+    "auto_attempts": 411,
+    "auto_successes": 0,
+    "auto_failures": 411
+  },
+  "limitations": [
+    "1-second TEL windows can straddle a restart/phase boundary.",
+    "hp==0 is excluded from active pressure duration; old tel_summary aggregates Game Over.",
+    "fr is count in a telemetry window; low counts at a transition are not automatically dropped frames.",
+    "Raw X/Y and separate SDA/SCL are not present in this telemetry."
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "tel_rows": 418,
+  "joy_rows": 418,
+  "active_rows": 418,
+  "observed_starts_hp_edges": 1,
+  "longest_active_stress_consecutive_rows": 325,
+  "mode_active_only": {
+    "M-144/L": {
+      "seconds": 93,
+      "fps_min": 60,
+      "fps_mean": 60.0,
+      "frames": 5580,
+      "long_frames": 0,
+      "max_interval_us": 16692,
+      "joystick_faults": 0,
+      "zero_pair_seconds": 0,
+      "max_service_gap_us": 592
+    },
+    "M-144/S": {
+      "seconds": 325,
+      "fps_min": 24,
+      "fps_mean": 59.8892,
+      "frames": 19464,
+      "long_frames": 0,
+      "max_interval_us": 16703,
+      "joystick_faults": 0,
+      "zero_pair_seconds": 0,
+      "max_service_gap_us": 5184
+    }
+  },
+  "direction_masks_seen": [
+    0,
+    2,
+    3,
+    6,
+    8,
+    9,
+    12
+  ],
+  "sequence_first": 149250,
+  "sequence_last": 179077,
+  "last_tel": {
+    "kind": "TEL",
+    "sec": 1028,
+    "tier": "M-144",
+    "phase": "S",
+    "fr": 60,
+    "lf": 0,
+    "im": 16685,
+    "c": 15346,
+    "r": 48,
+    "b": "2354/2298/2383",
+    "g": "842/850",
+    "gl": "13.8/15",
+    "hit": 145,
+    "abs": 9045,
+    "sc": 37300,
+    "hp": 860,
+    "jf": "0",
+    "jl": 0,
+    "ja": 1,
+    "jv": 1,
+    "jg": 0,
+    "jp": 60,
+    "jr": "0/0/0/0",
+    "jb": "0",
+    "js": 10278,
+    "jx": 5013,
+    "jn": 60,
+    "rp": 12165,
+    "time": "2026-11-01T20:19:47.846+08:00",
+    "host_mono": 40155.6674641
+  },
+  "last_joy": {
+    "kind": "JOY",
+    "seq": 179077,
+    "raw": [
+      12912,
+      12987
+    ],
+    "mask": 0,
+    "xy": [
+      807,
+      984
+    ],
+    "cap": [
+      0,
+      0
+    ],
+    "bok": 3,
+    "time": "2026-11-01T20:19:47.863+08:00",
+    "host_mono": 40155.6844241
+  },
+  "note": "One TEL row represents the preceding interval; transitions/partial first seconds must be reviewed. Game Over excluded from active stats."
+}

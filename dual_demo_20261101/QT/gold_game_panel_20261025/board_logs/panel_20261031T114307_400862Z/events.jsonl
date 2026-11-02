@@ -1,0 +1,4 @@
+{"monotonic_ns": 15903240698800, "event": "OPEN_REQUEST"}
+{"monotonic_ns": 15903257776500, "event": "PORT_OPEN", "dtr": false, "rts": false, "automatic_commands": []}
+{"monotonic_ns": 15945570481700, "event": "KEYBOARD_DISABLED", "reason": "串口已断开，键盘捕获已释放。", "neutral_attempted": false, "release_error": null}
+{"monotonic_ns": 15945675141500, "event": "CLOSE", "observed_build": null, "automatic_exit_sent": false}

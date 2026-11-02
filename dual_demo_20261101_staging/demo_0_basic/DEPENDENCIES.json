@@ -1,0 +1,417 @@
+{
+  "disabled_parameter_reads": [
+    {
+      "kind": "instance",
+      "parameter": "RAM_INIT_FILE",
+      "source": "debug_top.v",
+      "value": "empty"
+    },
+    {
+      "kind": "instance",
+      "parameter": "RAM_INIT_FILE",
+      "source": "rtl/debayer/line_buffer.v",
+      "value": "empty"
+    },
+    {
+      "kind": "default",
+      "parameter": "RAM_INIT_FILE",
+      "source": "rtl/simple_dual_port_ram.v",
+      "value": "empty"
+    },
+    {
+      "kind": "default",
+      "parameter": "RAM_INIT_FILE",
+      "source": "rtl/dual_clock_fifo.v",
+      "value": "empty"
+    },
+    {
+      "kind": "default",
+      "parameter": "RAM_INIT_FILE",
+      "source": "rtl/dual_clock_fifo.v",
+      "value": "empty"
+    },
+    {
+      "kind": "default",
+      "parameter": "RAM_INIT_FILE",
+      "source": "rtl/user_dual_port_ram.v",
+      "value": "empty"
+    }
+  ],
+  "includes": [
+    {
+      "reference": "axi_interconnect.vh",
+      "resolved": "ip/axi_interconnect_3to1/axi_interconnect.vh",
+      "source": "ip/axi_interconnect_3to1/axi_interconnect_3to1.v"
+    },
+    {
+      "reference": "rtl/frame_buffer_V3/ddr_rd_buffer_legacy.vh",
+      "resolved": "rtl/frame_buffer_V3/ddr_rd_buffer_legacy.vh",
+      "source": "rtl/frame_buffer_V3/ddr_rd_buffer.v"
+    },
+    {
+      "reference": "rtl/frame_read_boundary.vh",
+      "resolved": "rtl/frame_read_boundary.vh",
+      "source": "rtl/frame_buffer_V3/frame_buffer.v"
+    },
+    {
+      "reference": "timescale.v",
+      "resolved": "rtl/cam_i2c_ctrl/i2c_master/timescale.v",
+      "source": "rtl/cam_i2c_ctrl/i2c_master/i2c_master_bit_ctrl.v"
+    },
+    {
+      "reference": "i2c_master_defines.v",
+      "resolved": "rtl/cam_i2c_ctrl/i2c_master/i2c_master_defines.v",
+      "source": "rtl/cam_i2c_ctrl/i2c_master/i2c_master_bit_ctrl.v"
+    },
+    {
+      "reference": "timescale.v",
+      "resolved": "rtl/cam_i2c_ctrl/i2c_master/timescale.v",
+      "source": "rtl/cam_i2c_ctrl/i2c_master/i2c_master_top.v"
+    },
+    {
+      "reference": "i2c_master_defines.v",
+      "resolved": "rtl/cam_i2c_ctrl/i2c_master/i2c_master_defines.v",
+      "source": "rtl/cam_i2c_ctrl/i2c_master/i2c_master_top.v"
+    },
+    {
+      "reference": "timescale.v",
+      "resolved": "rtl/cam_i2c_ctrl/i2c_master/timescale.v",
+      "source": "rtl/cam_i2c_ctrl/i2c_master/i2c_master_byte_ctrl.v"
+    },
+    {
+      "reference": "i2c_master_defines.v",
+      "resolved": "rtl/cam_i2c_ctrl/i2c_master/i2c_master_defines.v",
+      "source": "rtl/cam_i2c_ctrl/i2c_master/i2c_master_byte_ctrl.v"
+    },
+    {
+      "reference": "ddr3_parameter.vh",
+      "resolved": "rtl/ddr3_controller/ddr3_parameter.vh",
+      "source": "rtl/ddr3_controller/ddr3_top.v"
+    },
+    {
+      "reference": "ddr3_controller/ddr3_parameter.vh",
+      "resolved": "rtl/ddr3_controller/ddr3_parameter.vh",
+      "source": "rtl/ti60f225_oob_top.v"
+    },
+    {
+      "reference": "rtl/command_validate.vh",
+      "resolved": "rtl/command_validate.vh",
+      "source": "rtl/ti60f225_oob_top.v"
+    },
+    {
+      "reference": "rtl/pipeline_events.vh",
+      "resolved": "rtl/pipeline_events.vh",
+      "source": "rtl/ti60f225_oob_top.v"
+    },
+    {
+      "reference": "rtl/scanout_commit_control.vh",
+      "resolved": "rtl/scanout_commit_control.vh",
+      "source": "rtl/ti60f225_oob_top.v"
+    }
+  ],
+  "limitation": "Static XML/include/literal-readmem and vendor RAM filename-binding check, not FPGA elaboration or synthesis",
+  "missing": [],
+  "parameter_bindings": [
+    {
+      "kind": "default",
+      "note": "Vendor placeholder; actual instances override through empty or named gamma/panel bindings",
+      "parameter": "RAM_INIT_FILE",
+      "source": "debug_top.v",
+      "template_default": "ram_init_file.mem"
+    },
+    {
+      "forwarded": "GAMMA_CURVE",
+      "kind": "instance",
+      "parameter": "RAM_INIT_FILE",
+      "source": "rtl/gamma_conrrection/gamma_correction.v"
+    },
+    {
+      "kind": "default",
+      "parameter": "GAMMA_CURVE",
+      "reference": "2P2.mem",
+      "resolved": "rtl/gamma_conrrection/2P2.mem",
+      "source": "rtl/gamma_conrrection/gamma_correction.v"
+    },
+    {
+      "forwarded": "INITIAL_CODE",
+      "kind": "instance",
+      "parameter": "RAM_INIT_FILE",
+      "source": "rtl/mipi_config/panel_config.v"
+    },
+    {
+      "evidence": "Only panel_config occurrence in uncommented active source set is its module declaration; no instantiation",
+      "kind": "default",
+      "parameter": "INITIAL_CODE",
+      "source": "rtl/mipi_config/panel_config.v",
+      "unused_module_default": "NT35596_1080p_reg.mem"
+    },
+    {
+      "kind": "default",
+      "note": "Vendor placeholder; actual instances override through empty or named gamma/panel bindings",
+      "parameter": "RAM_INIT_FILE",
+      "source": "rtl/true_dual_port_ram.v",
+      "template_default": "ram_init_file.mem"
+    },
+    {
+      "forwarded": "RAM_INIT_FILE",
+      "kind": "instance",
+      "parameter": "RAM_INIT_FILE",
+      "source": "rtl/dual_clock_fifo.v"
+    },
+    {
+      "forwarded": "RAM_INIT_FILE",
+      "kind": "instance",
+      "parameter": "RAM_INIT_FILE",
+      "source": "rtl/dual_clock_fifo.v"
+    },
+    {
+      "forwarded": "RAM_INIT_FILE",
+      "kind": "instance",
+      "parameter": "RAM_INIT_FILE",
+      "source": "rtl/dual_clock_fifo.v"
+    },
+    {
+      "forwarded": "RAM_INIT_FILE",
+      "kind": "instance",
+      "parameter": "RAM_INIT_FILE",
+      "source": "rtl/dual_clock_fifo.v"
+    },
+    {
+      "forwarded": "RAM_INIT_FILE",
+      "kind": "instance",
+      "parameter": "RAM_INIT_FILE",
+      "source": "rtl/dual_clock_fifo.v"
+    },
+    {
+      "kind": "instance",
+      "parameter": "GAMMA_CURVE",
+      "reference": "./rtl/gamma_conrrection/2P2.mem",
+      "resolved": "rtl/gamma_conrrection/2P2.mem",
+      "source": "rtl/ti60f225_oob_top.v"
+    }
+  ],
+  "parameterized_readmem": [
+    {
+      "expression": "RAM_INIT_FILE",
+      "source": "debug_top.v"
+    },
+    {
+      "expression": "RAM_INIT_FILE",
+      "source": "rtl/simple_dual_port_ram.v"
+    },
+    {
+      "expression": "RAM_INIT_FILE",
+      "source": "rtl/simple_dual_port_ram.v"
+    },
+    {
+      "expression": "RAM_INIT_FILE",
+      "source": "rtl/true_dual_port_ram.v"
+    },
+    {
+      "expression": "RAM_INIT_FILE",
+      "source": "rtl/true_dual_port_ram.v"
+    },
+    {
+      "expression": "RAM_INIT_FILE",
+      "source": "rtl/user_dual_port_ram.v"
+    }
+  ],
+  "readmem": [
+    {
+      "reference": "EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin",
+      "resolved": "ip/riscv_soc/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol0.bin",
+      "source": "ip/riscv_soc/riscv_soc.v"
+    },
+    {
+      "reference": "EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin",
+      "resolved": "ip/riscv_soc/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol1.bin",
+      "source": "ip/riscv_soc/riscv_soc.v"
+    },
+    {
+      "reference": "EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin",
+      "resolved": "ip/riscv_soc/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol2.bin",
+      "source": "ip/riscv_soc/riscv_soc.v"
+    },
+    {
+      "reference": "EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin",
+      "resolved": "ip/riscv_soc/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol3.bin",
+      "source": "ip/riscv_soc/riscv_soc.v"
+    }
+  ],
+  "scanned_sources": [
+    "apb_test_reg.v",
+    "axi_control.v",
+    "block_copy.v",
+    "cpu_framebuffer_writer.v",
+    "ddr_write_packer.v",
+    "debug_top.v",
+    "display_surface_manager.v",
+    "framebuffer_manager.v",
+    "full_cpu_diag_snapshot.v",
+    "gpu_command_queue.v",
+    "hdmi_init.v",
+    "ip/axi_interconnect_3to1/axi_interconnect.vh",
+    "ip/axi_interconnect_3to1/axi_interconnect_3to1.v",
+    "ip/riscv_soc/Ti60F225_devkit/top_soc.v",
+    "ip/riscv_soc/riscv_soc.v",
+    "rect_renderer.v",
+    "rtl/cam_i2c_ctrl/i2c/i2c_16addr_8data.v",
+    "rtl/cam_i2c_ctrl/i2c/i2c_master_ctrl_top.v",
+    "rtl/cam_i2c_ctrl/i2c/i2c_master_reg_rom.v",
+    "rtl/cam_i2c_ctrl/i2c/i2c_master_reg_set.v",
+    "rtl/cam_i2c_ctrl/i2c_master/i2c_master_bit_ctrl.v",
+    "rtl/cam_i2c_ctrl/i2c_master/i2c_master_byte_ctrl.v",
+    "rtl/cam_i2c_ctrl/i2c_master/i2c_master_defines.v",
+    "rtl/cam_i2c_ctrl/i2c_master/i2c_master_top.v",
+    "rtl/cam_i2c_ctrl/i2c_master/oc_i2c_master.v",
+    "rtl/cam_i2c_ctrl/i2c_master/timescale.v",
+    "rtl/command_validate.vh",
+    "rtl/csi_rx_controller.sv",
+    "rtl/ddr3_controller/axi4_bus_ctl/axi4_bus_ctl.v",
+    "rtl/ddr3_controller/common/efx_fifo_v2.3/efx_fifo_wrapper.v",
+    "rtl/ddr3_controller/ddr3_parameter.vh",
+    "rtl/ddr3_controller/ddr3_top.v",
+    "rtl/ddr3_controller/lb2_axi_clk.v",
+    "rtl/ddr3_controller/local_bus_ctl/local_bus_ctl.v",
+    "rtl/ddr3_controller/memory_bus_ctl/memory_bus_ctl.v",
+    "rtl/ddr3_controller/phy_ctl/ddr_calibration_ini.v",
+    "rtl/ddr3_controller/phy_ctl/ddr_mpr_rdlvl.v",
+    "rtl/ddr3_controller/phy_ctl/ddr_phy_if.v",
+    "rtl/ddr3_controller/phy_ctl/ddr_phy_rdlvl_dqs.v",
+    "rtl/ddr3_controller/phy_ctl/ddr_phy_wrcal.v",
+    "rtl/ddr3_controller/phy_ctl/ddr_phy_wrlvl.v",
+    "rtl/ddr3_controller/phy_ctl/phy_ctl.v",
+    "rtl/debayer/debayer_top_2to1.v",
+    "rtl/debayer/line_buffer.v",
+    "rtl/debayer/raw_to_rgb.v",
+    "rtl/debayer/rgb_gain_v1.v",
+    "rtl/dual_clock_fifo.v",
+    "rtl/dvi_tx/Sc_Fifo_Slr8.v",
+    "rtl/dvi_tx/audio_clock_regeneration_packet.sv",
+    "rtl/dvi_tx/audio_infoframe_packet.sv",
+    "rtl/dvi_tx/audio_packet.sv",
+    "rtl/dvi_tx/auxiliary_video_information_info_frame.sv",
+    "rtl/dvi_tx/dvi_encoder.v_encrypted.v",
+    "rtl/dvi_tx/ecc_calc_v1.v",
+    "rtl/dvi_tx/efx_fifo.v",
+    "rtl/dvi_tx/encode.v_encrypted.v",
+    "rtl/dvi_tx/packet_assembler.sv",
+    "rtl/dvi_tx/tx_aux.v_encrypted.v",
+    "rtl/frame_buffer_V3/DC_FIFO.v",
+    "rtl/frame_buffer_V3/bank_switch.v",
+    "rtl/frame_buffer_V3/data_tx.v",
+    "rtl/frame_buffer_V3/ddr_buffer.v",
+    "rtl/frame_buffer_V3/ddr_rd_buffer.v",
+    "rtl/frame_buffer_V3/ddr_rd_buffer_legacy.vh",
+    "rtl/frame_buffer_V3/ddr_wr_buffer.v",
+    "rtl/frame_buffer_V3/frame_buffer.v",
+    "rtl/frame_buffer_V3/frame_info_det.v",
+    "rtl/frame_buffer_V3/par2ser_parse.v",
+    "rtl/frame_buffer_V3/rst_n_piple.v",
+    "rtl/frame_buffer_V3/ser2par_v1.v",
+    "rtl/frame_buffer_V3/vid_par2ser.v",
+    "rtl/frame_buffer_V3/vid_rx_align_v1.v",
+    "rtl/frame_read_boundary.vh",
+    "rtl/gamma_conrrection/gamma_correction.v",
+    "rtl/hdmi_reset_sync.v",
+    "rtl/mipi_config/panel_config.v",
+    "rtl/pipeline_events.vh",
+    "rtl/q3_perf_overlay.v",
+    "rtl/q3_perf_snapshot_cdc.v",
+    "rtl/reset.v",
+    "rtl/riscv/reset_synchronizer.v",
+    "rtl/scanout_commit_control.vh",
+    "rtl/scope_blockcopy_measure.v",
+    "rtl/simple_dual_port_ram.v",
+    "rtl/ti60f225_oob_top.v",
+    "rtl/true_dual_port_ram.v",
+    "rtl/user_dual_port_ram.v",
+    "surface_table.v"
+  ],
+  "xml_and_ip_references": [
+    "apb_test_reg.v",
+    "axi_control.v",
+    "block_copy.v",
+    "cpu_framebuffer_writer.v",
+    "ddr_write_packer.v",
+    "debug_top.v",
+    "display_surface_manager.v",
+    "framebuffer_manager.v",
+    "full_cpu_diag_snapshot.v",
+    "gpu_command_queue.v",
+    "hdmi_init.v",
+    "ip/axi_interconnect_3to1/axi_interconnect_3to1.v",
+    "ip/axi_interconnect_3to1/settings.json",
+    "ip/riscv_soc/Ti60F225_devkit/top_soc.v",
+    "ip/riscv_soc/riscv_soc.v",
+    "ip/riscv_soc/settings.json",
+    "rect_renderer.v",
+    "rtl/cam_i2c_ctrl/i2c/i2c_16addr_8data.v",
+    "rtl/cam_i2c_ctrl/i2c/i2c_master_ctrl_top.v",
+    "rtl/cam_i2c_ctrl/i2c/i2c_master_reg_rom.v",
+    "rtl/cam_i2c_ctrl/i2c/i2c_master_reg_set.v",
+    "rtl/cam_i2c_ctrl/i2c_master/i2c_master_bit_ctrl.v",
+    "rtl/cam_i2c_ctrl/i2c_master/i2c_master_byte_ctrl.v",
+    "rtl/cam_i2c_ctrl/i2c_master/i2c_master_top.v",
+    "rtl/cam_i2c_ctrl/i2c_master/oc_i2c_master.v",
+    "rtl/csi_rx_controller.sv",
+    "rtl/ddr3_controller/axi4_bus_ctl/axi4_bus_ctl.v",
+    "rtl/ddr3_controller/common/efx_fifo_v2.3/efx_fifo_wrapper.v",
+    "rtl/ddr3_controller/ddr3_parameter.vh",
+    "rtl/ddr3_controller/ddr3_top.v",
+    "rtl/ddr3_controller/lb2_axi_clk.v",
+    "rtl/ddr3_controller/local_bus_ctl/local_bus_ctl.v",
+    "rtl/ddr3_controller/memory_bus_ctl/memory_bus_ctl.v",
+    "rtl/ddr3_controller/phy_ctl/ddr_calibration_ini.v",
+    "rtl/ddr3_controller/phy_ctl/ddr_mpr_rdlvl.v",
+    "rtl/ddr3_controller/phy_ctl/ddr_phy_if.v",
+    "rtl/ddr3_controller/phy_ctl/ddr_phy_rdlvl_dqs.v",
+    "rtl/ddr3_controller/phy_ctl/ddr_phy_wrcal.v",
+    "rtl/ddr3_controller/phy_ctl/ddr_phy_wrlvl.v",
+    "rtl/ddr3_controller/phy_ctl/phy_ctl.v",
+    "rtl/debayer/debayer_top_2to1.v",
+    "rtl/debayer/line_buffer.v",
+    "rtl/debayer/raw_to_rgb.v",
+    "rtl/debayer/rgb_gain_v1.v",
+    "rtl/dual_clock_fifo.v",
+    "rtl/dvi_tx/Sc_Fifo_Slr8.v",
+    "rtl/dvi_tx/audio_clock_regeneration_packet.sv",
+    "rtl/dvi_tx/audio_infoframe_packet.sv",
+    "rtl/dvi_tx/audio_packet.sv",
+    "rtl/dvi_tx/auxiliary_video_information_info_frame.sv",
+    "rtl/dvi_tx/dvi_encoder.v_encrypted.v",
+    "rtl/dvi_tx/ecc_calc_v1.v",
+    "rtl/dvi_tx/efx_fifo.v",
+    "rtl/dvi_tx/encode.v_encrypted.v",
+    "rtl/dvi_tx/packet_assembler.sv",
+    "rtl/dvi_tx/tx_aux.v_encrypted.v",
+    "rtl/frame_buffer_V3/DC_FIFO.v",
+    "rtl/frame_buffer_V3/bank_switch.v",
+    "rtl/frame_buffer_V3/data_tx.v",
+    "rtl/frame_buffer_V3/ddr_buffer.v",
+    "rtl/frame_buffer_V3/ddr_rd_buffer.v",
+    "rtl/frame_buffer_V3/ddr_wr_buffer.v",
+    "rtl/frame_buffer_V3/frame_buffer.v",
+    "rtl/frame_buffer_V3/frame_info_det.v",
+    "rtl/frame_buffer_V3/par2ser_parse.v",
+    "rtl/frame_buffer_V3/rst_n_piple.v",
+    "rtl/frame_buffer_V3/ser2par_v1.v",
+    "rtl/frame_buffer_V3/vid_par2ser.v",
+    "rtl/frame_buffer_V3/vid_rx_align_v1.v",
+    "rtl/gamma_conrrection/gamma_correction.v",
+    "rtl/hdmi_reset_sync.v",
+    "rtl/mipi_config/panel_config.v",
+    "rtl/q3_perf_overlay.v",
+    "rtl/q3_perf_snapshot_cdc.v",
+    "rtl/reset.v",
+    "rtl/riscv/reset_synchronizer.v",
+    "rtl/scope_blockcopy_measure.v",
+    "rtl/simple_dual_port_ram.v",
+    "rtl/ti60f225_oob_top.v",
+    "rtl/true_dual_port_ram.v",
+    "rtl/user_dual_port_ram.v",
+    "surface_table.v",
+    "ti60f225_oob.peri.xml",
+    "ti60f225_oob.sdc"
+  ]
+}

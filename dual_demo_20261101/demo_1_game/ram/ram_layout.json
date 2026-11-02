@@ -1,0 +1,36 @@
+{
+  "load_segments": [
+    {
+      "vaddr": "0xf9000000",
+      "filesz": 90164,
+      "memsz": 135312
+    }
+  ],
+  "_start": "0xf9000000",
+  "_end": "0xf901f090",
+  "_sp": "0xf9021090",
+  "__stack_size": 8192,
+  "gap_sp_to_bootloader": 11120,
+  "ram": {
+    "base": "0xF9000000",
+    "end": "0xF9024000",
+    "bytes": 147456,
+    "bootloader_start": "0xF9023C00",
+    "stack": 8192,
+    "reserve_min": 3072,
+    "bootloader_region_file": "ram/bootloader_region_F9023C00.bin",
+    "bootloader_region_sha256": "71df84cabf581eb6487cef226de9d7ab5671f4189febf2bc22360f583fa0ee48",
+    "bootloader_code_range": [
+      "0xF9023C00",
+      "0xF9023EF4"
+    ],
+    "bootloader_runtime_layout": {
+      "code_init_text": "[0xF9023C00, 0xF9023EF4) immutable (last instruction 0xF9023EF0)",
+      "data_rodata": "[0xF9023EF4, 0xF9023F04) writable",
+      "bss": "[0xF9023F04, 0xF9023F08)",
+      "stack_top_sp": "0xF9023F84 (start code: gp = 0xF90246E8, sp = gp - 0x764)",
+      "observed_runtime_write": "0xF9023F80 = 0xF900004C: ra of jal 0xF9023E70 at 0xF9000048, saved by sw x1,12(x2) after addi x2,x2,-16",
+      "evidence": "validation/pool850_ram144_20261031/reports/bootloader144 (start_disasm.txt, boot_disasm.txt); board read-back board/load_GHD6X_20261031_184220/ram_bootloader_region.bin"
+    }
+  }
+}

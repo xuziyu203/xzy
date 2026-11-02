@@ -1,0 +1,68 @@
+{
+  "source_sha256": {
+    "build_id.h": "6a7e84bf1bd6605f4240987f9b2817c95b0ec387bbaea4c59de3ccdcb3407fa7",
+    "joystick_ads1115.c": "26add6b82c33e485b57db911ac8cfb1d316c6304ea4292aa03a3984a7f21becd",
+    "joystick_ads1115.h": "257256363872d529e958dd6e8c5c4b47c4e03e2c20fdef88e64f06191a8a84e2",
+    "main_single.c": "8baef879b6e288c6027517f0137fd9fa880961d19369787ae7d8804b15b84573"
+  },
+  "changed_from_baseline": [
+    "embedded_sw/riscv_soc/software/standalone/apbTest/src/build_id.h",
+    "embedded_sw/riscv_soc/software/standalone/apbTest/src/joystick_ads1115.c",
+    "embedded_sw/riscv_soc/software/standalone/apbTest/src/joystick_ads1115.h",
+    "embedded_sw/riscv_soc/software/standalone/apbTest/src/main_single.c"
+  ],
+  "suites": {
+    "controls": {
+      "pass": true,
+      "cases": 73
+    },
+    "single": {
+      "pass": true,
+      "cases": 13
+    },
+    "hud": {
+      "pass": true,
+      "cases": 3
+    },
+    "g10": {
+      "pass": true,
+      "cases": 16
+    },
+    "repeat_ten": {
+      "pass": true,
+      "starts": 10,
+      "tier_changes": 9,
+      "light_to_pressure": 10,
+      "model_only": true
+    },
+    "telemetry_bounds": {
+      "actual": {
+        "returncode": 0,
+        "output": "LINE TEL LENGTH=458\nLINE JOY LENGTH=119\nMAX=458 RING=577\n"
+      },
+      "conservative_widths": {
+        "returncode": 0,
+        "output": "LINE TEL LENGTH=521\nLINE JOY LENGTH=130\nMAX=521 RING=651\n"
+      },
+      "source_sha256": "8baef879b6e288c6027517f0137fd9fa880961d19369787ae7d8804b15b84573"
+    }
+  },
+  "fixture_changes": [
+    "Production includes point to candidate; outputs live only in this round.",
+    "G10 case5 initially rejected intentional JOY lines; failure preserved, then all nine JOY fields parsed with ranges and all old TEL/backpressure assertions retained.",
+    "Repeated-game test helper renamed a historical test main to avoid nested harness main macro conflict; initial compile failure retained.",
+    "Telemetry boundary harness first lacked BSP stub constants; second attempt exposed MinGW -fstack-protector-all using invalid fs:0 TLS on Windows before telemetry code ran. Final harness uses explicit adjacent canaries and -ftrapv; both failures retained."
+  ],
+  "stack": {
+    "release_sha256": "0fac4deabec6a794316c8672ec37bbe3db7201c74c6fd5c3fc0880a976101087",
+    "image_equal_to_analysis_build": true,
+    "worst_path_bytes": 1232,
+    "stack_reserved": 8192,
+    "bound_proven": true
+  },
+  "limitations": [
+    "C/MMIO contract results are offline model checks, not ten board restarts or measured board FPS.",
+    "C/RTL driver co-simulation is recorded separately in cosim_results.json.",
+    "No new FPGA build/STA in this repair."
+  ]
+}

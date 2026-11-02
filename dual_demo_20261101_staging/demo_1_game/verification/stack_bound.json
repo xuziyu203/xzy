@@ -1,0 +1,82 @@
+{
+  "bound_proven": true,
+  "cycles": [],
+  "dynamic_sp": {},
+  "functions": 453,
+  "image_equal_to_analysis_build": true,
+  "indirect_sites": {
+    "__libc_init_array": [
+      "jalr\ta5",
+      "jalr\ta5"
+    ],
+    "asset_upload_service": [
+      "jalr\ta5",
+      "jalr\ta5"
+    ],
+    "cpu_writer_wait": [
+      "jalr\ts0"
+    ],
+    "cpu_writer_write_row": [
+      "jalr\ts3"
+    ],
+    "en_handle_line": [
+      "jalr\ta5"
+    ],
+    "enemy_test_service": [
+      "jalr\ta5",
+      "jalr\ta5",
+      "jalr\ta5"
+    ],
+    "memset": [
+      "jalr\t-96(a3)"
+    ]
+  },
+  "interrupt_instructions": [],
+  "release_elf": "pair/apbTest.elf",
+  "release_sha256": "0fac4deabec6a794316c8672ec37bbe3db7201c74c6fd5c3fc0880a976101087",
+  "stack_reserved": 8192,
+  "unlisted_indirect_sites": [],
+  "worst_path": [
+    [
+      "init",
+      0
+    ],
+    [
+      "main",
+      48
+    ],
+    [
+      "game_lifecycle_service",
+      16
+    ],
+    [
+      "renderer_cpu_seed_black",
+      48
+    ],
+    [
+      "cpu_writer_begin_frame",
+      32
+    ],
+    [
+      "cpu_writer_wait",
+      48
+    ],
+    [
+      "game_poll",
+      96
+    ],
+    [
+      "tel_service",
+      912
+    ],
+    [
+      "enemy_test_telem_take",
+      16
+    ],
+    [
+      "memcpy",
+      16
+    ]
+  ],
+  "worst_path_bytes": 1232
+}

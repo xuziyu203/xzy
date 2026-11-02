@@ -1,0 +1,21 @@
+{
+  "bit": "pair/basic_demo.bit",
+  "bit_sha256": "ca722493e2abed677c543dec61db9c2c6e95ae29ca39895ee1f3978f2a126998",
+  "delivery_status": "PARTIAL_STAGING",
+  "elf": "pair/basic_demo.elf",
+  "elf_sha256": "4a481583cb33e41a5478d10a9012aa53b44ffca055950293527f30c10f2efb3a",
+  "source": {
+    "source_head": "665157205c969c64b0de12848f598c2f94f67e62",
+    "source_note": "Frozen scope hw_05 + elf_source_inputs; original workspace preserved",
+    "validation": {
+      "board": {
+        "evidence": [],
+        "status": "NOT_RUN"
+      },
+      "firmware_build": "PASS: isolated draft build exactly matches release ELF",
+      "fpga_rebuild": "NOT_RUN this round; frozen existing bit",
+      "timing": "Existing FAIL; 183 setup paths / 0 hold; core->HDMI -1.711 ns, HDMI->core -0.724 ns"
+    }
+  },
+  "version": "SCOPE_BLOCKCOPY_20261101"
+}

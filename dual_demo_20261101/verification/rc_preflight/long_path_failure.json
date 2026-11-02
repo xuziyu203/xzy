@@ -1,0 +1,37 @@
+{
+  "status": "FAIL",
+  "zip": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\package_preflight\\dual_demo_rc.zip",
+  "zip_bytes": 10749690,
+  "zip_sha256": "7e47acbf85af1b2f381989ae109d8ebf31641870ee3c2e2eb3e8324c43053021",
+  "extract_to": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\package_preflight\\build extraction",
+  "report_dir": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\package_preflight\\preflight_verify_r1",
+  "hardware_access": false,
+  "stages": [
+    {
+      "name": "basic_clean_build",
+      "args": [
+        "C:\\Efinity\\2026.1\\python311\\bin\\python.exe",
+        "-B",
+        "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\package_preflight\\build extraction\\demo_0_basic\\tools\\build_firmware.py",
+        "--project-root",
+        "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\package_preflight\\build extraction\\demo_0_basic",
+        "--riscv-ide-root",
+        "C:\\Efinity\\efinity-riscv-ide-2026.1",
+        "--objdir",
+        "build_zip_verify"
+      ],
+      "cwd": null,
+      "returncode": 1
+    }
+  ],
+  "package_root": "C:\\Users\\Administrator\\Desktop\\1\\three_renderer_async_quad_20261006\\validation\\joystick_recovery_20261101\\package_preflight\\build extraction",
+  "checksum_counts": {
+    ".": 620,
+    "demo_0_basic": 254,
+    "demo_1_game": 350
+  },
+  "manifest_verified_before_build": true,
+  "source_manifests_verified": true,
+  "firmware": {},
+  "error": "RuntimeError: basic_clean_build failed; see preserved stdout/stderr"
+}

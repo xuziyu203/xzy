@@ -1,0 +1,272 @@
+{
+  "overall": "FAIL",
+  "explicit_sdc_matches_original": true,
+  "sdc_sha256": "354b75e3234053127c53e0b7bc4b50c3001d37556c9b6a0c1d12bab83df05c86",
+  "timing_model": "I3",
+  "seed": 5,
+  "pnr_exit_zero": true,
+  "clock_pairs": [
+    {
+      "kind": "setup",
+      "launch": "tx_cal_clk_90edge",
+      "capture": "tx_cal_clk_90edge",
+      "constraint_ns": 2.5,
+      "slack_ns": 0.246,
+      "previous_fix_slack_ns": 0.315
+    },
+    {
+      "kind": "setup",
+      "launch": "tx_cal_clk_90edge",
+      "capture": "tx_cal_clk",
+      "constraint_ns": 2.5,
+      "slack_ns": 1.074,
+      "previous_fix_slack_ns": 1.021
+    },
+    {
+      "kind": "setup",
+      "launch": "tx_cal_clk_90edge",
+      "capture": "core_clk",
+      "constraint_ns": 2.5,
+      "slack_ns": 2.046,
+      "previous_fix_slack_ns": 2.069
+    },
+    {
+      "kind": "setup",
+      "launch": "sdram_clk",
+      "capture": "tx_cal_clk_90edge",
+      "constraint_ns": 2.5,
+      "slack_ns": 0.715,
+      "previous_fix_slack_ns": 0.762
+    },
+    {
+      "kind": "setup",
+      "launch": "sdram_clk",
+      "capture": "sdram_clk",
+      "constraint_ns": 2.5,
+      "slack_ns": 0.173,
+      "previous_fix_slack_ns": 0.24
+    },
+    {
+      "kind": "setup",
+      "launch": "rx_cal_clk",
+      "capture": "rx_cal_clk",
+      "constraint_ns": 2.5,
+      "slack_ns": 0.21,
+      "previous_fix_slack_ns": 0.221
+    },
+    {
+      "kind": "setup",
+      "launch": "tx_cal_clk",
+      "capture": "tx_cal_clk",
+      "constraint_ns": 2.5,
+      "slack_ns": 0.297,
+      "previous_fix_slack_ns": 0.289
+    },
+    {
+      "kind": "setup",
+      "launch": "hdmi_tx_slow_clk",
+      "capture": "hdmi_tx_slow_clk",
+      "constraint_ns": 6.734,
+      "slack_ns": 0.633,
+      "previous_fix_slack_ns": 0.797
+    },
+    {
+      "kind": "setup",
+      "launch": "hdmi_tx_slow_clk",
+      "capture": "core_clk",
+      "constraint_ns": 0.002,
+      "slack_ns": -0.724,
+      "previous_fix_slack_ns": -0.671
+    },
+    {
+      "kind": "setup",
+      "launch": "core_clk",
+      "capture": "tx_cal_clk_90edge",
+      "constraint_ns": 2.5,
+      "slack_ns": 0.499,
+      "previous_fix_slack_ns": 0.682
+    },
+    {
+      "kind": "setup",
+      "launch": "core_clk",
+      "capture": "hdmi_tx_slow_clk",
+      "constraint_ns": 0.002,
+      "slack_ns": -1.711,
+      "previous_fix_slack_ns": -1.26
+    },
+    {
+      "kind": "setup",
+      "launch": "core_clk",
+      "capture": "core_clk",
+      "constraint_ns": 10.0,
+      "slack_ns": 2.112,
+      "previous_fix_slack_ns": 2.445
+    },
+    {
+      "kind": "hold",
+      "launch": "tx_cal_clk_90edge",
+      "capture": "tx_cal_clk_90edge",
+      "constraint_ns": 0.0,
+      "slack_ns": 0.072,
+      "previous_fix_slack_ns": 0.072
+    },
+    {
+      "kind": "hold",
+      "launch": "tx_cal_clk_90edge",
+      "capture": "tx_cal_clk",
+      "constraint_ns": 0.0,
+      "slack_ns": 0.607,
+      "previous_fix_slack_ns": 0.639
+    },
+    {
+      "kind": "hold",
+      "launch": "tx_cal_clk_90edge",
+      "capture": "core_clk",
+      "constraint_ns": 0.0,
+      "slack_ns": 0.079,
+      "previous_fix_slack_ns": 0.069
+    },
+    {
+      "kind": "hold",
+      "launch": "sdram_clk",
+      "capture": "tx_cal_clk_90edge",
+      "constraint_ns": 0.0,
+      "slack_ns": 0.43,
+      "previous_fix_slack_ns": 0.457
+    },
+    {
+      "kind": "hold",
+      "launch": "sdram_clk",
+      "capture": "sdram_clk",
+      "constraint_ns": 0.0,
+      "slack_ns": 0.023,
+      "previous_fix_slack_ns": 0.097
+    },
+    {
+      "kind": "hold",
+      "launch": "rx_cal_clk",
+      "capture": "rx_cal_clk",
+      "constraint_ns": 0.0,
+      "slack_ns": 0.029,
+      "previous_fix_slack_ns": 0.031
+    },
+    {
+      "kind": "hold",
+      "launch": "tx_cal_clk",
+      "capture": "tx_cal_clk",
+      "constraint_ns": 0.0,
+      "slack_ns": 0.097,
+      "previous_fix_slack_ns": 0.049
+    },
+    {
+      "kind": "hold",
+      "launch": "hdmi_tx_slow_clk",
+      "capture": "hdmi_tx_slow_clk",
+      "constraint_ns": 0.0,
+      "slack_ns": 0.027,
+      "previous_fix_slack_ns": 0.03
+    },
+    {
+      "kind": "hold",
+      "launch": "hdmi_tx_slow_clk",
+      "capture": "core_clk",
+      "constraint_ns": 0.0,
+      "slack_ns": 0.132,
+      "previous_fix_slack_ns": 0.099
+    },
+    {
+      "kind": "hold",
+      "launch": "core_clk",
+      "capture": "tx_cal_clk_90edge",
+      "constraint_ns": 0.0,
+      "slack_ns": 0.123,
+      "previous_fix_slack_ns": 0.123
+    },
+    {
+      "kind": "hold",
+      "launch": "core_clk",
+      "capture": "hdmi_tx_slow_clk",
+      "constraint_ns": 0.0,
+      "slack_ns": 0.087,
+      "previous_fix_slack_ns": 0.086
+    },
+    {
+      "kind": "hold",
+      "launch": "core_clk",
+      "capture": "core_clk",
+      "constraint_ns": 0.0,
+      "slack_ns": 0.026,
+      "previous_fix_slack_ns": 0.026
+    }
+  ],
+  "paths": {
+    "negative_setup": {
+      "worst_slack_ns": -1.711,
+      "reported_paths": 183,
+      "sha256": "7eea42a760424ce4744bd9e960c1e0d62b503cc81b4925e8248c023e2ca9bf9e"
+    },
+    "negative_hold": {
+      "worst_slack_ns": null,
+      "reported_paths": 0,
+      "sha256": null
+    },
+    "core": {
+      "worst_slack_ns": 2.112,
+      "reported_paths": 8,
+      "sha256": "8fb7a8813d5a86ba0e0926b9feaa15c326d99f61be01153f369c2af05fa85f35"
+    },
+    "hdmi": {
+      "worst_slack_ns": 0.633,
+      "reported_paths": 8,
+      "sha256": "3572ff9b1a94fffa23ebf7086d75cb07983ce76c48451d16d5b4a777c1968503"
+    },
+    "cross_hdmi_core": {
+      "worst_slack_ns": -0.724,
+      "reported_paths": 5,
+      "sha256": "af77ce38c3b9c1f75d2800a0b30e1adbb07627f99b50f122f4cb97eac3920634"
+    },
+    "cross_core_hdmi": {
+      "worst_slack_ns": -1.711,
+      "reported_paths": 8,
+      "sha256": "6421915912d54412eea7e8ec62a293aee96dce677db5379947afb4fd016a5dc7"
+    },
+    "ddr_tx": {
+      "worst_slack_ns": 0.246,
+      "reported_paths": 8,
+      "sha256": "8814113766afee9814bf42b50705ef0ec28bab1e01e83e68cc5cc11c840f2159"
+    },
+    "tx_cal": {
+      "worst_slack_ns": 0.297,
+      "reported_paths": 8,
+      "sha256": "cca473ecb8c907200a1b0fb505d88d8e19e8c7748cc86634b7e69a8201ea5804"
+    },
+    "sdram": {
+      "worst_slack_ns": 0.173,
+      "reported_paths": 8,
+      "sha256": "00f5ee6f58540fb8ba60a9520b557b601971f837564cad7b15ead0313160a6c0"
+    },
+    "rx_cal": {
+      "worst_slack_ns": 0.21,
+      "reported_paths": 8,
+      "sha256": "b5f59250b8875f11bdbb04a73bd3c72f62dc5de55879221dca53ca3aa69224d1"
+    },
+    "scope_inputs": {
+      "worst_slack_ns": 2.725,
+      "reported_paths": 20,
+      "sha256": "45e3aa386de02c1f249a57976240398b3125da5d79a1fab49ca246544004e504"
+    },
+    "scope_outputs": {
+      "worst_slack_ns": 3.589,
+      "reported_paths": 20,
+      "sha256": "89dfce13a7be58a0d230ecfc54d3ce90daf9d626a484096b3614a15c2d62ade2"
+    },
+    "scope_pin": {
+      "worst_slack_ns": 6.306,
+      "reported_paths": 1,
+      "sha256": "05d1a58782e928452df4e030c1b29f0077f1fd4ab0d39a63bc75089e9612cec8"
+    }
+  },
+  "new_negative_clock_pairs_vs_previous_fix": [],
+  "baseline": "C:\\Users\\Administrator\\Desktop\\demo_0\\validation\\demo_resolution_row_20261029\\timing_01\\summary.json",
+  "note": "Previous showcase timing is a comparison only, not a new board test. No constraints or clock frequencies were relaxed."
+}

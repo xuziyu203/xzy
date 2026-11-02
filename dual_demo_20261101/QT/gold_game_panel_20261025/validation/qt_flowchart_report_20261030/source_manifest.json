@@ -1,0 +1,23 @@
+{
+  "source_zip": "C:/Users/Administrator/Desktop/qt/QT/qt_panel_scifi_20261030.zip",
+  "zip_sha256": "29cc57ce6c506685c1a36f9b49b065b7f9eb66645096eb9b4ffeca382fe89183",
+  "files": [
+    {
+      "file": "gold_game_panel_20261025/render2d_console.py",
+      "sha256": "4cad8edbdb6f8de951fc9acf0327115b82e11fb98cf070823d621efa55c5b2b1"
+    },
+    {
+      "file": "gold_game_panel_20261025/panel_view.py",
+      "sha256": "c157eea1deafca4b8f1052a4afcff707a430ac14f5bdcef996a9e33a68c46498"
+    },
+    {
+      "file": "gold_game_panel_20261025/keyboard_transport.py",
+      "sha256": "a314c6c963a1f3158cbf6a0833021a9994a2792a11a5a4785b1dfc5b667137c6"
+    },
+    {
+      "file": "gold_game_panel_20261025/gold_game_panel.py",
+      "sha256": "98fa9042d4e17361624d630b40bcf60dccb3ca31bfef3a6f48b32ebc909db3a5"
+    }
+  ],
+  "review_method": "Static source reading only. No Qt application execution; no serial or hardware access."
+}
